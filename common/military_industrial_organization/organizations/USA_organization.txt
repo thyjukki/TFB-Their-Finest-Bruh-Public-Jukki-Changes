@@ -981,6 +981,161 @@ USA_north_american_aviation_organization = {
 	}
 }
 
+USA_curtiss_organization = {
+	name = USA_curtiss_organization
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_curtiss
+	allowed = {	
+		OR = {
+			tag = USA
+		}
+		has_dlc = "Arms Against Tyranny"
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+	}
+	initial_trait = {
+		name = AUS_mio_robust_light_aircraft
+
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.05
+			air_attack = 0.05
+		}
+	}
+
+	override_trait = {
+		token = generic_mio_trait_liquid_cooled_engines
+		
+		position = { x=2 y=0 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_advanced_aerodynamics
+		
+		position = { x=2 y=0 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_ongoing_developmental_upgrades
+		
+		position = { x=1 y=1 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_expanded_production_facilities
+		
+		position = { x=1 y=0 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_fixed_tailwheels
+		
+		position = { x=0 y=1 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_gun_pods
+		
+		position = { x=3 y=1 }
+		
+	}
+
+	override_trait = {
+		token = generic_mio_trait_maximum_wing_loads
+		
+		position = { x=1 y=1 }
+		
+	}
+
+	override_trait = {
+		token =  generic_mio_trait_heavier_airframe
+		
+		position = { x=-1 y=1 }
+		
+	}
+
+
+	override_trait = {
+		token = generic_mio_trait_removable_wings
+		
+		position = { x=-1 y=2 }
+		relative_position_id = generic_mio_trait_fixed_tailwheels
+
+		mutually_exclusive = { AUS_mio_trait_static_wings } 
+	}
+
+
+	add_trait = { 
+		token = AUS_mio_trait_static_wings
+		name = AUS_mio_trait_static_wings
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
+		special_trait_background = yes
+
+		position = { x=1 y=2 }
+		relative_position_id = generic_mio_trait_fixed_tailwheels
+
+		any_parent = { generic_mio_trait_fixed_tailwheels }
+
+		mutually_exclusive = { generic_mio_trait_removable_wings }
+
+		equipment_bonus = {
+			air_agility = 0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = AUS_mio_trait_weight_optimization
+		name = AUS_mio_trait_weight_optimization
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = AUS_mio_trait_static_wings
+
+		any_parent = { AUS_mio_trait_static_wings }
+
+
+		equipment_bonus = {
+			air_agility = 0.05
+			air_attack = 0.05
+			maximum_speed = 0.03
+		}
+	}
+
+
+	add_trait = { 
+		token = AUS_mio_trait_structural_integrity
+		name = AUS_mio_trait_structural_integrity
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_removable_wings
+
+		any_parent = { generic_mio_trait_removable_wings }
+
+
+		equipment_bonus = {
+			reliability = 0.1
+			air_defence = 0.1
+		}
+	}
+
+	remove_trait = { generic_mio_trait_maritime_duties generic_mio_trait_fuselage_ordinance_rack }
+
+}
+
 USA_lockheed_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_lockheed
@@ -1343,6 +1498,36 @@ USA_springfield_armory_organization = {
 
 		equipment_bonus = {
 			reliability = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_bazooka
+		name = USA_mio_trait_bazooka
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		special_trait_background = yes
+
+		position = { x=0 y=0 }  
+
+		limit_to_equipment_type = { 
+			squad_equipment
+		}
+
+		available = {
+			FROM = {
+				has_tech = support_weapons3
+			}
+		}
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.50
+			reliability = 0.1
 		}
 	}
 

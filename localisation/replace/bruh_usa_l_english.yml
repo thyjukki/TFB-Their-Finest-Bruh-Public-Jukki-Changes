@@ -127,6 +127,8 @@
   USA_war_department:0 "Begin Rearmament"
   USA_public_projects:0 "Public Projects"
   USA_investigate_uranium:0 "Advisory Committee on Uranium"
+  USA_curtiss_organization:0 "Curtiss-Wright"
+  USA_mio_trait_bazooka:0 "Bazooka"
 
   #### EVENTS ####
   usa.1001.t:0 "1936 Election Results"

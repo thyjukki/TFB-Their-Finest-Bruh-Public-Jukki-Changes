@@ -21,7 +21,7 @@ equipments = {
 		}
 		
 		maximum_speed = 8.0
-		reliability = 0.70
+		reliability = 0.80
 		hardness = 0.10
 
 		#Space taken in convoy

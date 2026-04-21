@@ -534,6 +534,9 @@ ideas = {
 				command_power_gain_mult = -0.5
 				send_volunteer_factor = -2
 				send_volunteer_size = 2
+				land_mastery_gain_factor = -0.4
+				air_mastery_gain_factor = -0.4
+				naval_mastery_gain_factor = -0.4
 			}
 		}
 

@@ -9910,8 +9910,10 @@ generic_support_equipment_organization = {
 		limit_to_equipment_type = { squad_equipment }
 
 		equipment_bonus = {
-			hard_attack = 0.1
-			build_cost_ic = 0.05
+			hard_attack = 0.5
+			ap_attack = 0.5
+			defense = 0.25
+			build_cost_ic = 0.15
 		}
 	}
 
@@ -9925,10 +9927,10 @@ generic_support_equipment_organization = {
 		
 		all_parents = { generic_mio_trait_private_tenders }
 		
-		limit_to_equipment_type = { infantry_equipment }
+		limit_to_equipment_type = { squad_equipment }
 
 		equipment_bonus = {
-			defense = 0.02
+			defense = 0.1
 		}
 	}
 
@@ -9947,8 +9949,8 @@ generic_support_equipment_organization = {
 		limit_to_equipment_type = { squad_equipment }
 
 		equipment_bonus = {
-			breakthrough = 0.05
-			soft_attack = 0.02
+			breakthrough = 0.1
+			soft_attack = 0.5
 			build_cost_ic = 0.06
 		}
 	}
