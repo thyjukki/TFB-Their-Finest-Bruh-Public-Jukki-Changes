@@ -9909,6 +9909,12 @@ generic_support_equipment_organization = {
 		
 		limit_to_equipment_type = { squad_equipment }
 
+		available = {
+			FROM = {
+				has_tech = support_weapons3
+			}
+		}
+
 		equipment_bonus = {
 			hard_attack = 0.5
 			ap_attack = 0.5
