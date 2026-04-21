@@ -542,3 +542,12 @@
   GER_MAN_UP_2:0 "§R Germany or Italy has full secured Egypt§!"
   GER_MAN_UP_3:0 "§R Germany has fully secured London§!"
   DENIED_CZE:0 "Demand Sudetenland Denied"
+
+
+  ### Techs ###
+  GER_pack_artillery_equipment_1:0 "7.5 cm GebG 36"
+  GER_pack_artillery_equipment_2:0 "LG 40"
+  GER_pack_artillery_equipment_3:0 "LG 42"
+  GER_dp_artillery_equipment_1:0 "7.5 cm IG 37"
+  GER_dp_artillery_equipment_2:0 "7.5 cm Pak 97/38"
+  GER_anti_tank_equipment_4:0 "PW600"
