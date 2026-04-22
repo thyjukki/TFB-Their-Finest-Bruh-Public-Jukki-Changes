@@ -1250,38 +1250,24 @@ operations = {
 			446
     	}
 		available = {
-			controls_state = 446
-			controls_state = 1057
-			OR = {
-				NOT = {
-					owns_state = 446
-					owns_state = 1057
-				}
-				any_enemy_country = {
-					OR = {
-						controls_state = 452
-						controls_state = 447
-						controls_state = 456
-						controls_state = 457
-						controls_state = 454
-						controls_state = 455
-						controls_state = 453
-						controls_state = 1047
-					}
-				}
-			}
+			has_full_control_of_state = 446
+			has_full_control_of_state = 1057
 		}
 	
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
-			any_controlled_state = {
-				OR = {
-					region = 28
-					region = 128
-					region = 232
-					region = 300
-					region = 225
+			controls_state = 446
+			controls_state = 1057
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					has_full_control_of_state = 446
+				}
+				NOT = {
+					has_full_control_of_state = 1057
 				}
 			}
 		}
@@ -1319,10 +1305,8 @@ operations = {
 		remove_effect = {
 			if = {
 				limit = {
-					OR = {
-						has_full_control_of_state = 446
-						has_full_control_of_state = 453
-					}
+					has_full_control_of_state = 446
+					has_full_control_of_state = 1057
 				}
 				set_country_flag = blew_up_suez
 				set_global_flag = SUEZ_CANAL_BLOCKED
@@ -1339,7 +1323,7 @@ operations = {
 					limit = {
 						ENG = {
 							owns_state = 446
-							owns_state = 453
+							owns_state = 1057
 						}
 					}
 					add_war_support = -0.05
