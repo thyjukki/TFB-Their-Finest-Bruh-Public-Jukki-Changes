@@ -1244,6 +1244,11 @@ operations = {
 		allowed = {
 			has_dlc = "Waking the Tiger"
 		}
+		state_target = any_controlled_state
+		on_map_mode = map_and_decisions_view
+		targets = {
+			446
+    	}
 		available = {
 			controls_state = 446
 			controls_state = 1057
@@ -1283,7 +1288,7 @@ operations = {
 	
 		fire_only_once = no
 	
-		days_remove = 30
+		days_remove = 14
 	
 		cost = 75
 	
@@ -1322,6 +1327,12 @@ operations = {
 				set_country_flag = blew_up_suez
 				set_global_flag = SUEZ_CANAL_BLOCKED
 				country_event = { id = wtt_news.40 hours = 6}
+				446 = {
+					remove_building = {
+						type = industrial_complex
+						level = 5
+					}
+				}
 			}
 			effect_tooltip = {
 				if = {

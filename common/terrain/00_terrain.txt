@@ -94,7 +94,6 @@ categories =  {
 			attack = -0.35
 		}
 		enemy_army_bonus_air_superiority_factor = -0.40
-		air_cas_present_factor = -0.20	
 	
 			
 
@@ -121,7 +120,6 @@ categories =  {
 		}
 
 		enemy_army_bonus_air_superiority_factor = -0.15
-		air_cas_present_factor = -0.05
 		supply_flow_penalty_factor = 0.12
 		
 		truck_attrition_factor = 1.0
@@ -160,7 +158,6 @@ categories =  {
 			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.40
-		air_cas_present_factor = -0.20
 		supply_flow_penalty_factor = -0.18
 	}
 	
