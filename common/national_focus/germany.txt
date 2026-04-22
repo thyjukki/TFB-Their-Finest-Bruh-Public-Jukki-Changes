@@ -14274,10 +14274,14 @@ focus_tree = {
 			else = {
 				GER_add_or_modify_military_intelligence_service = yes
 			}
-			add_to_variable = {
-				GER_military_intelligence_service_consumer_goods_factor = -0.05
-				tooltip =  consumer_goods_expected_value_tt
+			add_timed_idea = {
+				idea = GER_swiss_gold
+				days = 365
 			}
+			# add_to_variable = {
+			# 	GER_military_intelligence_service_consumer_goods_factor = -0.05
+			# 	tooltip =  consumer_goods_expected_value_tt
+			# }
 			if = {
 				limit = {
 					has_dlc = "La Resistance"

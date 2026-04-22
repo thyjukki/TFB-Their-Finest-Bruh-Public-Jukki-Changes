@@ -33,7 +33,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				dispersed_industry_category = -0.75
+				#dispersed_industry_category = -0.75
 			}		
 		}
 

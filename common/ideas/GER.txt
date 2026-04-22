@@ -6876,5 +6876,19 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+
+		GER_swiss_gold = {
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
 	}
 }
