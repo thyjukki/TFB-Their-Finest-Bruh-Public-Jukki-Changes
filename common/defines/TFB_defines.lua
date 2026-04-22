@@ -250,8 +250,8 @@ NDefines.NMilitary.OUT_OF_SUPPLY_SPEED = -0.4                    -- max speed re
 NDefines.NMilitary.NON_CORE_SUPPLY_SPEED = -0.4				   -- we are not running on our own VP supply so need to steal stuff along the way
 NDefines.NMilitary.NON_CORE_SUPPLY_AIR_SPEED = -0.15			   -- we are not running on our own VP supply so need to steal stuff along the way a bit less due to air supply
 NDefines.NMilitary.OUT_OF_SUPPLY_MORALE = -0.3                   -- max org regain reduction from supply
-NDefines.NMilitary.TRAINING_ATTRITION = 0.04		  			   -- amount of extra attrition from being in training
-NDefines.NMilitary.TRAINING_MIN_STRENGTH = 0.5					-- if strength is less than this the unit will pause training until it's been reinforced
+NDefines.NMilitary.TRAINING_ATTRITION = 0.05		  			   -- amount of extra attrition from being in training
+NDefines.NMilitary.TRAINING_MIN_STRENGTH = 0.9					-- if strength is less than this the unit will pause training until it's been reinforced
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20                        -- CAS bonus factor for air support moddifier for land unit in combat
 NDefines.NMilitary.LOW_SUPPLY = 0.95							   -- When the supply status of an unit becomes low.
 NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.02              -- chance to join combat bonus by each 100% larger than infantry base (up to 200%)
@@ -847,7 +847,7 @@ NDefines.NFactions.FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR = 0.2 -- a scala
 NDefines.NFactions.FACTION_INFLUENCE_SCIENTIST_CONTRIBUTION_VALUE = 1 --how much contribution one scientists gives to you if it is working for somebody else.
 
 
-NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.025				-- How much training contributes to doctrine mastery relative to combat/missions
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.02				-- How much training contributes to doctrine mastery relative to combat/missions
 NDefines.NDoctrines.MASTERY_BANK_CONVERSION_RATE = 0.5 				-- The rate at which mastery gained when a track is finished or empty is "banked"
 NDefines.NDoctrines.DOCTRINE_SHARING_BASE_MASTERY_GAIN_MONTHLY = 10        -- When doctrine sharing is enabled, this is the base amount of mastery gained monthly
 NDefines.NDoctrines.DOCTRINE_SHARING_MONTHLY_MASTERY_GAIN_PER_COMMANDER = 2 -- When doctrine sharing is enabled, each theater commander increases the montly mastery gain by this much
