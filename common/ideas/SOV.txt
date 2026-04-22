@@ -722,8 +722,8 @@ ideas = {
 			
 			research_bonus = {
 				electronics = -0.15
-				cat_mechanized_equipment = -0.10
-				armor = -0.10
+				cat_mechanized_equipment = -0.15
+				armor = -0.15
 			}
 			
 			equipment_bonus = {
@@ -760,8 +760,8 @@ ideas = {
 			
 			research_bonus = {
 				electronics = -0.2
-				cat_mechanized_equipment = -0.15
-				armor = -0.15
+				cat_mechanized_equipment = -0.25
+				armor = -0.25
 			}
 			
 			equipment_bonus = {
@@ -4693,12 +4693,12 @@ ideas = {
 
 			modifier = {
 				command_abilities_cost_factor = 0.1
-				land_doctrine_cost_factor = 0.2
-				naval_doctrine_cost_factor = 0.2
-				air_doctrine_cost_factor = 0.2
-				land_mastery_gain_factor = -0.1
-				air_mastery_gain_factor = -0.1
-				naval_mastery_gain_factor = -0.1
+				land_doctrine_cost_factor = 0.3
+				naval_doctrine_cost_factor = 0.3
+				air_doctrine_cost_factor = 0.3
+				land_mastery_gain_factor = -0.35
+				air_mastery_gain_factor = -0.35
+				naval_mastery_gain_factor = -0.35
 				promote_cost_factor = 5
 				drift_defence_factor = 0.1
 				army_core_defence_factor = 0.03
