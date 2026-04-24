@@ -157,6 +157,21 @@ ideas = {
 					AND = { NOT = { tag = USA } has_government = democratic threat > 0.1 }
 					AND = { tag = USA threat > 0.70 has_war_support > 0.5 }
 				
+				}
+				if = {
+					limit = {
+						original_tag = CZE
+						has_dlc = "Peace For Our Time"
+					}
+					custom_trigger_tooltip = {
+						tooltip = CZE_bop_no_industrialists_tt
+						NOT = {
+							OR = {
+								has_idea = CZE_industrialists_veto
+								has_idea = CZE_industrialists_veto_2
+							}
+						}
+					}
 				}					
 			}
 
@@ -250,6 +265,21 @@ ideas = {
 					AND = { has_government = neutrality threat > 0.05 }
 					AND = { NOT = { tag = USA } has_government = democratic threat > 0.25 }
 					AND = { tag = USA threat > 0.85 has_war_support > 0.65 }
+				}
+				if = {
+					limit = {
+						original_tag = CZE
+						has_dlc = "Peace For Our Time"
+					}
+					custom_trigger_tooltip = {
+						tooltip = CZE_bop_no_industrialists_tt
+						NOT = {
+							OR = {
+								has_idea = CZE_industrialists_veto
+								has_idea = CZE_industrialists_veto_2
+							}
+						}
+					}
 				}
 			}
 
@@ -413,6 +443,21 @@ ideas = {
 						}
 					}
 				}			
+				if = {
+					limit = {
+						original_tag = CZE
+						has_dlc = "Peace For Our Time"
+					}
+					custom_trigger_tooltip = {
+						tooltip = CZE_bop_no_industrialists_tt
+						NOT = {
+							OR = {
+								has_idea = CZE_industrialists_veto
+								has_idea = CZE_industrialists_veto_2
+							}
+						}
+					}
+				}
 			}
 
 			cost = 150
@@ -524,6 +569,21 @@ ideas = {
 						}
 					}
 					NOT = { has_idea = MON_brothers_war }
+				}
+				if = {
+					limit = {
+						original_tag = CZE
+						has_dlc = "Peace For Our Time"
+					}
+					custom_trigger_tooltip = {
+						tooltip = CZE_bop_no_industrialists_tt
+						NOT = {
+							OR = {
+								has_idea = CZE_industrialists_veto
+								has_idea = CZE_industrialists_veto_2
+							}
+						}
+					}
 				}
 
 			}

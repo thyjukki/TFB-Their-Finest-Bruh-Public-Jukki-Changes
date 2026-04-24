@@ -27,9 +27,9 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		#artillery = { x = 0 y = 0 }			# Mountian Guns
 	}
 }
 
@@ -45,6 +45,7 @@ division_template = {
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		#artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -59,6 +60,17 @@ division_template = {
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+	}
+}
+
+division_template = {
+   	name = "Finanční Stráž"  #Financial Guard -- garison formations before their merger with State Defense Guard. Precursor to some reservists units
+	division_names_group = CZE_GAR_01
+    is_locked = yes #unlock via focus
+    division_cap = 0 #The formal army unit formation of the financial guard mostly existed on paper at start date. Was filled out into a full blown reservists units between 1936-1938
+    priority = 0
+	regiments = {
+		militia = { x = 0 y = 0 } #Mix of varrying levels of professional personal, normal citizens, police officers, and paramilitary members.
 	}
 }
 
@@ -83,6 +95,8 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
+		#force_equipment_variants = { light_tank_chassis_0 = { owner = "CZE" version_name = "Tancik vz. 33" } }
+		
 	}
 	division = { # "4. divize"
 		division_name = {
@@ -138,6 +152,7 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
+		#force_equipment_variants = { light_tank_chassis_0 = { owner = "CZE" version_name = "Tancik vz. 33" } }
 	}
 	division = { # "15. divize"
 		division_name = {
@@ -169,7 +184,8 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
+		#force_equipment_variants = { light_tank_chassis_0 = { owner = "CZE" version_name = "Tancik vz. 33" } }
 	}
 	division = { # "4. fast"
 		division_name = {
@@ -179,7 +195,8 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.1
+		#force_equipment_variants = { light_tank_chassis_0 = { owner = "CZE" version_name = "Tancik vz. 33" } }
 	}
 	### I Armáda ###
 	division = { # "18. divize"
@@ -353,45 +370,7 @@ units = {
 	}
 }
 
-### Air Wings
-air_wings = {
-	# Letectvo I.Armády -- Prague
-	# Letectvo Hlavniho Velitelstivi -- Prague
-	9 = { 
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 36
-		}
-		tac_bomber_equipment_0 =  {	# Bloch MB.200
-			owner = "CZE" 
-			amount = 72
-		}
-		CAS_equipment_1 =  {		# Aero A-101
-			owner = "CZE" 
-			amount = 24
-		}
-	}
 
-	# Letectvo III.Armády -- Bratislava
-	70 = {
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 36
-		}
-	}
-
-	# Letectvo IV.Armády -- Olomouc
-	75 = {
-		fighter_equipment_0 = {		# Avia B.534
-			owner = "CZE" 
-			amount = 72
-		}
-		CAS_equipment_1 =  {		# Aero A-101
-			owner = "CZE" 
-			amount = 24
-		}
-	}
-}
 
 ### Starting Production ###
 instant_effect = {
@@ -405,6 +384,7 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:CZE_zbrojovka_brno_organization
 	}
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -413,7 +393,19 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.48
 		efficiency = 100
+		industrial_manufacturer = mio:CZE_zbrojovka_vsetin_organization
 	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = light_tank_chassis_2
+	# 		creator = CZE
+	# 		version_name = "LT vz. 35"
+	# 	}
+	# 	requested_factories = 2
+	# 	progress = 0.48
+	# 	efficiency = 100
+	# 	industrial_manufacturer = mio:CZE_ckd_organization
+	# }
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -423,15 +415,5 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 		industrial_manufacturer = mio:CZE_skoda_artillery_organization
-	}
-	add_equipment_to_stockpile = {
-		type = ger_light_tank_chassis_p35
-		amount = 1000
-		producer = CZE
-	}
-	add_equipment_to_stockpile = {
-		type = ger_light_tank_chassis_p38 
-		amount = 500
-		producer = CZE
 	}
 }

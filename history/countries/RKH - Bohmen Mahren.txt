@@ -88,7 +88,10 @@ if = {
 	}
 }
 
-set_research_slots = 3
+recruit_character = RKH_erich_friderici
+recruit_character = RKH_jaroslav_eminger 
+
+set_research_slots = 2
 set_convoys = 0
 
 1939.1.1 = {

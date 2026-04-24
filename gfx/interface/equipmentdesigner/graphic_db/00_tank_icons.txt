@@ -3045,12 +3045,36 @@ CZE = {
 				CZE_light_armor_entity
 			}
 		}
+		pool = {
+			limit = {
+				has_dlc = "Peace For Our Time"
+			}
+			icons = {
+				GFX_CZE_improved_light_tank_lt38_medium
+			}
+		}
+		pool = {
+			limit = {
+				has_dlc = "Peace For Our Time"
+			}
+			weight = 2
+			icons = {
+				GFX_CZE_improved_light_tank_lt38_medium
+			}
+		}
 	}
 	medium_tank_chassis = {
 		pool = {
 			models = {
 				CZE_modern_armor_entity #Škoda T-25
 				CZE_medium_armor_entity
+			}
+		}
+	}
+	medium_tank_destroyer_chassis = {
+		pool = {
+			icons = { 
+				GFX_CZE_basic_medium_td_medium
 			}
 		}
 	}
