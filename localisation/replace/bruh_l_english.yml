@@ -1516,6 +1516,8 @@ remove_combined_arms_expert:0 "Loses §YCombined Arms Expert§!"
 remove_mass_motorization_expert:0 "Loses §YMass Motorization Expert§!"
 remove_cavalry_expert:0 "Loses §YCavalry Expert§!"
 
+meta_game_flag:0 "Using Competitive Game start"
+
 
 # GAME RULES
  RULE_GROUP_TFB:0 "Custom TFB Game Rules"
