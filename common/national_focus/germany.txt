@@ -6178,7 +6178,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = GER_defense_of_the_reich_ns
-				days = 730
+				days = 365
 			}
 		}
 	}
