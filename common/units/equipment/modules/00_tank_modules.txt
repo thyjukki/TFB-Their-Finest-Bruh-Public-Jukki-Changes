@@ -1765,7 +1765,7 @@ equipment_modules = {
 			soft_attack = 18
 			build_cost_ic = 4
 			breakthrough = 5
-			reliability = -0.05
+			reliability = -0.1
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1780,7 +1780,7 @@ equipment_modules = {
 			soft_attack = 12 #significantly reduced by the support role (in unit)
 			breakthrough = 6 #significantly reduced by the support role (in unit)
 			build_cost_ic = 1.2
-			reliability = -0.05
+			reliability = -0.1
 		}
 		dismantle_cost_ic = 0.5
 
@@ -2171,15 +2171,15 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 28
-			hard_attack = 5
-			ap_attack = 20
-			build_cost_ic = 5
+			soft_attack = 25
+			hard_attack = 4
+			ap_attack = 10
+			build_cost_ic = 8
 		}
 		multiply_stats = {  }
 		
 		build_cost_resources = {
-			steel = 8
+			steel = 10
 		}
 		dismantle_cost_ic = 1
 	}
@@ -2196,10 +2196,10 @@ equipment_modules = {
 		parent = tank_art_gun_1
 
 		add_stats = {
-			soft_attack = 34
+			soft_attack = 30
 			hard_attack = 7
-			ap_attack = 30
-			build_cost_ic = 7.25
+			ap_attack = 20
+			build_cost_ic = 9
 		}
 		multiply_stats = {
 			maximum_speed = -0.075
@@ -2223,10 +2223,10 @@ equipment_modules = {
 		parent = tank_art_gun_2
 
 		add_stats = {
-			soft_attack = 40
-			hard_attack = 8
-			ap_attack = 40
-			build_cost_ic = 9.5
+			soft_attack = 34
+			hard_attack = 9
+			ap_attack = 30
+			build_cost_ic = 10
 		}
 		multiply_stats = {
 			maximum_speed = -0.15
@@ -2269,8 +2269,8 @@ equipment_modules = {
 		#parent = tank_med_gun_1
 
 		add_stats = {
-			soft_attack = 40
-			hard_attack = 28
+			soft_attack = 38
+			hard_attack = 26
 			ap_attack = 60
 			breakthrough = -10
 			build_cost_ic = 8.5
@@ -2294,8 +2294,8 @@ equipment_modules = {
 		parent = tank_med_gun_1
 
 		add_stats = {
-			soft_attack = 46
-			hard_attack = 34
+			soft_attack = 44
+			hard_attack = 30
 			ap_attack = 80
 			breakthrough = -10
 			build_cost_ic = 10
@@ -2643,7 +2643,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 50
-			hard_attack = 54
+			hard_attack = 56
 			reliability = -0.05
 			ap_attack = 90
 			build_cost_ic = 14
@@ -2668,7 +2668,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 64
-			hard_attack = 60
+			hard_attack = 62
 			ap_attack = 110
 			reliability = -0.05
 			breakthrough = -10
@@ -2719,7 +2719,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 44
-			hard_attack = 66
+			hard_attack = 68
 			ap_attack = 100
 			reliability = -0.1
 			#breakthrough = -10
@@ -2748,7 +2748,7 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 56
-			hard_attack = 78
+			hard_attack = 80
 			ap_attack = 125
 			reliability = -0.1
 			#breakthrough = -10
@@ -2877,10 +2877,10 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 44
-			hard_attack = 9
+			soft_attack = 39
+			hard_attack = 8
 			ap_attack = 30
-			build_cost_ic = 12
+			build_cost_ic = 18
 		}
 		multiply_stats = { 
 			maximum_speed = -0.10
@@ -2902,10 +2902,10 @@ equipment_modules = {
 		parent = tank_large_art_gun_1
 
 		add_stats = {
-			soft_attack = 54
-			hard_attack = 11
+			soft_attack = 45
+			hard_attack = 10
 			ap_attack = 40
-			build_cost_ic = 17
+			build_cost_ic = 19
 		}
 		multiply_stats = {
 			maximum_speed = -0.15
