@@ -2987,11 +2987,15 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 3
-			naval_torpedo_enemy_critical_chance_factor = -0.05
-			naval_torpedo_damage_reduction_factor = 0.05
+			naval_torpedo_enemy_critical_chance_factor = -0.75
+			naval_torpedo_damage_reduction_factor = 0.1
 		}
 		build_cost_resources = {
 			steel = 5
+		}
+
+		forbid_module_categories = {
+		  ship_medium_battery
 		}
 	}
 	ship_armor_cruiser_2 = {
@@ -3008,11 +3012,15 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 6.5
-			naval_torpedo_enemy_critical_chance_factor = -0.1
-			naval_torpedo_damage_reduction_factor = 0.1
+			naval_torpedo_enemy_critical_chance_factor = -0.8
+			naval_torpedo_damage_reduction_factor = 0.15
 		}
 		build_cost_resources = {
 			steel = 10
+		}
+
+		forbid_module_categories = {
+		  ship_medium_battery
 		}
 	}
 	ship_armor_cruiser_3 = {
@@ -3029,11 +3037,15 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 8.5
-			naval_torpedo_enemy_critical_chance_factor = -0.15
-			naval_torpedo_damage_reduction_factor = 0.15
+			naval_torpedo_enemy_critical_chance_factor = -0.85
+			naval_torpedo_damage_reduction_factor = 0.20
 		}
 		build_cost_resources = {
 			steel = 15
+		}
+
+		forbid_module_categories = {
+		  ship_medium_battery
 		}
 	}
 	ship_armor_cruiser_4 = {
@@ -3050,98 +3062,101 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 11
-			naval_torpedo_enemy_critical_chance_factor = -0.2
-			naval_torpedo_damage_reduction_factor = 0.2
+			naval_torpedo_enemy_critical_chance_factor = -0.90
+			naval_torpedo_damage_reduction_factor = 0.25
 		}
 		build_cost_resources = {
 			steel = 20
+		}
+
+		forbid_module_categories = {
+		  ship_medium_battery
 		}
 	}
 	ship_armor_cruiser_heavy_1 = {
 		add_equipment_type = capital_ship
 		abbreviation = "skl"
-		category = ship_cruiser_armor
-		gfx = ship_armor_thin_1
-		
-		multiply_stats = {			
-			naval_speed = -0.05
-			build_cost_ic = 0.075
+		category = ship_heavy_cruiser_armor
+		gfx = ship_heavy_cruiser_armor_1
+
+		multiply_stats = {
+			naval_speed = -0.075
+			build_cost_ic = 0.1
+			max_strength = 0.2
 		}
 		dismantle_cost_ic = 750
 		
 		add_stats = {
-			armor_value = 3
-			naval_torpedo_enemy_critical_chance_factor = -0.05
-			naval_torpedo_damage_reduction_factor = 0.05
-		}
-		build_cost_resources = {
-			steel = 5
-		}
-	}
-	ship_armor_cruiser_heavy_2 = {
-		add_equipment_type = capital_ship
-		abbreviation = "skk"
-		category = ship_cruiser_armor
-		gfx = ship_armor_thin_2
-		parent = ship_armor_cruiser_heavy_1
-		multiply_stats = {
-			build_cost_ic = 0.1
-			naval_speed = -0.075
-			max_strength = 0.1
-		}
-		dismantle_cost_ic = 1000
-		
-		add_stats = {
-			armor_value = 6.5
-			naval_torpedo_enemy_critical_chance_factor = -0.1
-			naval_torpedo_damage_reduction_factor = 0.1
+			armor_value = 5
 		}
 		build_cost_resources = {
 			steel = 10
 		}
 	}
-	ship_armor_cruiser_heavy_3 = {
+	ship_armor_cruiser_heavy_2 = {
 		add_equipment_type = capital_ship
-		abbreviation = "skj"
-		category = ship_cruiser_armor
-		gfx = ship_armor_thin_3
-		parent = ship_armor_cruiser_heavy_2
+		abbreviation = "skk"
+		category = ship_heavy_cruiser_armor
+		gfx = ship_heavy_cruiser_armor_2
+		parent = ship_armor_cruiser_heavy_1
 		multiply_stats = {
-			build_cost_ic = 0.125
-			naval_speed = -0.1
-			max_strength = 0.2
+			build_cost_ic = 0.15
+			naval_speed = -0.01
+			max_strength = 0.30
 		}
-		dismantle_cost_ic = 1250
+		dismantle_cost_ic = 1000
 		
 		add_stats = {
-			armor_value = 8.5
-			naval_torpedo_enemy_critical_chance_factor = -0.15
-			naval_torpedo_damage_reduction_factor = 0.15
+			armor_value = 7.5
+			naval_torpedo_enemy_critical_chance_factor = -0.025
+			naval_torpedo_damage_reduction_factor = 0.025
 		}
 		build_cost_resources = {
 			steel = 15
 		}
 	}
+	ship_armor_cruiser_heavy_3 = {
+		add_equipment_type = capital_ship
+		abbreviation = "skj"
+		category = ship_heavy_cruiser_armor
+		gfx = ship_heavy_cruiser_armor_3
+		parent = ship_armor_cruiser_heavy_2
+		multiply_stats = {
+			build_cost_ic = 0.2
+			naval_speed = -0.125
+			max_strength = 0.30
+		}
+		dismantle_cost_ic = 1250
+		
+		add_stats = {
+			armor_value = 9.5
+			naval_torpedo_enemy_critical_chance_factor = -0.05
+			naval_torpedo_damage_reduction_factor = 0.05
+		}
+		build_cost_resources = {
+			steel = 20
+		}
+	}
 	ship_armor_cruiser_heavy_4 = {
 		add_equipment_type = capital_ship
 		abbreviation = "skh"
-		category = ship_cruiser_armor
-		gfx = ship_armor_thin_4
+		category = ship_heavy_cruiser_armor
+		gfx = ship_heavy_cruiser_armor_4
 		parent = ship_armor_cruiser_heavy_3
 		multiply_stats = {
-			build_cost_ic = 0.15
-			naval_speed = -0.125
-			max_strength = 0.3
+			build_cost_ic = 0.25
+			naval_speed = -0.15
+			max_strength = 0.40
 		}
 		dismantle_cost_ic = 1500
 		
 		add_stats = {
-			armor_value = 11
-			naval_torpedo_enemy_critical_chance_factor = -0.2
-			naval_torpedo_damage_reduction_factor = 0.2
+			armor_value = 12
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+			naval_torpedo_damage_reduction_factor = 0.1
 		}
 		build_cost_resources = {
-			steel = 20
+			steel = 25
 		}
 	}
 	ship_armor_carrier_deck = {
