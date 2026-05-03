@@ -524,7 +524,7 @@ NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.05  -- will 
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR					= 0.4 -- if one side has more ships than the other that side will get this penalty for each +100% ship ratio it has
 --NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS		= 0.015 -- each ship that joins the combat will have this penalty to be added into positioning
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO					= 1.2  -- maximum penalty to get from larger fleets
-NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY                         = 99    -- the minimum fleet size in ships that a fleet must be before having the large fleet penalty applied to them
+NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY                         = 40    -- the minimum fleet size in ships that a fleet must be before having the large fleet penalty applied to them
 
 NDefines.NNavy.UNDERWAY_REPLENISHMENT_CONVOY_COST_PER_FUEL = 0.05	-- Cost in convoys for underway replenishment multiplied by max daily fuel consumption (rounded up)
 
