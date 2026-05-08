@@ -349,9 +349,14 @@ assault_infantry = {
                 breakthrough = 0.15
                 soft_attack = 0.1
             }
-            category_assault_gun = {
+            light_assault_gun_brigade = {
                 max_organisation = 3
-                add = yes
+            }
+            medium_assault_gun_brigade = {
+                max_organisation = 3
+            }
+            heavy_assault_gun_brigade = {
+                max_organisation = 3
             }
 
         }
