@@ -175,22 +175,22 @@ large_unit_tactics = {
     unit_artillery_brigade_design_cost_factor = -1
     unit_anti_tank_brigade_design_cost_factor = -1
     category_light_infantry = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
     category_artillery = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
     category_anti_tank = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
     category_tank_destroyers = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
     motorized = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
     mechanized = {
-        combat_width = -0.5
+        combat_width = -0.2
     }
 
     
