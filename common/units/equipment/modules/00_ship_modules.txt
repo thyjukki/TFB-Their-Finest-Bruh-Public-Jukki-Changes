@@ -517,8 +517,6 @@ equipment_modules = {
 			hg_attack = 10
 			build_cost_ic = 800
 			max_strength = 5
-			naval_torpedo_enemy_critical_chance_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.05
 		}
 		multiply_stats = {
 			naval_speed = -0.07
@@ -552,8 +550,6 @@ equipment_modules = {
 			hg_attack = 14
 			build_cost_ic = 850
 			max_strength = 10
-			naval_torpedo_enemy_critical_chance_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.05
 		}
 		multiply_stats = {
 			naval_speed = -0.08
@@ -587,8 +583,6 @@ equipment_modules = {
 			hg_attack = 18
 			build_cost_ic = 900
 			max_strength = 15
-			naval_torpedo_enemy_critical_chance_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.05
 		}
 		multiply_stats = {
 			naval_speed = -0.09
@@ -628,8 +622,6 @@ equipment_modules = {
 			hg_attack = 22
 			build_cost_ic = 950
 			max_strength = 20
-			naval_torpedo_enemy_critical_chance_factor = 0.05
-			naval_torpedo_damage_reduction_factor = -0.05
 		}
 		multiply_stats = {
 			naval_speed = -0.10
@@ -2056,7 +2048,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 14
+			torpedo_attack = 15
 			build_cost_ic = 90
 		}
 		multiply_stats = {
@@ -2076,7 +2068,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 18
+			torpedo_attack = 20
 			build_cost_ic = 120
 		}
 		multiply_stats = {
@@ -2109,7 +2101,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 22
+			torpedo_attack = 25
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -2132,7 +2124,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 26
+			torpedo_attack = 30
 			build_cost_ic = 180
 		}
 		multiply_stats = {
@@ -2154,7 +2146,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 8
+			torpedo_attack = 13
 			build_cost_ic = 80
 		}
 
@@ -2176,7 +2168,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 10
+			torpedo_attack = 16
 			build_cost_ic = 100
 			naval_torpedo_hit_chance_factor = 0.005
 		}
@@ -2203,7 +2195,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 12
+			torpedo_attack = 20
 			build_cost_ic = 120
 			naval_torpedo_hit_chance_factor = 0.01
 		}
@@ -2227,7 +2219,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 14
+			torpedo_attack = 24
 			build_cost_ic = 140
 			naval_torpedo_hit_chance_factor = 0.015
 		}
@@ -2793,14 +2785,9 @@ equipment_modules = {
 			build_cost_ic = 0.1
 			naval_speed = -0.3
 			max_strength = 0.15
-
 		}
 		build_cost_resources = {
 			steel = 10
-		}
-		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.05
-			naval_torpedo_damage_reduction_factor = 0.05
 		}
 		dismantle_cost_ic = 1600
 		
@@ -2836,8 +2823,8 @@ equipment_modules = {
 			steel = 15
 		}
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.10
-			naval_torpedo_damage_reduction_factor = 0.10
+			naval_torpedo_enemy_critical_chance_factor = -0.05
+			naval_torpedo_damage_reduction_factor = 0.05
 		}
 		dismantle_cost_ic = 2000
 		
@@ -2856,8 +2843,8 @@ equipment_modules = {
 			steel = 15
 		}
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.05
-			naval_torpedo_damage_reduction_factor = 0.05
+			naval_torpedo_enemy_critical_chance_factor = -0.025
+			naval_torpedo_damage_reduction_factor = 0.025
 		}
 		dismantle_cost_ic = 1600
 	}
@@ -2876,8 +2863,8 @@ equipment_modules = {
 			steel = 20
 		}
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.15
-			naval_torpedo_damage_reduction_factor = 0.15
+			naval_torpedo_enemy_critical_chance_factor = -0.1
+			naval_torpedo_damage_reduction_factor = 0.1
 		}
 		dismantle_cost_ic = 2400
 		
@@ -2897,8 +2884,8 @@ equipment_modules = {
 			steel = 20
 		}
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.1
-			naval_torpedo_damage_reduction_factor = 0.1
+			naval_torpedo_enemy_critical_chance_factor = -0.05
+			naval_torpedo_damage_reduction_factor = 0.05
 		}
 		dismantle_cost_ic = 2000
 		
@@ -2920,8 +2907,7 @@ equipment_modules = {
 		add_stats = {
 			armor_value = 55
 			surface_visibility = 10
-			naval_torpedo_enemy_critical_chance_factor = -0.10
-			naval_torpedo_damage_reduction_factor = 0.1
+			naval_torpedo_enemy_critical_chance_factor = 0.10
 		}
 		dismantle_cost_ic = 8200
 		
@@ -2939,8 +2925,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 3
-			naval_torpedo_enemy_critical_chance_factor = -0.75
-			naval_torpedo_damage_reduction_factor = 0.3
+			naval_torpedo_enemy_critical_chance_factor = -0.05
+			naval_torpedo_damage_reduction_factor = 0.40
 		}
 		build_cost_resources = {
 			steel = 5
@@ -2964,8 +2950,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 6.5
-			naval_torpedo_enemy_critical_chance_factor = -0.8
-			naval_torpedo_damage_reduction_factor = 0.35
+			naval_torpedo_enemy_critical_chance_factor = -0.10
+			naval_torpedo_damage_reduction_factor = 0.45
 		}
 		build_cost_resources = {
 			steel = 10
@@ -2989,8 +2975,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 8.5
-			naval_torpedo_enemy_critical_chance_factor = -0.85
-			naval_torpedo_damage_reduction_factor = 0.40
+			naval_torpedo_enemy_critical_chance_factor = -0.15
+			naval_torpedo_damage_reduction_factor = 0.50
 		}
 		build_cost_resources = {
 			steel = 15
@@ -3014,8 +3000,8 @@ equipment_modules = {
 		
 		add_stats = {
 			armor_value = 11
-			naval_torpedo_enemy_critical_chance_factor = -0.90
-			naval_torpedo_damage_reduction_factor = 0.45
+			naval_torpedo_enemy_critical_chance_factor = -0.20
+			naval_torpedo_damage_reduction_factor = 0.55
 		}
 		build_cost_resources = {
 			steel = 20

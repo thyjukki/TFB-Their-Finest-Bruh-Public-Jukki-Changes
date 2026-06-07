@@ -118,8 +118,8 @@ equipments = {
 		
 		max_strength = 30
 
-		naval_torpedo_enemy_critical_chance_factor = -0.75
-		naval_torpedo_damage_reduction_factor = 0.2
+		naval_torpedo_enemy_critical_chance_factor = -0.15
+		naval_torpedo_damage_reduction_factor = 0.45
 		
 
 		fuel_consumption = 0
@@ -210,8 +210,8 @@ equipments = {
 		max_strength = 45
 		build_cost_ic = 550
 
-		naval_torpedo_enemy_critical_chance_factor = -0.8
-		naval_torpedo_damage_reduction_factor = 0.25
+		naval_torpedo_enemy_critical_chance_factor = -0.20
+		naval_torpedo_damage_reduction_factor = 0.5
 		
 		manpower = 325
 		naval_dominance_factor = 30
@@ -281,8 +281,8 @@ equipments = {
 		manpower = 400
 		naval_dominance_factor = 36
 
-		naval_torpedo_enemy_critical_chance_factor = -0.85
-		naval_torpedo_damage_reduction_factor = 0.3
+		naval_torpedo_enemy_critical_chance_factor = -0.25
+		naval_torpedo_damage_reduction_factor = 0.55
 
 		default_modules = {
 			mid_1_custom_slot = empty
@@ -369,9 +369,8 @@ equipments = {
 		max_strength = 75
 		build_cost_ic = 650
 
-		naval_torpedo_enemy_critical_chance_factor = -0.90
-		
-		naval_torpedo_damage_reduction_factor = 0.35
+		naval_torpedo_enemy_critical_chance_factor = -0.30
+		naval_torpedo_damage_reduction_factor = 0.6
 		
 		manpower = 500
 		naval_dominance_factor = 44
