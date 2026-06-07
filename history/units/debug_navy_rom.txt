@@ -57,6 +57,60 @@ units = {
 			ship = { name = "SHBB" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB" } } }
 			ship = { name = "SHBB" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB" } } }
 		}
+		task_force = {
+			name = "SHBB LA"
+			location = 657
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+			ship = { name = "SHBB LA" definition = sh_battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = ROM creator = ROM version_name = "SHBB LA" } } }
+		}
 	}
 	# Carrier
 	fleet = {
@@ -1081,7 +1135,7 @@ units = {
 		naval_base = 657
 		task_force = {
 			name = "36HC AA"
-			location = 9783
+			location = 657
 			ship = { name = "36HC AA" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC AA" } } }
 			ship = { name = "36HC AA" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC AA" } } }
 			ship = { name = "36HC AA" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC AA" } } }
@@ -1235,7 +1289,7 @@ units = {
 		}
 		task_force = {
 			name = "36HC Torp"
-			location = 9783
+			location = 657
 			ship = { name = "36HC Torp" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC Torp" } } }
 			ship = { name = "36HC Torp" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC Torp" } } }
 			ship = { name = "36HC Torp" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36HC Torp" } } }
@@ -2472,7 +2526,7 @@ units = {
 		}
 		task_force = {
 			name = "36LC LA"
-			location = 9783
+			location = 657
 			ship = { name = "36LC LA" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC LA" } } }
 			ship = { name = "36LC LA" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC LA" } } }
 			ship = { name = "36LC LA" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC LA" } } }
@@ -2626,7 +2680,7 @@ units = {
 		}
 		task_force = {
 			name = "36LC Piercing"
-			location = 9783
+			location = 657
 			ship = { name = "36LC Piercing" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Piercing" } } }
 			ship = { name = "36LC Piercing" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Piercing" } } }
 			ship = { name = "36LC Piercing" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Piercing" } } }
@@ -2780,7 +2834,7 @@ units = {
 		}
 		task_force = {
 			name = "36LC Spotting"
-			location = 9783
+			location = 657
 			ship = { name = "36LC Spotting" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Spotting" } } }
 			ship = { name = "36LC Spotting" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Spotting" } } }
 			ship = { name = "36LC Spotting" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ROM creator = ROM version_name = "36LC Spotting" } } }
