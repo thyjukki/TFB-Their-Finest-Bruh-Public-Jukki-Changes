@@ -293,11 +293,8 @@ coastal_minelaying = {
 
     	}
     	clearing_procedures = {
-    		submarine = {
-    			mines_sweeping = 0.1
-    		}
     		destroyer = {
-    			mines_sweeping = 0.1
+    			mines_sweeping = 0.15
     		}
     	}
     }
