@@ -748,6 +748,12 @@
  ship_armor_cruiser_heavy_4_desc:0 "The most advanced armor scheme for well protected cruisers, maximizing protection but significantly increasing weight."
  ship_armor_cruiser_heavy_4_short:0 "Heavy Cruiser Armour IV"
 
+ ship_secondaries_3:0 "127MM RF. Cannon"
+ ship_secondaries_3_short:0 "Secondary Battery III"
+ ship_secondaries_3_desc:0 "Larger diameter rapid fire cannons, designed to defend capital ships against destroyers and light cruisers."
+ ship_secondaries_4:0 "130mm RF. Auto-Loading Cannon"
+ ship_secondaries_4_short:0 "Secondary Battery IV"
+ ship_secondaries_4_desc:0 "Small rapid fire cannons with an auto-loading mechanism, designed to defend capital ships against destroyers and light cruisers. The auto-loading mechanism allows for a higher rate of fire, making it more effective against fast-moving targets."
 
  ### TECHS ####
  early_ship_hull_heavy:0 "1922 Heavy Ship Hull"
