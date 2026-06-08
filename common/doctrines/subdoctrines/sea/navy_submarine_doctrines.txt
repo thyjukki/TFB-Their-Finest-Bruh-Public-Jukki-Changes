@@ -269,7 +269,7 @@ coastal_minelaying = {
     	covert_buildup = {
     		submarine = {
     			naval_speed = 0.05
-    			mines_planting = 0.125
+    			torpedo_attack = 0.05
     		}
 
     	}
