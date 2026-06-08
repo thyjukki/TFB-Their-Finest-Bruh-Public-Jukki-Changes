@@ -444,7 +444,8 @@
  dockyard_cg_mod_desc:0 "§WFor every £dockyard_texticon §R1§! §YNaval Dockyards§!, you will gain §Y0.2%§! £civ_factory_consumer_texticon §Yexpected§! Consumer Goods (flat consumer goods) for Major Nations or §Y1%§! for Minor Nations to prevent spamming naval dockyards. §0[consumer_goods_dockyards_sl]§! \nThis does §RNOT§! apply when you are in the §BLondon Naval Treaty§!"
  dockyard_cg_mod_major:0 "Calculation starts after 60 dockyards for majors"
  dockyard_cg_mod_minor:0 "Calculation starts at 25 for minors."
- dockyard_cg_mod_usa:0 "The calculation for the US starts at 60, but then increases to 85 after the 'War Production Board' focus."
+ dockyard_cg_mod_usa:0 "The calculation for the US starts at 60, but then increases to 80 after the 'Maritime Commissions' and to 120 after the 'War Production Board' focus."
+ dockyard_cg_mod_jap:0 "The calculation for the Japan starts at 60, but then increases to 80 if naval faction is influential, and to 100 if naval faction is dominating."
 
  dockyard_build_speed_mod:0 "§YDockyard Inefficiencies§!"
  dockyard_build_speed_mod_desc:0 "§WFor every £dockyard_texticon §R1§! §YNaval Dockyards§! in land you §Yown and controll§!, you will lose §R2%§! £construction_speed_dockyard_texticon Dockyard Construction Speed for Major Nations or §R10%§! for Minor Nations to prevent spamming naval dockyards. §0[consumer_goods_dockyards_sl]§! \nThis does §RNOT§! apply when you are in the §BLondon Naval Treaty§!"
