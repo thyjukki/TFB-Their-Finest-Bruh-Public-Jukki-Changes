@@ -2792,6 +2792,10 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 10
 		}
+		add_stats = {
+			naval_torpedo_enemy_critical_chance_factor = 0.1
+			naval_torpedo_damage_reduction_factor = -0.1
+		}
 		dismantle_cost_ic = 1600
 		
 	}
@@ -2807,6 +2811,10 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 10
+		}
+		add_stats = {
+			naval_torpedo_enemy_critical_chance_factor = 0.075
+			naval_torpedo_damage_reduction_factor = -0.075
 		}
 		dismantle_cost_ic = 1200
 		
@@ -2825,6 +2833,10 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 15
 		}
+		add_stats = {
+			naval_torpedo_enemy_critical_chance_factor = 0.05
+			naval_torpedo_damage_reduction_factor = -0.05
+		}
 		dismantle_cost_ic = 2000
 		
 	}
@@ -2840,6 +2852,10 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 15
+		}
+		add_stats = {
+			naval_torpedo_enemy_critical_chance_factor = 0.025
+			naval_torpedo_damage_reduction_factor = -0.025
 		}
 		dismantle_cost_ic = 1600
 	}
@@ -2873,6 +2889,10 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 20
+		}
+		add_stats = {
+			naval_torpedo_enemy_critical_chance_factor = -0.025
+			naval_torpedo_damage_reduction_factor = 0.025
 		}
 		dismantle_cost_ic = 2000
 		
@@ -2911,7 +2931,6 @@ equipment_modules = {
 		dismantle_cost_ic = 750
 		
 		add_stats = {
-			armor_value = 3
 			naval_torpedo_enemy_critical_chance_factor = -0.10
 			naval_torpedo_damage_reduction_factor = 0.45
 		}
@@ -2932,11 +2951,11 @@ equipment_modules = {
 			build_cost_ic = 0.1
 			naval_speed = -0.075
 			max_strength = 0.1
+			armor_value = 0.1
 		}
 		dismantle_cost_ic = 1000
 		
 		add_stats = {
-			armor_value = 6.5
 			naval_torpedo_enemy_critical_chance_factor = -0.15
 			naval_torpedo_damage_reduction_factor = 0.5
 		}
@@ -2957,11 +2976,11 @@ equipment_modules = {
 			build_cost_ic = 0.125
 			naval_speed = -0.1
 			max_strength = 0.2
+			armor_value = 0.2
 		}
 		dismantle_cost_ic = 1250
 		
 		add_stats = {
-			armor_value = 8.5
 			naval_torpedo_enemy_critical_chance_factor = -0.20
 			naval_torpedo_damage_reduction_factor = 0.55
 		}
@@ -2982,11 +3001,11 @@ equipment_modules = {
 			build_cost_ic = 0.15
 			naval_speed = -0.125
 			max_strength = 0.3
+			armor_value = 0.3
 		}
 		dismantle_cost_ic = 1500
 		
 		add_stats = {
-			armor_value = 11
 			naval_torpedo_enemy_critical_chance_factor = -0.25
 			naval_torpedo_damage_reduction_factor = 0.6
 		}
@@ -3008,11 +3027,13 @@ equipment_modules = {
 			naval_speed = -0.075
 			build_cost_ic = 0.1
 			max_strength = 0.2
+			armor_value = 0.2
 		}
 		dismantle_cost_ic = 750
 		
 		add_stats = {
-			armor_value = 5
+			naval_torpedo_enemy_critical_chance_factor = 0.1
+			naval_torpedo_damage_reduction_factor = -0.1
 		}
 		build_cost_resources = {
 			steel = 10
@@ -3028,13 +3049,13 @@ equipment_modules = {
 			build_cost_ic = 0.15
 			naval_speed = -0.1
 			max_strength = 0.30
+			armor_value = 0.3
 		}
 		dismantle_cost_ic = 1000
 		
 		add_stats = {
-			armor_value = 7.5
-			naval_torpedo_enemy_critical_chance_factor = -0.025
-			naval_torpedo_damage_reduction_factor = 0.025
+			naval_torpedo_enemy_critical_chance_factor = 0.075
+			naval_torpedo_damage_reduction_factor = -0.075
 		}
 		build_cost_resources = {
 			steel = 15
@@ -3050,13 +3071,13 @@ equipment_modules = {
 			build_cost_ic = 0.2
 			naval_speed = -0.125
 			max_strength = 0.30
+			armor_value = 0.4
 		}
 		dismantle_cost_ic = 1250
 		
 		add_stats = {
-			armor_value = 9.5
-			naval_torpedo_enemy_critical_chance_factor = -0.05
-			naval_torpedo_damage_reduction_factor = 0.05
+			naval_torpedo_enemy_critical_chance_factor = 0.05
+			naval_torpedo_damage_reduction_factor = -0.05
 		}
 		build_cost_resources = {
 			steel = 20
@@ -3072,14 +3093,10 @@ equipment_modules = {
 			build_cost_ic = 0.25
 			naval_speed = -0.15
 			max_strength = 0.40
+			armor_value = 0.5
 		}
 		dismantle_cost_ic = 1500
 		
-		add_stats = {
-			armor_value = 12
-			naval_torpedo_enemy_critical_chance_factor = -0.1
-			naval_torpedo_damage_reduction_factor = 0.1
-		}
 		build_cost_resources = {
 			steel = 25
 		}
