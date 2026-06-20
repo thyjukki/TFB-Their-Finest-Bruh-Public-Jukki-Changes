@@ -215,6 +215,7 @@ add_ideas = {
 	USA_island_hopping8
 	USA_neutrality_idea
 	new_deal
+	USA_john_garner
 	USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
 }

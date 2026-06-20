@@ -2,6 +2,25 @@ ideas = {
 
 	country = {
 
+		USA_john_garner = {
+
+			picture = generic_political_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+
 		USA_tackling_waste_idea = {
 
 			picture = generic_disjointed_gov			
@@ -1443,6 +1462,22 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
+		USA_cash_and_carry_program_idea = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				cic_construction_boost_factor = 0.05
+			}
+		}
 		USA_privatization = {
 			picture = man_five_year_plan_industry
 			
@@ -1606,6 +1641,27 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.50
 				production_speed_industrial_complex_factor = 0.25
+				stability_factor = 0.10
+			}
+		}
+
+		USA_compromised_new_deal = {
+
+			allowed = {
+				always = no
+			}
+
+			picture = new_deal
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.45
+				production_speed_industrial_complex_factor = 0.2
 				stability_factor = 0.10
 			}
 		}

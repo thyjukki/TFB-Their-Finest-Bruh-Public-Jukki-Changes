@@ -3089,6 +3089,51 @@ country_event = {
 	}
 }
 
+# FDR announces his second term campaign
+country_event = {
+	id = usa.1008
+	title = usa.1008.t
+	desc = usa.1008.d
+	picture = GFX_report_event_FDR_speech
+
+	major = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1936.4.30
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = usa.1008.a
+		ai_chance = {
+			base = 90
+		}
+
+		set_country_flag = USA_garner_running_mate
+		custom_effect_tooltip = USA_garner_congress_campaign_focus_delay_tt
+	}
+
+	option = {
+		name = usa.1008.b
+		ai_chance = {
+			base = 10
+		}
+
+		set_country_flag = USA_wallace_running_mate
+		remove_ideas = USA_john_garner
+		USA_congress_small_opposition = yes
+		reduce_focus_completion_cost = {
+			focus = USA_judicial_procedures_reform_bill
+			cost = 35
+		}
+	}
+}
+
 country_event = { #Charlie Brown and Franz Stigler incident (USA)
 	id = usa.65
 	title = usa.65.t
