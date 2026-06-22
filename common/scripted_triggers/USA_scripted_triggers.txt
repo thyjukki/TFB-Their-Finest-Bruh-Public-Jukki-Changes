@@ -1,0 +1,57 @@
+USA_great_depression_cooldown_ready_trigger = {
+	OR = {
+		not = { has_country_flag = USA_great_depression_cooldown }
+		{
+			has_country_flag = USA_great_depression_cooldown
+			if = {
+				limit = { has_country_flag = USA_judicial_reform_garner_forced }
+				custom_trigger_tooltip = {
+					tooltip = USA_great_depression_timer_245_tt
+					has_country_flag = {
+						flag = USA_great_depression_cooldown
+						days > 245
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = USA_great_depression_timer_210_tt
+					has_country_flag = {
+						flag = USA_great_depression_cooldown
+						days > 210
+					}
+				}
+			}
+	}
+}
+
+USA_great_depression_cooldown_ready_or_unused_trigger = {
+	if = {
+		limit = { has_country_flag = USA_great_depression_cooldown }
+		USA_great_depression_cooldown_ready_trigger = yes
+	}
+	else = {
+		always = yes
+	}
+}
+
+USA_great_depression_cooldown_210_ready_trigger = {
+	has_country_flag = USA_great_depression_cooldown
+	custom_trigger_tooltip = {
+		tooltip = USA_great_depression_timer_210_tt
+		has_country_flag = {
+			flag = USA_great_depression_cooldown
+			days > 210
+		}
+	}
+}
+
+USA_great_depression_cooldown_210_ready_or_unused_trigger = {
+	if = {
+		limit = { has_country_flag = USA_great_depression_cooldown }
+		USA_great_depression_cooldown_210_ready_trigger = yes
+	}
+	else = {
+		always = yes
+	}
+}

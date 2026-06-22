@@ -63,6 +63,14 @@ USA_intervention_mandate = {
 		has_completed_focus = USA_reinforce_monroe_doctrine
 	}
 }
+USA_home_defense_expansion = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_country_flag = USA_strengthen_our_home_defenses
+	}
+}
 # USA_honor_the_confederacy = {
 # 	icon = usa_honor_the_confederacy
 # 	allowed = {

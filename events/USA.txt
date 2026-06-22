@@ -3134,6 +3134,96 @@ country_event = {
 	}
 }
 
+# Judicial Procedures Reform Bill - Garner
+country_event = {
+	id = usa.1009
+	title = usa.1009.t
+	desc = usa.1009.d
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1009.a
+		ai_chance = {
+			base = 35
+		}
+
+		remove_ideas = USA_john_garner
+		set_country_flag = USA_judicial_reform_resolved
+		set_country_flag = USA_judicial_reform_garner_forced
+		USA_great_depression_level_down = yes
+		USA_congress_medium_opposition = yes
+		set_country_flag = USA_great_depression_cooldown
+		custom_effect_tooltip = USA_great_depression_cooldown_245_tt
+	}
+
+	option = {
+		name = usa.1009.b
+		ai_chance = {
+			base = 65
+		}
+
+		remove_ideas = USA_john_garner
+		set_country_flag = USA_judicial_reform_resolved
+		add_political_power = -100
+		USA_great_depression_level_down = yes
+		USA_congress_medium_opposition = yes
+		set_country_flag = USA_great_depression_cooldown
+		custom_effect_tooltip = USA_great_depression_cooldown_tt
+	}
+}
+
+# Judicial Procedures Reform Bill - Wallace
+country_event = {
+	id = usa.1010
+	title = usa.1010.t
+	desc = usa.1010.d
+	picture = GFX_report_event_FDR_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1010.a
+		ai_chance = {
+			base = 65
+		}
+
+		set_country_flag = USA_judicial_reform_resolved
+		add_political_power = -100
+		USA_great_depression_level_down = yes
+		USA_congress_small_opposition = yes
+		set_country_flag = USA_great_depression_cooldown
+		custom_effect_tooltip = USA_great_depression_cooldown_tt
+	}
+
+	option = {
+		name = usa.1010.b
+		ai_chance = {
+			base = 35
+		}
+
+		set_country_flag = USA_judicial_reform_resolved
+		set_country_flag = USA_judicial_reform_accelerated_recovery
+		USA_congress_medium_opposition = yes
+		USA_great_depression_level_down = yes
+		set_country_flag = USA_great_depression_cooldown
+		custom_effect_tooltip = USA_great_depression_cooldown_tt
+		reduce_focus_completion_cost = {
+			focus = USA_agricultural_adjustment_act
+			cost = 35
+		}
+		reduce_focus_completion_cost = {
+			focus = USA_fair_labour_standards_act
+			cost = 35
+		}
+		reduce_focus_completion_cost = {
+			focus = USA_federal_housing_act
+			cost = 35
+		}
+	}
+}
+
 country_event = { #Charlie Brown and Franz Stigler incident (USA)
 	id = usa.65
 	title = usa.65.t
