@@ -914,7 +914,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = USA_new_deal_2
 		}
-		x = 6
+		x = 7
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1284,11 +1284,11 @@ focus_tree = {
 
 	focus = {
 		id = USA_extend_civilian_conservation_corps
-		icon = GFX_focus_generic_construction
+		icon = GFX_focus_generic_workers
 		prerequisite = { focus = USA_landon_deal focus = USA_new_deal_2 }
 		relative_position_id = USA_landon_deal
 		mutually_exclusive = { focus = USA_divert_ccc_funding_to_private_companies }
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1311,7 +1311,7 @@ focus_tree = {
 		prerequisite = { focus = USA_landon_deal }
 		relative_position_id = USA_landon_deal
 		mutually_exclusive = { focus = USA_extend_civilian_conservation_corps }
-		x = -1
+		x = -2
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1344,11 +1344,11 @@ focus_tree = {
 
 	focus = {
 		id = USA_repurpose_ccc
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
 		prerequisite = { focus = USA_extend_civilian_conservation_corps focus = USA_divert_ccc_funding_to_private_companies }
-		relative_position_id = USA_landon_deal
-		x = -2
-		y = 2
+		relative_position_id = USA_extend_civilian_conservation_corps
+		x = 1
+		y = 1
 		cost = 5
 		#ai_will_do = {
 		#	factor = 1
@@ -4652,8 +4652,8 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_focus_secret_rearmament
-		x = 31
-		y = 0
+		x = 33
+		y = 
 		cost = 5
 
 		ai_will_do = {
@@ -4727,7 +4727,7 @@ focus_tree = {
 		id = USA_selective_training_act
 		icon = GFX_focus_generic_military_mission
 		x = -5
-		y = 1
+		y = 6
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		cost = 10
@@ -4789,7 +4789,7 @@ focus_tree = {
 		id = USA_first_special_service_force
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_selective_training_act }
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = USA_selective_training_act
 		cost = 5
@@ -4809,6 +4809,58 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_m1_garand
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = USA_selective_training_act }
+		x = -2
+		y = 1
+		relative_position_id = USA_selective_training_act
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			IF = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:USA_springfield_armory_organization = {
+					add_mio_size = 1
+					unlock_mio_trait_tooltip = USA_mio_trait_m1_garand_self_loading_rifle
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_support_weapon_development
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = USA_m1_garand }
+		x = 0
+		y = 1
+		relative_position_id = USA_m1_garand
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_support_weapon_development
+				uses = 2
+				bonus = 0.5
+				category = infantry_weapons
+			}
+		}
+	}
+
 	focus = {
 		id = USA_louisiana_maneuvers
 		icon = GFX_goal_generic_cavalry
@@ -4855,10 +4907,10 @@ focus_tree = {
 	focus = {
 		id = USA_airborne_divisions
 		icon = GFX_focus_generic_paratrooper
-		x = -2
-		y = 2
+		x = 0
+		y = 1
 		prerequisite = { focus = USA_first_special_service_force }
-		relative_position_id = USA_selective_training_act
+		relative_position_id = USA_first_special_service_force
 		cost = 5
 
 		ai_will_do = {
@@ -4923,12 +4975,33 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_worlds_best_fed_army
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 3
+		prerequisite = { focus = USA_army_of_the_united_states }
+		relative_position_id = USA_selective_training_act
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = USA_k_rations
+		}
+	}
+
 	focus = {
 		id = USA_womens_armed_service_integration_act
 		icon = GFX_focus_generic_treaty
 		x = 0
-		y = 3
-		prerequisite = { focus = USA_army_of_the_united_states }
+		y = 4
+		prerequisite = { focus = USA_worlds_best_fed_army }
 		relative_position_id = USA_selective_training_act
 		cost = 5
 
@@ -4962,7 +5035,7 @@ focus_tree = {
 	focus = {
 		id = USA_support_rock_island
 		icon = GFX_goal_generic_army_artillery
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = USA_selective_training_act
 		cost = 5
@@ -4985,51 +5058,59 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_tank_experiments
-		icon = GFX_goal_generic_army_tanks
-		x = 2
-		y = 2
+		id = USA_motorized_artillery
+		icon = GFX_focus_SWE_let_fly_all_guns
+		x = -1
+		y = 1
 		prerequisite = { focus = USA_support_rock_island }
-		relative_position_id = USA_selective_training_act
+		relative_position_id = USA_support_rock_island
 		cost = 5
+		mutually_exclusive = { focus = USA_self_propelled_guns }
 
 		ai_will_do = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
 			add_tech_bonus = {
-				name = USA_tank_experiments
-				uses = 3
+				name = USA_motorized_artillery
+				uses = 2
 				bonus = 0.5
-				category = armor
+				category = mot_rockets
 			}
+		}
+	}
+
+	focus = {
+		id = USA_self_propelled_guns
+		icon = GFX_focus_generic_self_propelled_gun
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_support_rock_island }
+		relative_position_id = USA_support_rock_island
+		cost = 5
+		mutually_exclusive = { focus = USA_motorized_artillery }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = USA_self_propelled_guns_idea
 		}
 	}
 
 	focus = {
 		id = USA_tank_destroyer_doctrine
 		icon = GFX_focus_usa_tank_destroyer_doctrine
-		x = 2
-		y = 3
-		prerequisite = { focus = USA_tank_experiments }
-		relative_position_id = USA_selective_training_act
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_armored_cavalry focus = USA_armored_division focus = USA_infantry_tanks }
+		relative_position_id = USA_armored_cavalry
 		cost = 5
 
 		ai_will_do = {
@@ -5049,6 +5130,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_mastery = {
+				amount = 50
+				sub_doctrine = tank_destroyer_force
+			}
+			add_mastery = {
+				amount = 50
+				sub_doctrine = self_propelled_support
+			}
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -5067,54 +5156,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_main_battle_tanks
-		icon = GFX_focus_generic_combined_arms
-		x = 4
-		y = 3
-		prerequisite = { focus = USA_tank_experiments }
-		relative_position_id = USA_selective_training_act
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = USA_detroit_arsenal_organization
-				mio:USA_detroit_arsenal_organization = {
-					add_mio_size = 2
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = detroit_arsenal
-			}
-		}
-	}
-	focus = {
 		id = USA_the_sherman
 		icon = GFX_goal_continuous_armor_production
 		x = 0
-		y = 1
-		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine  }
-		relative_position_id = USA_main_battle_tanks
+		y = 2
+		prerequisite = { focus = USA_armored_division  }
+		relative_position_id = USA_armored_division
 		cost = 5
 
 		ai_will_do = {
@@ -5142,9 +5189,9 @@ focus_tree = {
 		id = USA_hello_to_ford
 		icon = GFX_goal_generic_army_motorized
 		x = 0
-		y = 1
-		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
-		relative_position_id = USA_tank_destroyer_doctrine
+		y = 2
+		prerequisite = { focus = USA_armored_cavalry }
+		relative_position_id = USA_armored_cavalry
 		cost = 5
 
 		ai_will_do = {
@@ -5169,44 +5216,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_armored_infantry
-		icon = GFX_goal_generic_build_tank
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_hello_to_ford }
-		relative_position_id = USA_hello_to_ford
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = USA_armored_infantry
-				uses = 1
-				ahead_reduction = 1
-				bonus = 1
-				category = cat_mechanized_equipment
-			}
-		}
-	}
-	focus = {
 		id = USA_build_the_pentagon
 		icon = GFX_focus_usa_build_the_pentagon
-		x = -1
+		x = 1
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5235,7 +5247,7 @@ focus_tree = {
 	focus = {
 		id = USA_department_of_defense
 		icon = GFX_goal_generic_military_sphere
-		x = -1
+		x = 1
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
@@ -5273,7 +5285,7 @@ focus_tree = {
 	focus = {
 		id = USA_air_war_plans_division
 		icon = GFX_goal_generic_build_airforce
-		x = 2
+		x = 4
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -5524,7 +5536,7 @@ focus_tree = {
 	focus = {
 		id = USA_two_ocean_navy_act
 		icon = GFX_focus_generic_navy_battleship2
-		x = 11
+		x = 13
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -6363,6 +6375,242 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = tp_tech 
+			}
+		}
+	}
+
+	focus = {
+		id = USA_cavalry_traditions
+		icon = GFX_goal_generic_cavalry
+		x = 8
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_selective_training_act }
+		relative_position_id = USA_selective_training_act
+		mutually_exclusive = { focus = USA_armored_developments }
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 10
+			add_ideas = USA_us_cavalry
+		}
+	}
+
+	focus = {
+		id = USA_mounted_infantry
+		icon = GFX_goal_generic_cavalry
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_cavalry_traditions }
+		relative_position_id = USA_cavalry_traditions
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+				sub_doctrine = mounted_infantry
+			}
+			USA_george_s_patton = {
+				add_unit_leader_trait = cavalry_leader
+			}
+		}
+	}
+
+	focus = {
+		id = USA_terrain_advantage
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_mounted_infantry }
+		relative_position_id = USA_mounted_infantry
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			custom_effect_tooltip = USA_terrain_advantage_tt
+			hidden_effect = {
+				set_technology = { USA_cavalry_terrain_advantage = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_armored_car_integration
+		icon = GFX_focus_SWE_lynx_armored_car
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_cavalry_traditions }
+		relative_position_id = USA_cavalry_traditions
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_armored_car_integration
+				uses = 2
+				bonus = 0.5
+				category = cat_armored_cars
+				category = cat_light_armor
+			}
+		}
+	}
+
+	focus = {
+		id = USA_armored_developments
+		icon = GFX_goal_generic_army_tanks
+		x = 12
+		y = 1
+		cost = 5
+		prerequisite = { focus = USA_selective_training_act }
+		relative_position_id = USA_selective_training_act
+		mutually_exclusive = { focus = USA_cavalry_traditions }
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 10
+			if = {
+				limit = {
+					has_idea = USA_neglected_tank_development
+				}
+				swap_ideas = {
+					remove_idea = USA_neglected_tank_development
+					add_idea = USA_neglected_tank_development_reduced
+				}
+			}
+			add_tech_bonus = {
+				name = USA_armored_developments
+				uses = 1
+				bonus = 0.5
+				category = armor
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = USA_armored_division
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_armored_developments }
+		relative_position_id = USA_armored_developments
+		cost = 5
+		mutually_exclusive = { focus = USA_infantry_tanks }
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+				track = armor
+			}
+			add_tech_bonus = {
+				name = USA_armored_division
+				uses = 2
+				bonus = 0.5
+				category = cat_medium_armor
+			}
+			USA_george_s_patton = {
+				add_unit_leader_trait = panzer_leader
+			}
+		}
+	}
+
+	focus = {
+		id = USA_infantry_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_armored_developments }
+		relative_position_id = USA_armored_developments
+		cost = 5
+		mutually_exclusive = { focus = USA_armored_division }
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+				sub_doctrine = armored_infantry_support
+			}
+			add_tech_bonus = {
+				name = USA_infantry_tanks
+				uses = 1
+				bonus = 0.5
+				category = cat_heavy_armor
+			}
+		}
+	}
+
+	focus = {
+		id = USA_detroit_arsenal
+		icon = GFX_focus_generic_combined_arms
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_armored_division focus = USA_infantry_tanks }
+		relative_position_id = USA_armored_division
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_detroit_arsenal_organization
+				mio:USA_detroit_arsenal_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = detroit_arsenal
+			}
+		}
+	}
+
+	focus = {
+		id = USA_armored_cavalry
+		icon = GFX_goal_generic_build_tank
+		x = -2
+		y = 1
+		prerequisite = { focus = USA_cavalry_traditions focus = USA_armored_developments }
+		relative_position_id = USA_armored_developments
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+				sub_doctrine = armored_cavalry
+			}
+			add_tech_bonus = {
+				name = USA_armored_cavalry
+				uses = 1
+				ahead_reduction = 1
+				bonus = 1
+				category = cat_mechanized_equipment
+			}
+			if = {
+				limit = {
+					has_idea = USA_us_cavalry
+				}
+				swap_ideas = {
+					remove_idea = USA_us_cavalry
+					add_idea = USA_us_cavalry_armored
+				}
 			}
 		}
 	}

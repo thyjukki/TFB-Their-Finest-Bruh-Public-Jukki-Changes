@@ -80,7 +80,6 @@ USA_historical_plan = {
 		USA_race_for_rubber
 		USA_destroyers_for_bases
 		USA_support_rock_island
-		USA_tank_experiments
 		USA_tank_destroyer_doctrine
 		USA_combined_bomber_offensive
 		USA_carrier_primacy

@@ -216,6 +216,7 @@ add_ideas = {
 	USA_neutrality_idea
 	new_deal
 	USA_john_garner
+	USA_neglected_tank_development
 	USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
 }
