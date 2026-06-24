@@ -101,7 +101,7 @@
   USA_terrain_advantage_desc:0 "Cavalry units trained to exploit difficult ground can move quickly through dificult terrain, where armored units would struggle."
   USA_terrain_advantage_tt:0 "§YCavalry§!:\n  §YForest§!:\n    Attack: §G+5.00%§!\n    Movement: §G+5.00%§!\n  §YJungle§!:\n    Attack: §G+5.00%§!\n    Movement: §G+5.00%§!\n  §YRiver§!:\n    Attack: §G+5.00%§!\n    Movement: §G+5.00%§!"
   USA_armored_car_integration:0 "Armored Car Integration"
-  USA_armored_car_integration_desc:0 "National Defense Act of 1920 stipulates that tanks belong to infantry, but by defining light tanks as armored cars, we can give our armored car units access to the armor and firepower they need to be effective on the battlefield."
+  USA_armored_car_integration_desc:0 "National Defense Act of 1920 stipulates that tanks belong to infantry, but by defining light tanks as armored cars, we can still give our cavalry formations the armored vehicles they need to keep up with modern warfare."
   USA_armored_division:0 "Armored Division"
   USA_armored_division_desc:0 "Independent armored divisions will allow tanks to operate as the decisive arm of breakthrough and exploitation, rather than as scattered support for infantry formations."
   USA_infantry_tanks:0 "Infantry Tanks"
