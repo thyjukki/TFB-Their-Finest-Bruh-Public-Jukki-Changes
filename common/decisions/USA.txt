@@ -507,6 +507,245 @@ operations = {
 		}
 	}
 }
+
+USA_foreign_service_volunteers_decisions = {
+
+	USA_lincoln_brigade = {
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+		}
+
+		available = {
+			has_global_flag = spanish_civil_war
+			SPR = { has_civil_war = yes }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			army_experience = 5
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			SPR = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_flying_tigers = {
+		icon = generic_air
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+		}
+
+		available = {
+			CHI = { has_war_with = JAP }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			air_experience = 10
+			add_ideas = USA_foreign_air_volunteers_flying_tigers
+			CHI = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_eagle_squadron = {
+		icon = generic_air
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+		}
+
+		available = {
+			OR = {
+				ENG = { has_war = yes }
+				FRA = { has_war = yes }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			set_country_flag = USA_eagle_squadron_decision_completed
+			air_experience = 10
+			add_ideas = USA_foreign_air_volunteers_eagle_squadron
+			ENG = {
+				add_manpower = 5000
+			}
+			FRA = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_canadian_american_volunteers = {
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+		}
+
+		available = {
+			CAN = { has_war = yes }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			add_ideas = USA_canadian_american_volunteers_idea
+			CAN = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_finnish_american_legion = {
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+		}
+
+		available = {
+			FIN = {
+				has_war_with = SOV
+				has_defensive_war_with = SOV
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			army_experience = 10
+			add_ideas = USA_finnish_american_legion_idea
+			FIN = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_sweenys_french_detachment = {
+		icon = generic_air
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+			has_country_flag = USA_eagle_squadron_decision_completed
+		}
+
+		available = {
+			FRA = {
+				has_war = yes
+				has_capitulated = no
+				NOT = { has_cosmetic_tag = FRA_FREE }
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			air_experience = 10
+			add_ideas = USA_foreign_air_volunteers_sweenys_french_detachment
+			FRA = {
+				add_manpower = 5000
+			}
+		}
+	}
+
+	USA_the_five_yanks = {
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_foreign_service_volunteers
+			has_country_flag = USA_eagle_squadron_decision_completed
+		}
+
+		available = {
+			ENG = { has_war = yes }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		days_remove = 7
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			army_experience = 10
+			add_war_support = 0.05
+			ENG = {
+				add_manpower = 5000
+			}
+		}
+	}
+}
 USA_home_defense_expansion = {
 	USA_seize_the_bermuda = {
 		icon = generic_prepare_civil_war

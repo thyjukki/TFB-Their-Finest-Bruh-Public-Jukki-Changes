@@ -3327,3 +3327,178 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = usa.1011
+	title = usa.1011.t
+	desc = usa.1011.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1011.a
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_fighter_contract_north_american_unlocked
+		mio:USA_north_american_aviation_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1011.b
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_fighter_contract_curtiss_unlocked
+		mio:USA_curtiss_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1011.c
+		ai_chance = { base = 30 }
+
+		set_country_flag = USA_fighter_contract_republic_unlocked
+		mio:USA_republic_aviations_organization = {
+			add_mio_funds = 1000
+		}
+	}
+}
+
+country_event = {
+	id = usa.1012
+	title = usa.1012.t
+	desc = usa.1012.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1012.a
+		ai_chance = { base = 50 }
+
+		set_country_flag = USA_escort_fighter_contract_north_american_unlocked
+		mio:USA_north_american_aviation_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1012.b
+		ai_chance = { base = 50 }
+
+		set_country_flag = USA_escort_fighter_contract_lockheed_unlocked
+		mio:USA_lockheed_organization = {
+			add_mio_funds = 1000
+		}
+	}
+}
+
+country_event = {
+	id = usa.1013
+	title = usa.1013.t
+	desc = usa.1013.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1013.a
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_cas_contract_north_american_unlocked
+		mio:USA_north_american_aviation_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1013.b
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_cas_contract_douglas_unlocked
+		mio:USA_douglas_aircraft_company_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1013.c
+		ai_chance = { base = 30 }
+
+		set_country_flag = USA_cas_contract_republic_unlocked
+		mio:USA_republic_aviations_organization = {
+			add_mio_funds = 1000
+		}
+	}
+}
+
+country_event = {
+	id = usa.1014
+	title = usa.1014.t
+	desc = usa.1014.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1014.a
+		ai_chance = { base = 50 }
+
+		set_country_flag = USA_tactical_bomber_contract_north_american_unlocked
+		mio:USA_north_american_aviation_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1014.b
+		ai_chance = { base = 50 }
+
+		set_country_flag = USA_tactical_bomber_contract_lockheed_unlocked
+		mio:USA_lockheed_organization = {
+			add_mio_funds = 1000
+		}
+	}
+}
+
+country_event = {
+	id = usa.1015
+	title = usa.1015.t
+	desc = usa.1015.d
+	picture = GFX_report_event_usa_amelia_earhart_airplane
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa.1015.a
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_naval_aircraft_contract_grumman_unlocked
+		mio:USA_grumman_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1015.b
+		ai_chance = { base = 35 }
+
+		set_country_flag = USA_naval_aircraft_contract_north_american_unlocked
+		mio:USA_north_american_aviation_organization = {
+			add_mio_funds = 1000
+		}
+	}
+
+	option = {
+		name = usa.1015.c
+		ai_chance = { base = 30 }
+
+		set_country_flag = USA_naval_aircraft_contract_republic_unlocked
+		mio:USA_republic_aviations_organization = {
+			add_mio_funds = 1000
+		}
+	}
+}

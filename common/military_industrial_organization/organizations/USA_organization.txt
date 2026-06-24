@@ -983,11 +983,176 @@ USA_north_american_aviation_organization = {
 			base = 2
 		}
 	}
+
+	add_trait = {
+		token = USA_mio_trait_fighter_contract
+		name = USA_mio_trait_fighter_contract
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 0 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_fighter_contract_north_american_unlocked
+				NOT = { has_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { fighter_equipment cv_fighter_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_escort_fighter_contract
+		name = USA_mio_trait_escort_fighter_contract
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_escort_fighter_contract_north_american_unlocked
+				NOT = { has_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { heavy_fighter_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_cas_contract
+		name = USA_mio_trait_cas_contract
+		icon = GFX_generic_mio_department_icon_plane_cas_line_efficiency
+		special_trait_background = yes
+
+		position = { x = 0 y = 2 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_cas_contract_north_american_unlocked
+				NOT = { has_country_flag = USA_mio_trait_cas_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_cas_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { CAS_equipment cv_CAS_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_tactical_bomber_contract
+		name = USA_mio_trait_tactical_bomber_contract
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 3 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_tactical_bomber_contract_north_american_unlocked
+				NOT = { has_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { tac_bomber_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_naval_aircraft_contract
+		name = USA_mio_trait_naval_aircraft_contract
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 4 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_naval_aircraft_contract_north_american_unlocked
+				NOT = { has_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { nav_bomber_equipment cv_nav_bomber_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
 }
 
 USA_curtiss_organization = {
 	name = USA_curtiss_organization
-	include = generic_light_aircraft_organization
+	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_curtiss
 	allowed = {	
 		OR = {
@@ -996,148 +1161,147 @@ USA_curtiss_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 
-	equipment_type = {
-		mio_cat_eq_all_small_plane
-	}
-	initial_trait = {
-		name = AUS_mio_robust_light_aircraft
-
-		equipment_bonus = {
-			reliability = 0.05
-			maximum_speed = 0.05
-			air_attack = 0.05
-		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_liquid_cooled_engines
-		
-		position = { x=2 y=0 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_advanced_aerodynamics
-		
-		position = { x=2 y=0 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_ongoing_developmental_upgrades
-		
-		position = { x=1 y=1 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_expanded_production_facilities
-		
-		position = { x=1 y=0 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_fixed_tailwheels
-		
-		position = { x=0 y=1 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_gun_pods
-		
-		position = { x=3 y=1 }
-		
-	}
-
-	override_trait = {
-		token = generic_mio_trait_maximum_wing_loads
-		
-		position = { x=1 y=1 }
-		
-	}
-
-	override_trait = {
-		token =  generic_mio_trait_heavier_airframe
-		
-		position = { x=-1 y=1 }
-		
-	}
-
-
-	override_trait = {
-		token = generic_mio_trait_removable_wings
-		
-		position = { x=-1 y=2 }
-		relative_position_id = generic_mio_trait_fixed_tailwheels
-
-		mutually_exclusive = { AUS_mio_trait_static_wings } 
-	}
-
-
-	add_trait = { 
-		token = AUS_mio_trait_static_wings
-		name = AUS_mio_trait_static_wings
+	add_trait = {
+		token = USA_mio_trait_fighter_contract
+		name = USA_mio_trait_fighter_contract
 		icon = GFX_generic_mio_department_icon_plane_fighter_production
 		special_trait_background = yes
 
-		position = { x=1 y=2 }
-		relative_position_id = generic_mio_trait_fixed_tailwheels
+		position = { x = 0 y = 1 }
 
-		any_parent = { generic_mio_trait_fixed_tailwheels }
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
 
-		mutually_exclusive = { generic_mio_trait_removable_wings }
+		available = {
+			FROM = {
+				has_country_flag = USA_fighter_contract_curtiss_unlocked
+				NOT = { has_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { fighter_equipment cv_fighter_equipment }
 
 		equipment_bonus = {
-			air_agility = 0.05
-		}
-
-		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			build_cost_ic = -0.1
 		}
 	}
+}
 
-	add_trait = { 
-		token = AUS_mio_trait_weight_optimization
-		name = AUS_mio_trait_weight_optimization
-		icon = GFX_generic_mio_trait_icon_air_agility
+USA_republic_aviations_organization = {
+	name = USA_republic_aviations_organization
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+
+	allowed = {
+		tag = USA
+	}
+
+	add_trait = {
+		token = USA_mio_trait_fighter_contract
+		name = USA_mio_trait_fighter_contract
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = AUS_mio_trait_static_wings
+		position = { x = 0 y = 0 }
 
-		any_parent = { AUS_mio_trait_static_wings }
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
 
+		available = {
+			FROM = {
+				has_country_flag = USA_fighter_contract_republic_unlocked
+				NOT = { has_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_fighter_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { fighter_equipment cv_fighter_equipment }
 
 		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.05
-			maximum_speed = 0.03
+			build_cost_ic = -0.1
 		}
 	}
 
-
-	add_trait = { 
-		token = AUS_mio_trait_structural_integrity
-		name = AUS_mio_trait_structural_integrity
-		icon = GFX_generic_mio_trait_icon_reliability
+	add_trait = {
+		token = USA_mio_trait_cas_contract
+		name = USA_mio_trait_cas_contract
+		icon = GFX_generic_mio_department_icon_plane_cas_line_efficiency
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_removable_wings
+		position = { x = 0 y = 1 }
 
-		any_parent = { generic_mio_trait_removable_wings }
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
 
+		available = {
+			FROM = {
+				has_country_flag = USA_cas_contract_republic_unlocked
+				NOT = { has_country_flag = USA_mio_trait_cas_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_cas_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { CAS_equipment cv_CAS_equipment }
 
 		equipment_bonus = {
-			reliability = 0.1
-			air_defence = 0.1
+			build_cost_ic = -0.1
 		}
 	}
 
-	remove_trait = { generic_mio_trait_maritime_duties generic_mio_trait_fuselage_ordinance_rack }
+	add_trait = {
+		token = USA_mio_trait_naval_aircraft_contract
+		name = USA_mio_trait_naval_aircraft_contract
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
+		special_trait_background = yes
 
+		position = { x = 0 y = 2 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_naval_aircraft_contract_republic_unlocked
+				NOT = { has_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { nav_bomber_equipment cv_nav_bomber_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
 }
 
 USA_lockheed_organization = {
@@ -1268,6 +1432,72 @@ USA_lockheed_organization = {
 			air_attack = 0.05
 		}
 	}
+
+	add_trait = {
+		token = USA_mio_trait_escort_fighter_contract
+		name = USA_mio_trait_escort_fighter_contract
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 0 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_escort_fighter_contract_lockheed_unlocked
+				NOT = { has_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { heavy_fighter_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_tactical_bomber_contract
+		name = USA_mio_trait_tactical_bomber_contract
+		icon = GFX_generic_mio_department_icon_plane_general_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_tactical_bomber_contract_lockheed_unlocked
+				NOT = { has_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { tac_bomber_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
 }
 
 USA_douglas_aircraft_company_organization = {
@@ -1324,6 +1554,39 @@ USA_douglas_aircraft_company_organization = {
 		}
 	}
 
+	add_trait = {
+		token = USA_mio_trait_cas_contract
+		name = USA_mio_trait_cas_contract
+		icon = GFX_generic_mio_department_icon_plane_cas_line_efficiency
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_cas_contract_douglas_unlocked
+				NOT = { has_country_flag = USA_mio_trait_cas_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_cas_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { CAS_equipment cv_CAS_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
+
 }
 
 USA_boeing_organization = {
@@ -1370,6 +1633,42 @@ USA_boeing_organization = {
 			fuel_consumption = 0.05
 		}
 	}
+
+	add_trait = {
+		token = USA_mio_trait_strategic_bomber_contract
+		name = USA_mio_trait_strategic_bomber_contract
+		icon = GFX_generic_mio_department_icon_plane_strategic_bomber_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 0 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_heavy_aircraft_funding_boeing_unlocked
+				NOT = { has_country_flag = USA_mio_trait_strategic_bomber_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			FROM = { set_country_flag = USA_mio_trait_strategic_bomber_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = {
+			strat_bomber_equipment
+			jet_strat_bomber_equipment
+			mio_cat_eq_only_strategic_bomber
+		}
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
+		}
+	}
 }
 
 USA_grumman_organization = {
@@ -1397,6 +1696,39 @@ USA_grumman_organization = {
 		equipment_bonus = {
 			air_agility = 0.05
 			maximum_speed = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_naval_aircraft_contract
+		name = USA_mio_trait_naval_aircraft_contract
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
+		special_trait_background = yes
+
+		position = { x = 0 y = 0 }
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		available = {
+			FROM = {
+				has_country_flag = USA_naval_aircraft_contract_grumman_unlocked
+				NOT = { has_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = { set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag }
+		}
+
+		limit_to_equipment_type = { nav_bomber_equipment cv_nav_bomber_equipment }
+
+		equipment_bonus = {
+			build_cost_ic = -0.1
 		}
 	}
 	

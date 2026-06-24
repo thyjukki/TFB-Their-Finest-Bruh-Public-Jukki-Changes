@@ -1,3 +1,41 @@
+USA_AOD_add_border_airfield_aircraft_subsidy = {
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = fighter_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = heavy_fighter_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = CAS_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = tac_bomber_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = strat_bomber_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = flying_boat_equipment
+		seller_tags = { FROM }
+	}
+	add_equipment_subsidy = {
+		cic = 500
+		equipment_type = nav_bomber_equipment
+		seller_tags = { FROM }
+	}
+}
+
 USA_neutrality_level_up = {
 	if = {
 		limit = { has_idea = USA_neutrality_idea_3 }

@@ -1,0 +1,12 @@
+USA_united_states_army_air_forces_dynamic_modifier = {
+	icon = GFX_idea_generic_air_bonus
+	enable = { always = yes }
+
+	experience_gain_air = USA_united_states_army_air_forces_experience_gain_air
+	air_fuel_consumption_factor = USA_united_states_army_air_forces_air_fuel_consumption_factor
+	air_training_xp_gain_factor = USA_united_states_army_air_forces_air_training_xp_gain_factor
+	air_defence_factor = USA_united_states_army_air_forces_air_defence_factor
+	air_night_penalty = USA_united_states_army_air_forces_air_night_penalty
+	air_superiority_detect_factor = USA_united_states_army_air_forces_air_superiority_detect_factor
+	air_interception_detect_factor = USA_united_states_army_air_forces_air_interception_detect_factor
+}
