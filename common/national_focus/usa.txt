@@ -1349,7 +1349,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_congress_isolation_campaign
-		icon = GFX_focus_hol_war_on_pacifism
+		icon = GFX_HUN_joint_aluminum_mining_company
 		prerequisite = { focus = USA_landon_deal }
 		relative_position_id = USA_landon_deal
 		mutually_exclusive = { focus = USA_america_first_support }
@@ -2940,7 +2940,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_revitilize_military_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_generic_military_industry
 		x = -1
 		y = 1
 		relative_position_id = USA_cash_and_carry_program
@@ -3022,7 +3022,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_push_over_the_planes
-		icon = GFX_goal_generic_air_production
+		icon = GFX_focus_generic_air_partners
 		x = 1
 		y = 1
 		relative_position_id = USA_cash_and_carry_program
@@ -5228,7 +5228,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_united_states_army_air_forces
-		icon = GFX_focus_PHI_aircraft_requisition
+		icon = GFX_goal_generic_build_airforce
 		x = 1
 		y = 1
 		cost = 5
@@ -5260,7 +5260,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_repurpose_air_corps
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_focus_generic_pilot_training
 		x = 0
 		y = 1
 		cost = 5
@@ -5465,7 +5465,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_naval_bomber_tactics
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_focus_generic_multi_role_aircraft
 		x = 3
 		y = 1
 		cost = 5
@@ -5511,7 +5511,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_air_war_plans_division
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_SMB_purchase_aircraft
 		x = -3
 		y = 1
 		cost = 10
@@ -5536,7 +5536,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_award_fighter_contract
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = USA_air_war_plans_division }
 		x = -1
 		y = 1
@@ -5571,7 +5571,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_award_escort_fighter_contract
-		icon = GFX_focus_generic_long_range_aircraft
+		icon = GFX_focus_usa_escort_fighters
 		prerequisite = { focus = USA_air_war_plans_division }
 		x = 1
 		y = 1
@@ -5641,7 +5641,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_award_tactical_bomber_contract
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_generic_long_range_aircraft
 		prerequisite = { focus = USA_air_war_plans_division }
 		x = 0
 		y = 2

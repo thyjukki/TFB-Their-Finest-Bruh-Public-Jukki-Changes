@@ -114,14 +114,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
-        name = "GFX_idea_SOV_Izhevsk"
-        texturefile = "gfx/interface/ideas/idea_SOV_Izhevsk.dds"
-    }
+		name = "GFX_idea_SOV_Izhevsk"
+		texturefile = "gfx/interface/ideas/idea_SOV_Izhevsk.dds"
+	}
 
-    spriteType = {
-        name = "GFX_galvin"
-        texturefile = "gfx/interface/ideas/galvin.dds"
-    }
+	spriteType = {
+		name = "GFX_galvin"
+		texturefile = "gfx/interface/ideas/galvin.dds"
+	}
 
 	spriteType = {
 		name = "GFX_republican_aviation"
