@@ -1896,3 +1896,6 @@ meta_game_flag:0 "Using Competitive Game start"
  logistics_company_camel:0 "Camel Logistics Company"
  light_amphibious_tank_recon_support_tech:0 "Amphibious Light tank Recon Company"
  camel_logistics_support_tech:0 "Camel Logistics Technology"
+
+ air_maximum_speed_factor_tt: " $MODIFIER_AIR_MAX_SPEED_FACTOR$: $RIGHT|+=%1$"
+ air_superiority_detect_factor_tt: " $MODIFIER_AIR_SUPERIORITY_DETECT_FACTOR$: $RIGHT|+=%1$"

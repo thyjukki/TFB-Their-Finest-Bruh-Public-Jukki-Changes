@@ -2344,7 +2344,7 @@ ideas = {
 			}
 		}
 
-		USA_heavy_aircraft_funding_idea = {
+		USA_mechanized_landing_forces = {
 			
 			allowed = {
 				always = no
@@ -2355,6 +2355,15 @@ ideas = {
 			}
 			
 			removal_cost = -1
+			
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				amphibious_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
 		}
 
 		air_support_focus = {

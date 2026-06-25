@@ -123,4 +123,8 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/galvin.dds"
     }
 
+	spriteType = {
+		name = "GFX_republican_aviation"
+		texturefile = "gfx/interface/ideas/republic_aviation.dds"
+	}
 }

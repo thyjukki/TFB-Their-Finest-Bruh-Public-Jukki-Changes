@@ -3342,28 +3342,34 @@ country_event = {
 
 		set_country_flag = USA_fighter_contract_north_american_unlocked
 		mio:USA_north_american_aviation_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_fighter_contract
 		}
+		set_country_flag = USA_mio_trait_fighter_contract_taken_flag
 	}
 
 	option = {
 		name = usa.1011.b
 		ai_chance = { base = 35 }
 
-		set_country_flag = USA_fighter_contract_curtiss_unlocked
-		mio:USA_curtiss_organization = {
-			add_mio_funds = 1000
+		set_country_flag = USA_fighter_contract_republic_unlocked
+		mio:USA_republic_aviations_organization = {
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_fighter_contract
 		}
+		set_country_flag = USA_mio_trait_fighter_contract_taken_flag
 	}
 
 	option = {
 		name = usa.1011.c
 		ai_chance = { base = 30 }
 
-		set_country_flag = USA_fighter_contract_republic_unlocked
-		mio:USA_republic_aviations_organization = {
-			add_mio_funds = 1000
+		set_country_flag = USA_fighter_contract_curtiss_unlocked
+		mio:USA_curtiss_organization = {
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_fighter_contract
 		}
+		set_country_flag = USA_mio_trait_fighter_contract_taken_flag
 	}
 }
 
@@ -3381,8 +3387,10 @@ country_event = {
 
 		set_country_flag = USA_escort_fighter_contract_north_american_unlocked
 		mio:USA_north_american_aviation_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_escort_fighter_contract
 		}
+		set_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag
 	}
 
 	option = {
@@ -3391,8 +3399,10 @@ country_event = {
 
 		set_country_flag = USA_escort_fighter_contract_lockheed_unlocked
 		mio:USA_lockheed_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_escort_fighter_contract
 		}
+		set_country_flag = USA_mio_trait_escort_fighter_contract_taken_flag
 	}
 }
 
@@ -3410,8 +3420,10 @@ country_event = {
 
 		set_country_flag = USA_cas_contract_north_american_unlocked
 		mio:USA_north_american_aviation_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_cas_contract
 		}
+		set_country_flag = USA_mio_trait_cas_contract_taken_flag
 	}
 
 	option = {
@@ -3420,18 +3432,22 @@ country_event = {
 
 		set_country_flag = USA_cas_contract_douglas_unlocked
 		mio:USA_douglas_aircraft_company_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_cas_contract
 		}
+		set_country_flag = USA_mio_trait_cas_contract_taken_flag
 	}
 
 	option = {
 		name = usa.1013.c
 		ai_chance = { base = 30 }
 
-		set_country_flag = USA_cas_contract_republic_unlocked
-		mio:USA_republic_aviations_organization = {
-			add_mio_funds = 1000
+		set_country_flag = USA_cas_contract_curtiss_unlocked
+		mio:USA_curtiss_organization = {
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_cas_contract
 		}
+		set_country_flag = USA_mio_trait_cas_contract_taken_flag
 	}
 }
 
@@ -3449,8 +3465,10 @@ country_event = {
 
 		set_country_flag = USA_tactical_bomber_contract_north_american_unlocked
 		mio:USA_north_american_aviation_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_tactical_bomber_contract
 		}
+		set_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag
 	}
 
 	option = {
@@ -3459,8 +3477,10 @@ country_event = {
 
 		set_country_flag = USA_tactical_bomber_contract_lockheed_unlocked
 		mio:USA_lockheed_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_tactical_bomber_contract
 		}
+		set_country_flag = USA_mio_trait_tactical_bomber_contract_taken_flag
 	}
 }
 
@@ -3478,8 +3498,10 @@ country_event = {
 
 		set_country_flag = USA_naval_aircraft_contract_grumman_unlocked
 		mio:USA_grumman_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_naval_aircraft_contract
 		}
+		set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag
 	}
 
 	option = {
@@ -3488,17 +3510,21 @@ country_event = {
 
 		set_country_flag = USA_naval_aircraft_contract_north_american_unlocked
 		mio:USA_north_american_aviation_organization = {
-			add_mio_funds = 1000
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_naval_aircraft_contract
 		}
+		set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag
 	}
 
 	option = {
 		name = usa.1015.c
 		ai_chance = { base = 30 }
 
-		set_country_flag = USA_naval_aircraft_contract_republic_unlocked
-		mio:USA_republic_aviations_organization = {
-			add_mio_funds = 1000
+		set_country_flag = USA_naval_aircraft_contract_curtiss_unlocked
+		mio:USA_curtiss_organization = {
+			add_mio_funds = 1500
+			complete_mio_trait = USA_mio_trait_naval_aircraft_contract
 		}
+		set_country_flag = USA_mio_trait_naval_aircraft_contract_taken_flag
 	}
 }

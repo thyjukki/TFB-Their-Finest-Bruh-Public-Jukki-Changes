@@ -9337,4 +9337,8 @@ spriteType = {
 		texturefile = "gfx/interface/technologies/transport.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_goal_usa_cavalry"
+		textureFile = "gfx/interface/goals/usa/goal_usa_cavalry.dds"
+	}
 }
