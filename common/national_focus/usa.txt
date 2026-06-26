@@ -3376,7 +3376,7 @@ focus_tree = {
 		#}
 		available = {
 			democratic > 0.95
-			has_war_support > 0.30
+			has_war_support > 0.20
 		}
 
 		available_if_capitulated = yes
