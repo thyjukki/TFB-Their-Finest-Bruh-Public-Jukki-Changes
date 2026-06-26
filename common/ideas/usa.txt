@@ -976,7 +976,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.6
+				consumer_goods_factor = 0.65
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				local_resources_factor = -0.25
@@ -999,7 +999,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.65
-				consumer_goods_factor = 0.50
+				consumer_goods_factor = 0.55
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
 				local_resources_factor = -0.20
@@ -1022,7 +1022,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				consumer_goods_factor = 0.4
+				consumer_goods_factor = 0.45
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
 				local_resources_factor = -0.1
@@ -1045,7 +1045,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.20
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.35
 				conscription_factor = -0.2
 				join_faction_tension = 0.2
 				local_resources_factor = -0.1
@@ -1616,8 +1616,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
-				min_export = -0.1
+				consumer_goods_factor = -0.1
 			}
 		}
 		USA_magic = {	
@@ -1985,7 +1984,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.50
-				production_speed_industrial_complex_factor = 0.35
+				production_speed_industrial_complex_factor = 0.30
 				stability_factor = 0.10
 			}
 		}
