@@ -9341,4 +9341,14 @@ spriteType = {
 		name = "GFX_goal_usa_cavalry"
 		textureFile = "gfx/interface/goals/usa/goal_usa_cavalry.dds"
 	}
+
+	spriteType = {
+		name = "GFX_portrait_usa_teddy_force_ghost"
+		textureFile = "gfx/leaders/USA/teddy_force_ghost.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_usa_teddy_force_ghost_small"
+		textureFile = "gfx/interface/ideas/idea_teddy_ghost.dds"
+	}
 }

@@ -1004,6 +1004,29 @@ characters={
 			legacy_id=-1
 		}
 	}
+	USA_teddy_force_ghost={
+		name="Teddy Force Ghost"
+		portraits={
+			army={
+				small=GFX_portrait_usa_teddy_force_ghost_small
+			}
+			army={
+				large=GFX_portrait_usa_teddy_force_ghost
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist war_hero cavalry_leader cavalry_expert hill_fighter }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+			visible = {
+				has_completed_focus = USA_rough_riders_legacy
+			}
+		}
+	}
 	USA_dwight_d_eisenhower={
 		name="Dwight D. Eisenhower"
 		advisor={

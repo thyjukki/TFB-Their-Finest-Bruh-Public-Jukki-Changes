@@ -7081,6 +7081,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_rough_riders_legacy
+		icon = GFX_goal_usa_cavalry
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_terrain_advantage }
+		relative_position_id = USA_terrain_advantage
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = USA_us_cavalry
+				}
+				swap_ideas = {
+					remove_idea = USA_us_cavalry
+					add_idea = USA_us_cavalry_rough_riders
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = USA_us_cavalry_armored
+				}
+				swap_ideas = {
+					remove_idea = USA_us_cavalry_armored
+					add_idea = USA_us_cavalry_armored_rough_riders
+				}
+			}
+			else = {
+				add_ideas = USA_us_cavalry_rough_riders
+			}
+		}
+	}
+
+	focus = {
 		id = USA_armored_car_integration
 		icon = GFX_focus_SWE_lynx_armored_car
 		x = -2
