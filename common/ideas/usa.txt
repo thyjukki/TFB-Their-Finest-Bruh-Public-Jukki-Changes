@@ -2,6 +2,26 @@ ideas = {
 
 	country = {
 
+		USA_economic_boom_idea = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
 		USA_neglected_tank_development = {
 
 			picture = generic_army_bonus
@@ -66,6 +86,26 @@ ideas = {
 			}
 		}
 
+		USA_us_cavalry_rough_riders = {
+
+			picture = generic_army_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+		}
+
 		USA_us_cavalry_armored = {
 
 			picture = generic_army_bonus
@@ -83,6 +123,30 @@ ideas = {
 			modifier = {
 				cavalry_attack_factor = 0.05
 				cavalry_defence_factor = 0.05
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+			}
+		}
+
+		USA_us_cavalry_armored_rough_riders = {
+
+			picture = generic_army_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
 				motorized_attack_factor = 0.05
 				motorized_defence_factor = 0.05
 				mechanized_attack_factor = 0.05
@@ -1617,6 +1681,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		USA_magic = {	
