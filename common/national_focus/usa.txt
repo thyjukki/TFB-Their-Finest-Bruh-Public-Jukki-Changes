@@ -2324,6 +2324,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
+		mutually_exclusive = { focus = USA_home_front_defense }
 		relative_position_id = USA_fdr_again
 		cost = 10
 
@@ -2355,7 +2356,8 @@ focus_tree = {
 		}
 		
 		bypass = {
-
+			NOT = { has_idea = USA_neutrality_act }
+			NOT = { has_idea = USA_lend_lease_act_na }
 		}
 
 		cancel_if_invalid = no
@@ -2400,9 +2402,41 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_home_front_defense
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 2
+		y = 0
+		prerequisite = { focus = USA_wilkies_deal focus = USA_fdr_again }
+		mutually_exclusive = { focus = USA_lend_lease_act }
+		relative_position_id = USA_lend_lease_act
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			NOT = { has_idea = USA_neutrality_act }
+			NOT = { has_idea = USA_lend_lease_act_na }
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		completion_reward = {
+			add_ideas = USA_home_front_defense_idea
+			USA_neutrality_level_up = yes
+		}
+	}
+
+	focus = {
 		id = USA_military_construction
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = USA_lend_lease_act }
+		prerequisite = { focus = USA_lend_lease_act focus = USA_home_front_defense }
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -3479,6 +3513,8 @@ focus_tree = {
 			NOT = { has_idea = USA_neutrality_idea_3 }
 		}
 		completion_reward = {
+			remove_ideas = USA_neutrality_act
+			remove_ideas = USA_lend_lease_act_na
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
@@ -7015,7 +7051,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_rough_riders_legacy
-		icon = GFX_goal_usa_cavalry
+		icon = GFX_focus_FIN_strengthen_military_administration
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_terrain_advantage }

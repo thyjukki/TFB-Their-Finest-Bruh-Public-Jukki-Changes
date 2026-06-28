@@ -22,6 +22,25 @@ ideas = {
 			}
 		}
 
+		USA_home_front_defense_idea = {
+
+			picture = generic_military_build
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
 		USA_neglected_tank_development = {
 
 			picture = generic_army_bonus
