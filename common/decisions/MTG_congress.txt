@@ -124,6 +124,36 @@ USA_congress = {
 			USA_congress_medium_support = yes
 		}
 	}
+	USA_lean_on_america_first_support = {
+		icon = generic_political_discourse
+
+		allowed = {
+			original_tag = USA
+		}
+
+		visible = {
+			has_completed_focus = USA_congress_isolation_campaign
+		}
+
+		available = {
+			has_completed_focus = USA_congress_isolation_campaign
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		days_re_enable = 180
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			USA_congress_medium_support = yes
+			add_war_support = -0.05
+		}
+	}
 	# USA_amend_the_budget = {
 	# 	icon = ger_mefo_bills
 	# 	available = {

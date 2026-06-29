@@ -834,8 +834,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_prepare_our_defenses
-		icon = GFX_goal_generic_construct_mil_factory
+		id = USA_strengthen_our_home_defenses
+		icon = GFX_focus_generic_annex_country
 		prerequisite = { focus = USA_peace_of_our_time }
 		relative_position_id = USA_peace_of_our_time
 		x = 0
@@ -846,28 +846,6 @@ focus_tree = {
 		#}
 		available = {
 			GER = { has_war_with = ENG }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			add_ideas = USA_prepare_our_defenses_idea
-		}
-	}
-
-	focus = {
-		id = USA_strengthen_our_home_defenses
-		icon = GFX_focus_generic_annex_country
-		prerequisite = { focus = USA_prepare_our_defenses }
-		prerequisite = { focus = USA_america_first_support }
-		relative_position_id = USA_prepare_our_defenses
-		x = -1
-		y = 1
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
 		}
 
 		available_if_capitulated = yes
@@ -1276,29 +1254,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			USA_congress_small_support = yes
-		}
-	}
-
-	focus = {
-		id = USA_america_first_support
-		icon = GFX_focus_ARG_the_american_push
-		prerequisite = { focus = USA_landon_deal }
-		relative_position_id = USA_landon_deal
-		x = 5
-		y = 1
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
 			USA_congress_medium_support = yes
-			add_war_support = -0.05
+			unlock_decision_tooltip = USA_lean_on_america_first_support
 		}
 	}
 	
