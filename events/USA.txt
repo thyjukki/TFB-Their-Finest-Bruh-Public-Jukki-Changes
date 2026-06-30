@@ -3190,7 +3190,6 @@ country_event = {
 		}
 
 		set_country_flag = USA_judicial_reform_resolved
-		add_political_power = -100
 		USA_great_depression_level_down = yes
 		USA_congress_small_opposition = yes
 		set_country_flag = USA_great_depression_cooldown
@@ -3205,6 +3204,7 @@ country_event = {
 
 		set_country_flag = USA_judicial_reform_resolved
 		set_country_flag = USA_judicial_reform_accelerated_recovery
+		add_political_power = -50
 		USA_congress_medium_opposition = yes
 		USA_great_depression_level_down = yes
 		set_country_flag = USA_great_depression_cooldown

@@ -842,10 +842,10 @@ USA_newport_news_shipbuilding_organization = {
 			ship_hull_carrier_super
 		}
 
-		position = { x=-1 y=0 }
-		relative_position_id = generic_mio_trait_flight_deck_edge_aa_mounts
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_gyro_stabilized_mounts
 
-		any_parent = { generic_mio_trait_flight_deck_edge_aa_mounts }
+		all_parents = { generic_mio_trait_gyro_stabilized_mounts generic_mio_trait_advanced_fitting_works generic_mio_trait_splinter_protection }
 
 		equipment_bonus = {
 			carrier_size = 1

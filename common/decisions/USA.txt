@@ -526,22 +526,32 @@ USA_foreign_service_volunteers_decisions = {
 			SPR = { has_civil_war = yes }
 		}
 
-		cost = 25
-		fire_only_once = yes
-		days_remove = 7
-
-		complete_effect = {
+		cancel_trigger = {
+			OR = {
+				NOT = { has_global_flag = spanish_civil_war }
+				NOT = { SPR = { has_civil_war = yes } }
+			}
 		}
 
-		remove_effect = {
-			army_experience = 5
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			experience_gain_army = 0.04
+		}
+
+		complete_effect = {
+			add_manpower = -3000
 			add_popularity = {
 				ideology = communism
 				popularity = 0.02
 			}
 			SPR = {
-				add_manpower = 5000
+				add_manpower = 3000
 			}
+		}
+
+		remove_effect = {
 		}
 	}
 
@@ -560,19 +570,27 @@ USA_foreign_service_volunteers_decisions = {
 			CHI = { has_war_with = JAP }
 		}
 
-		cost = 25
-		fire_only_once = yes
-		days_remove = 7
-
-		complete_effect = {
+		cancel_trigger = {
+			NOT = { CHI = { has_war_with = JAP } }
 		}
 
-		remove_effect = {
-			air_experience = 10
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			experience_gain_air = 0.04
+		}
+
+		complete_effect = {
 			add_ideas = USA_foreign_air_volunteers_flying_tigers
+			add_manpower = -5000
 			CHI = {
 				add_manpower = 5000
 			}
+		}
+
+		remove_effect = {
+			remove_ideas = USA_foreign_air_volunteers_flying_tigers
 		}
 	}
 
@@ -594,23 +612,32 @@ USA_foreign_service_volunteers_decisions = {
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		days_remove = 7
-
-		complete_effect = {
+		cancel_trigger = {
+			NOT = { ENG = { has_war = yes } }
+			NOT = { FRA = { has_war = yes } }
 		}
 
-		remove_effect = {
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			experience_gain_air = 0.04
+		}
+
+		complete_effect = {
 			set_country_flag = USA_eagle_squadron_decision_completed
-			air_experience = 10
 			add_ideas = USA_foreign_air_volunteers_eagle_squadron
+			add_manpower = -5000
 			ENG = {
 				add_manpower = 5000
 			}
 			FRA = {
 				add_manpower = 5000
 			}
+		}
+
+		remove_effect = {
+			remove_ideas = USA_foreign_air_volunteers_eagle_squadron
 		}
 	}
 
@@ -629,18 +656,27 @@ USA_foreign_service_volunteers_decisions = {
 			CAN = { has_war = yes }
 		}
 
+		cancel_trigger = {
+			NOT = { CAN = { has_war = yes } }
+		}
+
 		cost = 25
 		fire_only_once = yes
-		days_remove = 7
+
+		modifier = {
+			experience_gain_army = 0.04
+		}
 
 		complete_effect = {
+			add_ideas = USA_canadian_american_volunteers_idea
+			add_manpower = -9000
+			CAN = {
+				add_manpower = 9000
+			}
 		}
 
 		remove_effect = {
-			add_ideas = USA_canadian_american_volunteers_idea
-			CAN = {
-				add_manpower = 5000
-			}
+			remove_ideas = USA_canadian_american_volunteers_idea
 		}
 	}
 
@@ -662,55 +698,32 @@ USA_foreign_service_volunteers_decisions = {
 			}
 		}
 
-		cost = 25
-		fire_only_once = yes
-		days_remove = 7
-
-		complete_effect = {
+		cancel_trigger = {
+			NOT = {
+				FIN = {
+					has_war_with = SOV
+					has_defensive_war_with = SOV
+				}
+			}
 		}
 
-		remove_effect = {
-			army_experience = 10
+		cost = 25
+		fire_only_once = yes
+
+		modifier = {
+			experience_gain_army = 0.04
+		}
+
+		complete_effect = {
 			add_ideas = USA_finnish_american_legion_idea
+			add_manpower = -5000
 			FIN = {
 				add_manpower = 5000
 			}
 		}
-	}
-
-	USA_sweenys_french_detachment = {
-		icon = generic_air
-
-		allowed = {
-			original_tag = USA
-		}
-
-		visible = {
-			has_completed_focus = USA_foreign_service_volunteers
-			has_country_flag = USA_eagle_squadron_decision_completed
-		}
-
-		available = {
-			FRA = {
-				has_war = yes
-				has_capitulated = no
-				NOT = { has_cosmetic_tag = FRA_FREE }
-			}
-		}
-
-		cost = 25
-		fire_only_once = yes
-		days_remove = 7
-
-		complete_effect = {
-		}
 
 		remove_effect = {
-			air_experience = 10
-			add_ideas = USA_foreign_air_volunteers_sweenys_french_detachment
-			FRA = {
-				add_manpower = 5000
-			}
+			remove_ideas = USA_finnish_american_legion_idea
 		}
 	}
 
@@ -723,11 +736,11 @@ USA_foreign_service_volunteers_decisions = {
 
 		visible = {
 			has_completed_focus = USA_foreign_service_volunteers
-			has_country_flag = USA_eagle_squadron_decision_completed
 		}
 
 		available = {
 			ENG = { has_war = yes }
+			FRA = { has_capitulated = yes }
 		}
 
 		cost = 25
@@ -740,9 +753,6 @@ USA_foreign_service_volunteers_decisions = {
 		remove_effect = {
 			army_experience = 10
 			add_war_support = 0.05
-			ENG = {
-				add_manpower = 5000
-			}
 		}
 	}
 }

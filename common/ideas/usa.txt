@@ -274,25 +274,6 @@ ideas = {
 			}
 		}
 
-		USA_diverted_ccc_funding_idea = {
-
-			picture = generic_foreign_capital
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				local_resources_factor = 0.05
-			}
-		}
-
 		USA_repurposed_ccc_idea = {
 
 			picture = generic_army_bonus
@@ -309,6 +290,10 @@ ideas = {
 			
 			modifier = {
 				training_time_army_factor = -0.05
+				production_speed_air_base_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_radar_station_factor = 0.1
 			}
 		}
 

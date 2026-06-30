@@ -427,7 +427,8 @@ focus_tree = {
 			else = {
 				country_event = { id = usa.1010 }
 			}
-			custom_effect_tooltip = USA_reduce_judicial_procedures_reform_bill_tt
+			custom_effect_tooltip = USA_find_a_compromise_level_down_tt
+			custom_effect_tooltip = USA_judicial_reform_bill_garner_tldr_tt
 		}
 	}
 
@@ -455,6 +456,7 @@ focus_tree = {
 			USA_congress_small_opposition = yes
 			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
+			custom_effect_tooltip = USA_find_a_compromise_reduced_opposition_tt
 		}
 	}
 
@@ -606,89 +608,30 @@ focus_tree = {
 
 	focus = {
 		id = USA_construction_1
-		icon = GFX_focus_generic_concessions
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = USA_recession_recovery }
 		relative_position_id = USA_recession_recovery
 		x = 0
 		y = 1
 		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-						
-					}
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
+			379 = {
+				add_resource = { type = steel amount = 1000 }
+				add_resource = { type = tungsten amount = 300 }
+				add_resource = { type = aluminium amount = 800 }
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-					}
+			385 = {
+				add_resource = { type = steel amount = 1000 }
+				add_resource = { type = tungsten amount = 300 }
+				add_resource = { type = aluminium amount = 800 }
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-						}
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
+			387 = {
+				add_resource = { type = steel amount = 1000 }
+				add_resource = { type = tungsten amount = 300 }
+				add_resource = { type = aluminium amount = 800 }
 			}
 		}
 	}
@@ -815,7 +758,7 @@ focus_tree = {
 		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = USA_landon_deal }
 		relative_position_id = USA_landon_deal
-		x = 7
+		x = 6
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -899,225 +842,6 @@ focus_tree = {
 			air_experience = 10
 		}
 	}
-
-	focus = {
-		id = USA_lincoln_brigade
-		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = USA_foreign_service_volunteers }
-		relative_position_id = USA_foreign_service_volunteers
-		x = -2
-		y = 1
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			has_global_flag = spanish_civil_war
-			SPR = { has_civil_war = yes }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			army_experience = 5
-			add_popularity = {
-				ideology = communism
-				popularity = 0.02
-			}
-			SPR = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_flying_tigers
-		icon = GFX_focus_generic_air
-		prerequisite = { focus = USA_foreign_service_volunteers }
-		relative_position_id = USA_foreign_service_volunteers
-		x = -1
-		y = 2
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			CHI = { has_war_with = JAP }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			air_experience = 10
-			add_ideas = USA_foreign_air_volunteers_flying_tigers
-			CHI = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_eagle_squadron
-		icon = GFX_focus_generic_air
-		prerequisite = { focus = USA_foreign_service_volunteers }
-		relative_position_id = USA_foreign_service_volunteers
-		x = 0
-		y = 3
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			OR = {
-				ENG = { has_war = yes }
-				FRA = { has_war = yes }
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			air_experience = 10
-			add_ideas = USA_foreign_air_volunteers_eagle_squadron
-			ENG = {
-				add_manpower = 5000
-			}
-			FRA = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_canadian_american_volunteers
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = USA_foreign_service_volunteers }
-		relative_position_id = USA_foreign_service_volunteers
-		x = 1
-		y = 2
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			CAN = { has_war = yes }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_ideas = USA_canadian_american_volunteers_idea
-			CAN = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_finnish_american_legion
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = USA_foreign_service_volunteers }
-		relative_position_id = USA_foreign_service_volunteers
-		x = 2
-		y = 1
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			FIN = {
-				has_war_with = SOV
-				has_defensive_war_with = SOV
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			army_experience = 10
-			add_ideas = USA_finnish_american_legion_idea
-			FIN = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_sweenys_french_detachment
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = USA_eagle_squadron }
-		relative_position_id = USA_eagle_squadron
-		x = -1
-		y = 1
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			FRA = {
-				has_war = yes
-				has_capitulated = no
-				NOT = { has_cosmetic_tag = FRA_FREE }
-			}
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			air_experience = 10
-			add_ideas = USA_foreign_air_volunteers_sweenys_french_detachment
-			FRA = {
-				add_manpower = 5000
-			}
-		}
-	}
-
-	focus = {
-		id = USA_the_five_yanks
-		icon = GFX_focus_generic_manpower
-		prerequisite = { focus = USA_eagle_squadron }
-		relative_position_id = USA_eagle_squadron
-		x = 1
-		y = 1
-		cost = 2
-		allow_branch = {
-			always = no
-		}
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			ENG = { has_war = yes }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			army_experience = 10
-			add_war_support = 0.05
-			ENG = {
-				add_manpower = 5000
-			}
-		}
-	}
 	
 	focus = {
 		id = USA_construction_4
@@ -1198,7 +922,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			add_ideas = USA_diverted_ccc_funding_idea
 			379 = {
 				add_resource = {
 					type = steel
@@ -1457,6 +1180,12 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = excavation_tech
+			}
+			378 = {
+				add_resource = {
+					type = oil
+					amount = 1000
+				}
 			}
 		}
 	}
@@ -2388,6 +2117,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = USA_home_front_defense_idea
 			USA_neutrality_level_up = yes
+			custom_effect_tooltip = USA_home_front_defense_lend_lease_warning_tt
 		}
 	}
 
@@ -2767,7 +2497,13 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			set_country_flag = USA_great_depression_cooldown
-			USA_congress_medium_opposition = yes
+			if = {
+				limit = { has_completed_focus = USA_find_a_compromise }
+				USA_congress_small_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
+			}
 			if = {
 				limit = { NOT = { has_country_flag = USA_judicial_reform_resolved } }
 				custom_effect_tooltip = USA_judicial_reform_focus_time_warning_tt
@@ -2821,7 +2557,13 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			set_country_flag = USA_great_depression_cooldown
-			USA_congress_medium_opposition = yes
+			if = {
+				limit = { has_completed_focus = USA_find_a_compromise }
+				USA_congress_small_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
+			}
 			if = {
 				limit = { NOT = { has_country_flag = USA_judicial_reform_resolved } }
 				custom_effect_tooltip = USA_judicial_reform_focus_time_warning_tt
@@ -3002,7 +2744,7 @@ focus_tree = {
 			has_government = democratic
 			USA_great_depression_cooldown_ready_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -3021,7 +2763,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			USA_congress_medium_opposition = yes
+			if = {
+				limit = { has_completed_focus = USA_find_a_compromise }
+				USA_congress_small_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
+			}
 			custom_effect_tooltip = federal_housing_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
@@ -3283,6 +3031,7 @@ focus_tree = {
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
+			custom_effect_tooltip = USA_arsenal_of_democracy_subsidies_tt
 		}
 	}
 
@@ -3396,9 +3145,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = USA_public_projects_subsidies_warning_tt
 		}
 	}
-	
+
 
 	focus = {
 		id = USA_the_giant_wakes
@@ -3473,6 +3223,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = USA_neutrality_act
 			remove_ideas = USA_lend_lease_act_na
+			remove_ideas = USA_home_front_defense_idea
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
@@ -6607,10 +6358,13 @@ focus_tree = {
 				category = naval_bomber
 				category = naval_air
 			}
+			mio:USA_grumman_organization = {
+				add_mio_size = 1
+			}
 		}
 	}
 
-	
+
 
 	focus = {
 		id = USA_escort_effort
