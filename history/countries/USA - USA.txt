@@ -46,7 +46,7 @@ if = {
 
 set_research_slots = 7
 set_stability = 0.75
-set_war_support = 0
+set_war_support = 0.20
 add_command_power = 20
 set_variable = { dockyard_major = 1 }
 set_variable = { var = senators_support value = 48 }
@@ -216,7 +216,6 @@ add_ideas = {
 	USA_neutrality_idea
 	new_deal
 	USA_john_garner
-	USA_neglected_tank_development
 	USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
 }

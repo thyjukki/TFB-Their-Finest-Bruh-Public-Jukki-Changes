@@ -611,7 +611,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = USA_recession_recovery }
 		relative_position_id = USA_recession_recovery
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 
@@ -635,7 +635,30 @@ focus_tree = {
 			}
 		}
 	}
-	
+
+	focus = {
+		id = USA_electrification_effort
+		icon = GFX_focus_generic_hydroelectric_energy
+		prerequisite = { focus = USA_recession_recovery }
+		relative_position_id = USA_recession_recovery
+		x = -1
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_ideas = USA_rural_electrification_idea
+			368 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	# focus = {
 	# 	id = USA_construction_3
 	# 	icon = GFX_focus_generic_industry_3
@@ -776,28 +799,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_strengthen_our_home_defenses
-		icon = GFX_focus_generic_annex_country
-		prerequisite = { focus = USA_peace_of_our_time }
-		relative_position_id = USA_peace_of_our_time
-		x = 0
-		y = 1
-		cost = 5
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		available = {
-			GER = { has_war_with = ENG }
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			set_country_flag = USA_strengthen_our_home_defenses
-			custom_effect_tooltip = USA_strengthen_our_home_defenses_unlock_tt
-		}
-	}
 	
 	focus = {
 		id = USA_denounce_neutrality
@@ -905,7 +906,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_divert_ccc_funding_to_private_companies
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_focus_generic_reduce_unneccessary_expenditure
 		prerequisite = { focus = USA_landon_deal }
 		relative_position_id = USA_landon_deal
 		mutually_exclusive = { focus = USA_extend_civilian_conservation_corps }
@@ -916,7 +917,6 @@ focus_tree = {
 		#	factor = 1
 		#}
 		available = {
-			has_country_flag = USA_36_landon_victory
 		}
 
 		available_if_capitulated = yes
@@ -2116,7 +2116,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
 			add_ideas = USA_home_front_defense_idea
-			USA_neutrality_level_up = yes
 			custom_effect_tooltip = USA_home_front_defense_lend_lease_warning_tt
 		}
 	}
@@ -2460,12 +2459,13 @@ focus_tree = {
 	
 	focus = {
 		id = USA_agricultural_adjustment_act
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_generic_modernizing_agriculture
 		overlay = GFX_focus_fast_overlay_generic_clock
 		x = 0
 		y = 2
 		relative_position_id = USA_recession_recovery
-		prerequisite = {focus = USA_construction_1 }
+		prerequisite = { focus = USA_construction_1 }
+		prerequisite = { focus = USA_electrification_effort }
 
 		cost = 10
 
@@ -6833,15 +6833,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 10
-			if = {
-				limit = {
-					has_idea = USA_neglected_tank_development
-				}
-				swap_ideas = {
-					remove_idea = USA_neglected_tank_development
-					add_idea = USA_neglected_tank_development_reduced
-				}
-			}
 			add_tech_bonus = {
 				name = USA_armored_developments
 				uses = 1
