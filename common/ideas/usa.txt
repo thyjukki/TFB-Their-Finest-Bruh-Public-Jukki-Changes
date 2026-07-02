@@ -186,7 +186,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				political_power_factor = 0.25
+				political_power_factor = 0.1
 			}
 		}
 
@@ -267,6 +267,7 @@ ideas = {
 			
 			modifier = {
 				training_time_army_factor = -0.05
+				infrastructure_construction_speed = -0.05
 				production_speed_air_base_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 				production_speed_anti_air_building_factor = 0.1
