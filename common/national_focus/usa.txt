@@ -5235,6 +5235,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_doolittle_raid
+		icon = GFX_goal_generic_air_bomber
+		relative_position_id = USA_naval_bomber_tactics
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = USA_naval_bomber_tactics focus = USA_carrier_primacy }
+
+		available = {
+			has_war_with = JAP
+			has_tech = tactical_bomber2
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			custom_effect_tooltip = USA_unlocks_doolittle_raid_tt
+			hidden_effect = {
+				set_technology = { USA_custom_carrier_tac_tech = 1 popup = no }
+				add_equipment_to_stockpile = {
+					type = USA_custom_carrier_tac
+					amount = 20
+					producer = USA
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = USA_air_war_plans_division
 		icon = GFX_focus_SMB_purchase_aircraft
 		x = -3

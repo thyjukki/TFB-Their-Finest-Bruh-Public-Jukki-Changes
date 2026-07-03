@@ -1137,6 +1137,11 @@ spriteTypes = {
 		name = "GFX_USA_tactical_bomber2_medium"
 		texturefile = "gfx/interface/technologies/air/usa/usa_tac_2.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_USA_custom_carrier_tac_medium"
+		texturefile = "gfx/interface/technologies/air/usa/usa_tac_2.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_USA_tactical_bomber3_medium"

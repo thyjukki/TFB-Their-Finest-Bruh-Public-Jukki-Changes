@@ -247,6 +247,8 @@ script_enum_equipment_bonus_type = {
 	mothership_equipment_0
 	strat_bomber_intercontinental_equipment
 	strat_bomber_intercontinental_equipment_1
+	USA_custom_carrier_tac_archetype
+	USA_custom_carrier_tac
 	motorbike_equipment
 	motorbike_equipment_1
 

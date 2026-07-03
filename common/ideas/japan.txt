@@ -4986,6 +4986,19 @@ ideas = {
 
 
 	hidden_ideas = {
+		JAP_doolittle_raid_shock = {
+			allowed = { original_tag = JAP }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_attack_factor = -0.05
+				army_core_attack_factor = 0.05
+				army_defence_factor = -0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
 		JAP_ship_management_committee_idea = {
 			name = JAP_ship_management_committee
 

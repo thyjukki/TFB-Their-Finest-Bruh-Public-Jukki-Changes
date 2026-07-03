@@ -381,4 +381,7 @@
 
 
 
+  JAP_doolittle_raid_shock:0 "Tokyo in Flames"
+  JAP_doolittle_raid_shock_desc:0 "American bombers struck the Japanese home islands. The blow shook public confidence and exposed the vulnerabilities of the empire's defensive perimeter. Imperial forces are being pressured to guarantee that home islands are safe."
+
   JAP_7075_aluminium_alloy_tt: "§Y$fighter_equipment$§! and §Y$cv_fighter_equipment$§! $MODIFIER_AIR_AGILITY$: §G+5%§!"

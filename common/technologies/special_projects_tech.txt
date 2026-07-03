@@ -87,5 +87,12 @@ technologies = {
 		categories = {
 			nuclear
 		}
-	}	
+	}
+
+	USA_custom_carrier_tac_tech = {
+		start_year = 1942
+		enable_equipments = {
+			USA_custom_carrier_tac
+		}
+	}
 }

@@ -1926,7 +1926,7 @@ types = {
 				}
 				actor_effects = {
 					raid_damage_units = {
-						plane_loss = 0.5
+						plane_loss = 1.0
 						ratio = yes
 					}
 					raid_add_unit_experience = 0.1
@@ -3114,7 +3114,7 @@ types = {
 				}
 				actor_effects = {
 					raid_damage_units = {
-						plane_loss = 0.5 
+						plane_loss = 1.0 
 						ratio = yes
 					}
 					raid_add_unit_experience = 0.1
@@ -3483,6 +3483,244 @@ types = {
 							count = 5
 						}
 					}
+				}
+			}
+		}
+	}
+
+
+	### DOOLITTLE RAID ###
+
+	USA_doolittle_raid = {
+
+		days_to_prepare = 30
+
+		category = air_raids
+		custom_map_icon = GFX_raid_type_icon_other_raid
+
+		ai_will_do = {
+			base = 100 # unique Raid
+		}
+
+		command_power = 25
+
+		allowed = {
+			original_tag = USA
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = USA_doolittle_raid
+		}
+
+		show_target = {
+			has_war_with = JAP
+			282 = {
+				is_owned_and_controlled_by = JAP
+			}
+		}
+
+		available = {
+			has_war_with = JAP
+		}
+
+		launchable = {
+
+		}
+
+		target_type = {
+			building = {
+				type = landmark_tokyo_imperial_palace
+			}
+		}
+		target_icon = GFX_tokyo_imperial_palace_icon
+		launch_sound = raid_launch_air
+
+		arrow = {
+		    type = air
+		}
+
+		unit_requirements = {
+			equipment = {
+				type = { tactical_bomber }
+				amount = { min = 10 }
+			}
+		}
+
+		starting_point = {
+		    types = { air_base carrier }
+		}
+
+		success_factors = {
+			success = {
+				base = 0.65
+
+				experience = {
+					weight = 0.05
+					start_weight = -0.05
+					reference = 1.0
+				}
+				air_agility = {
+					reference = 100.0
+					weight = 0.05
+					start_weight = -0.05
+				}
+				reliability = {
+					reference = 1
+					weight = 0.05
+					start_weight = -0.1
+				}
+				air_defence = {
+					reference = 100
+					weight = 0.05
+					start_weight = -0.05
+				}
+
+				air_superiority = {
+					reference = 1
+					weight = 0.1
+					start_weight = -0.1
+				}
+
+				anti_air = {
+					reference = 5
+					weight = -0.1
+				}
+				interception = {
+					reference = 500
+					weight = -0.2
+				}
+				intel = {
+					weight = 0.2
+					reference = 100
+				}
+			}
+
+			critical = {
+				base = 0.1
+			}
+		}
+
+		success_levels = {
+			failure = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1.0
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.05
+					var:actor_country = {
+						add_war_support = 0.05
+					}
+				}
+				victim_effects = {
+					var:victim_country = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "raid_failed_entity"
+					animation = "attack"
+				}
+			}
+			limited_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1.0
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.1
+					var:actor_country = {
+						add_war_support = 0.05
+						add_ace = {
+							name = "James"
+							surname = "Doolittle"
+							callsign = "Jimmy"
+							type = bomber_genius
+						}
+					}
+				}
+				victim_effects = {
+					var:victim_country = {
+						add_war_support = -0.05
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_limited_success_entity"
+					animation = "attack"
+				}
+			}
+			success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1.0
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.2
+					var:actor_country = {
+						add_war_support = 0.05
+						add_ace = {
+							name = "James"
+							surname = "Doolittle"
+							callsign = "Jimmy"
+							type = bomber_genius
+						}
+					}
+				}
+				victim_effects = {
+					var:victim_country = {
+						add_war_support = -0.05
+						add_timed_idea = { idea = JAP_doolittle_raid_shock days = 60 }
+					}
+					var:target_state = {
+						damage_building = {
+							type = landmark_tokyo_imperial_palace
+							damage = 0.5
+							province = var:ROOT.target_province
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_success_entity"
+					animation = "attack"
+				}
+			}
+			critical_success = {
+				actor_effects = {
+					raid_damage_units = {
+						plane_loss = 1.0
+						ratio = yes
+					}
+					raid_add_unit_experience = 0.35
+					var:actor_country = {
+						add_war_support = 0.05
+						add_ace = {
+							name = "James"
+							surname = "Doolittle"
+							callsign = "Jimmy"
+							type = bomber_genius
+						}
+					}
+				}
+				victim_effects = {
+					var:victim_country = {
+						add_war_support = -0.05
+						add_timed_idea = { idea = JAP_doolittle_raid_shock days = 60 }
+						JAP_big_naval_faction_loss = yes
+					}
+					var:target_state = {
+						damage_building = {
+							type = landmark_tokyo_imperial_palace
+							damage = 1.0
+							province = var:ROOT.target_province
+							repair_speed_modifier = -0.4
+						}
+					}
+				}
+				visual_effect = {
+					entity = "air_raids_2_critical_success_entity"
+					animation = "attack"
 				}
 			}
 		}

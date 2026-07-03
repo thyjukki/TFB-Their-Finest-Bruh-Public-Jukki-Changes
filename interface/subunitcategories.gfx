@@ -1,6 +1,19 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_unit_custom_carrier_tac_icon_small_texticon"
+		texturefile = "gfx/texticons/unit_air_tac_bomber_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_custom_carrier_tac_icon_small"
+		texturefile = "gfx/texticons/unit_air_tac_bomber_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
 		name = "GFX_category_bomber"
 		texturefile = "gfx/interface/category_bomber.dds"
 		legacy_lazy_load = no

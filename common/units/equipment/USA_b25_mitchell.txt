@@ -1,0 +1,59 @@
+equipments = {
+
+	USA_custom_carrier_tac_archetype = {
+		year = 1942
+
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		carrier_capable = yes
+		picture = USA_custom_carrier_tac
+
+		type = tactical_bomber
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 6
+		interface_category = interface_category_air
+		interface_overview_category_index = 5
+
+		allow_mission_type = training
+		allow_mission_type = strategic_bomber
+	}
+
+	USA_custom_carrier_tac = {
+		year = 1942
+
+		archetype = USA_custom_carrier_tac_archetype
+		priority = 0
+
+		is_buildable = no
+		
+		air_range = 2000
+		maximum_speed = 440
+		air_agility = 25
+		air_attack = 12
+		air_defence = 25
+		air_bombing = 14
+		air_ground_attack = 10
+
+		naval_strike_attack = 8
+		naval_strike_targetting = 4
+
+		air_superiority = 1.15
+		reliability = 0.8
+		lend_lease_cost = 10000
+		manpower = 60
+		
+		build_cost_ic = 156
+		build_cost_ic = 112
+		resources = {
+			#oil = 1
+			aluminium = 40
+			rubber = 8
+		}
+		
+		manpower = 80
+		fuel_consumption = 0.26
+
+	}
+}
