@@ -1750,6 +1750,22 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+		USA_lincoln_brigade_idea = {
+			picture = generic_army_support
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.04
+			}
+		}
 		USA_foreign_air_volunteers_flying_tigers = {
 			picture = usa_us_air_force
 			allowed = {
@@ -1764,6 +1780,7 @@ ideas = {
 
 			modifier = {
 				air_mastery_gain_factor = 0.05
+				experience_gain_air = 0.04
 			}
 		}
 		USA_foreign_air_volunteers_eagle_squadron = {
@@ -1780,6 +1797,7 @@ ideas = {
 
 			modifier = {
 				air_mastery_gain_factor = 0.05
+				experience_gain_air = 0.04
 			}
 		}
 		USA_foreign_air_volunteers_sweenys_french_detachment = {
@@ -1811,7 +1829,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				acclimatization_cold_climate_gain_factor = 0.1
+				experience_gain_army = 0.04
 			}
 		}
 		USA_canadian_american_volunteers_idea = {
@@ -1828,6 +1846,7 @@ ideas = {
 
 			modifier = {
 				land_mastery_gain_factor = 0.05
+				experience_gain_army = 0.04
 			}
 		}
 		USA_privatization = {

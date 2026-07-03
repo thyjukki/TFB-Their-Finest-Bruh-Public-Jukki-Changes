@@ -536,11 +536,8 @@ USA_foreign_service_volunteers_decisions = {
 		cost = 25
 		fire_only_once = yes
 
-		modifier = {
-			experience_gain_army = 0.04
-		}
-
 		complete_effect = {
+			add_ideas = USA_lincoln_brigade_idea
 			add_manpower = -3000
 			add_popularity = {
 				ideology = communism
@@ -552,6 +549,7 @@ USA_foreign_service_volunteers_decisions = {
 		}
 
 		remove_effect = {
+			remove_ideas = USA_lincoln_brigade_idea
 		}
 	}
 
@@ -567,7 +565,10 @@ USA_foreign_service_volunteers_decisions = {
 		}
 
 		available = {
-			CHI = { has_war_with = JAP }
+			CHI = {
+				has_war_with = JAP
+				surrender_progress > 0.1
+			}
 		}
 
 		cancel_trigger = {
@@ -577,11 +578,8 @@ USA_foreign_service_volunteers_decisions = {
 		cost = 25
 		fire_only_once = yes
 
-		modifier = {
-			experience_gain_air = 0.04
-		}
-
 		complete_effect = {
+			add_war_support = 0.05
 			add_ideas = USA_foreign_air_volunteers_flying_tigers
 			add_manpower = -5000
 			CHI = {
@@ -619,10 +617,6 @@ USA_foreign_service_volunteers_decisions = {
 
 		cost = 25
 		fire_only_once = yes
-
-		modifier = {
-			experience_gain_air = 0.04
-		}
 
 		complete_effect = {
 			set_country_flag = USA_eagle_squadron_decision_completed
@@ -662,10 +656,6 @@ USA_foreign_service_volunteers_decisions = {
 
 		cost = 25
 		fire_only_once = yes
-
-		modifier = {
-			experience_gain_army = 0.04
-		}
 
 		complete_effect = {
 			add_ideas = USA_canadian_american_volunteers_idea
@@ -709,10 +699,6 @@ USA_foreign_service_volunteers_decisions = {
 
 		cost = 25
 		fire_only_once = yes
-
-		modifier = {
-			experience_gain_army = 0.04
-		}
 
 		complete_effect = {
 			add_ideas = USA_finnish_american_legion_idea

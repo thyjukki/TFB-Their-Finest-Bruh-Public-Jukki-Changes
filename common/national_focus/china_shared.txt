@@ -3310,8 +3310,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
-		is_subject = no
+		always = no
 	}
 
 	bypass = {
