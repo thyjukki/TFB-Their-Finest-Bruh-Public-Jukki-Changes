@@ -354,8 +354,8 @@ island_defences = {
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 0.15
-	cas_damage_reduction = 0.5
+	#army_defence_factor = 0.15
+	#cas_damage_reduction = 0.5
 	dig_in_speed_factor = 1.0
 	max_dig_in_factor = 0.15
 	local_supplies_for_controller = 1
@@ -1558,4 +1558,10 @@ ITA_libyan_evac = {
 	icon = GFX_modifiers_generic_military_plans
 	
 	state_production_speed_buildings_factor = -0.75
+}
+
+SPR_appeasement_modifier = {
+	icon = GFX_goal_generic_forceful_treaty
+	enable = { always = yes }
+	power_balance_daily = SPR_power_balance_daily
 }

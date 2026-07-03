@@ -276,6 +276,8 @@
   ITA_esploratori_desc:0 "The designation "esploratori", meaning "scouts", was originally given to a class of Italian warship that were between the then current destroyers and cruisers, in terms of size and firepower."
   ITA_defend_empire:0 "Defend the Empire"
   ITA_defend_empire_desc:0 "The Empire is a source of great pride to our people. We should prepare our defences to ensure our future enemies will not prevail should they attack."
+  ITA_copy_foreign_designs:0 "Copy Foreign Designs"
+  ITA_copy_foreign_designs_desc:0 "Italians are really stupid and can't design their own tank. Steal allied ones and look at them."
   
   #### NEW ITALY LOC ####
   ITA_economic_concerns:0 "Economic Concerns"
@@ -460,8 +462,9 @@
   ITA_heart_of_italy_tt1:0 "Adds two levels of §YInfrastructure§! in §YToscana§!, §YEmilia Romagna§!, §YPiemonte§!, §YLombardia§!, §YVeneto§! and §YLitorale§!."
   ITA_proclaim_empire_tt1:0 "Completing this focus §RAfter White Peacing§! with §YEthiopia§! will cause the focus to grant §Y10% less Stability§!"
   ITA_globalism_tt1:0 "Completing this focus §RBefore§! ending the war in Ethiopia will fire an event allowing you to §YWhite Peace with the Ethiopians.§!"
+  ITA_globalism_tt2:0 "§YWhite Peacing§! with the §YEthiopians.§! Will lower you back to §RPartial Mobilization§!"
   ITA_yugo_tt1:0 "This focus will grant a §YWargoal§! when AI Yugoslavia goes §YDemocratic.§!"
-  ITA_balearics_tt1:0 "Selecting this option means you will §RNOT§! be able to send §YVolunteers to Spain.§!"
+  ITA_balearics_tt1:0 "Selecting this option means you will §RNOT§! be able to send §YVolunteers to Spain.§!\nAs well you will pay §R15%§! §YConsumer Goods Factor§! to Spain for 6 months."
   ITA_corpo_volontarie_tt1:0 "This focus will complete via §Yevent§! when the §YSpanish Civil War§! Begins. Or §Rbypass§! if §YEthiopia§! was §YWhite Peaced§!."
   ITA_modify_army_reform_tt:0 "Modify §YItalian Army Reform§! by:"
   fortress_tt:0 "$production_speed_fortress_factor$: $RIGHT|G=0%$"
@@ -612,6 +615,8 @@
   ITA_leverage_global_partnership:0 "Utilize the Diaspora"
   ITA_mil_to_civ:0 "Slashed Arms Funding"
   ITA_mio_trait_lancia_all_in:0 "Lancia Cost Cutting"
+  ITA_balearic_purchase:0 "Balearic Purchase"
+  SPR_balearic_sale:0 "Balearic Sale Income"
   
   
 

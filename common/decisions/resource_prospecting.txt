@@ -8926,7 +8926,7 @@ prospect_for_resources = {
 			76 = {
 				add_resource = {
 					type = oil
-					amount = 240
+					amount = 200
 				}
 			}
 		}
@@ -8984,7 +8984,7 @@ prospect_for_resources = {
 			155 = {
 				add_resource = {
 					type = oil
-					amount = 140
+					amount = 80
 				}
 			}
 		}

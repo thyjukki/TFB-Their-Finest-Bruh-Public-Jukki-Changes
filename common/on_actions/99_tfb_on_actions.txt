@@ -1340,7 +1340,7 @@ on_actions = {
 			}
 		}
 		effect = {
-			1091 = {
+			1090 = {
 				add_dynamic_modifier = {
 					modifier =  NO_PORTS_CAN_BE_BUILT 
 				}
@@ -2846,6 +2846,12 @@ on_actions = {
                     country_event = { id = lar_spain.658 days = 10 }
                 }
             }
+        }
+	}
+
+	on_weekly_SPR = {
+		effect = {
+			SPR_calculate_appeasement_ticking = yes
         }
 	}
 
