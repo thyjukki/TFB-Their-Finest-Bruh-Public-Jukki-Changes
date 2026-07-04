@@ -4801,12 +4801,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
 			add_ideas = USA_womens_armed_service_integration_act
-			add_tech_bonus = {
-				name = USA_infantry
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
 		}
 	}
 	
@@ -5274,8 +5268,27 @@ focus_tree = {
 		#}
 		prerequisite = { focus = USA_united_states_army_air_forces }
 		relative_position_id = USA_united_states_army_air_forces
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		available = {
+			if = {
+				limit = {
+					threat < 0.2
+				}
+				congress_high_support_trigger = yes
+			}
+			else_if = {
+				limit = {
+					threat < 0.3
+				}
+				congress_medium_support_trigger = yes
+			}
+			else = {
+				congress_low_support_trigger = yes
+			}
+		}
+
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_USA_CONGRESS }
 	
 		completion_reward = {
 			air_experience = 25
