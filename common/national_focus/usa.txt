@@ -6699,7 +6699,7 @@ focus_tree = {
 	focus = {
 		id = USA_armored_developments
 		icon = GFX_focus_generic_tank_production
-		x = 12
+		x = 14
 		y = 1
 		cost = 5
 		prerequisite = { focus = USA_selective_training_act }
@@ -6781,9 +6781,10 @@ focus_tree = {
 	focus = {
 		id = USA_detroit_arsenal
 		icon = GFX_focus_generic_combined_arms
-		x = 1
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_armored_division focus = USA_infantry_tanks }
+		prerequisite = { focus = USA_armored_division }
+		mutually_exclusive = { focus = USA_utilize_gm_subsidiaries }
 		relative_position_id = USA_armored_division
 		cost = 5
 
@@ -6808,12 +6809,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_utilize_gm_subsidiaries
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_infantry_tanks focus = USA_armored_division }
+		mutually_exclusive = { focus = USA_detroit_arsenal }
+		relative_position_id = USA_infantry_tanks
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_vauxhall_organization
+				USA_copy_vauxhall_MIO_effects = yes
+			}
+		}
+	}
+
+	focus = {
 		id = USA_armored_cavalry
 		icon = GFX_focus_generic_mechanized
-		x = -2
+		x = 2
 		y = 1
 		prerequisite = { focus = USA_cavalry_traditions focus = USA_armored_developments }
-		relative_position_id = USA_armored_developments
+		relative_position_id = USA_cavalry_traditions
 		cost = 5
 
 		available_if_capitulated = yes
@@ -6854,10 +6879,10 @@ focus_tree = {
 	focus = {
 		id = USA_tank_destroyer_doctrine
 		icon = GFX_focus_usa_tank_destroyer_doctrine
-		x = 1
+		x = -2
 		y = 1
-		prerequisite = { focus = USA_armored_cavalry focus = USA_armored_division focus = USA_infantry_tanks }
-			relative_position_id = USA_armored_cavalry
+		prerequisite = { focus = USA_cavalry_traditions focus = USA_armored_developments }
+		relative_position_id = USA_armored_developments
 		cost = 5
 
 		ai_will_do = {
@@ -6907,9 +6932,9 @@ focus_tree = {
 		id = USA_the_sherman
 		icon = GFX_goal_continuous_armor_production
 		x = 0
-		y = 2
-		prerequisite = { focus = USA_armored_division  }
-			relative_position_id = USA_armored_division
+		y = 1
+		prerequisite = { focus = USA_detroit_arsenal  }
+		relative_position_id = USA_detroit_arsenal
 		cost = 5
 
 		ai_will_do = {

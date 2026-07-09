@@ -583,3 +583,8 @@
   USA_motorized_equipment_3:0 "GMC CCKW"
   USA_mechanized_equipment_3:0 "M9 Half-Track"
   USA_mechanized_equipment_4:0 "M5 Half-Track"
+  USA_utilize_gm_subsidiaries:0 "Utilize GM Subsidiaries"
+  USA_utilize_gm_subsidiaries_desc:0 "General Motors operates an extensive network of subsidiaries across the Allied world. Vauxhall Motors in Britain has accumulated years of experience producing infantry support tanks for Commonwealth forces. Through GM's corporate network, their engineering expertise and manufacturing capacity are available to supplement American armored production."
+  USA_vauxhall_organization:0 "GM - Vauxhall"
+  USA_vauxhall_organization_desc:0 "Vauxhall Motors, a General Motors subsidiary based in Luton, has spent the war producing infantry support tanks for Britain. Through GM's international industrial network, their engineering experience and production methods are now available to American armored programs."
+  USA_vauxhall_mio_levels_tt:0 "Gains MIO levels equal to the current level of the British Vauxhall organization."

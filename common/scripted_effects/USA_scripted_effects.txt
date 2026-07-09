@@ -5194,3 +5194,18 @@ USA_election_count = {
 		country_event = USA.1003
 	}
 }
+
+USA_copy_vauxhall_MIO_effects = {
+	custom_effect_tooltip = USA_vauxhall_mio_levels_tt
+	if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 10 } } } mio:USA_vauxhall_organization = { add_mio_size = 11 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 9 } } } mio:USA_vauxhall_organization = { add_mio_size = 10 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 8 } } } mio:USA_vauxhall_organization = { add_mio_size = 9 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 7 } } } mio:USA_vauxhall_organization = { add_mio_size = 8 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 6 } } } mio:USA_vauxhall_organization = { add_mio_size = 7 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 5 } } } mio:USA_vauxhall_organization = { add_mio_size = 6 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 4 } } } mio:USA_vauxhall_organization = { add_mio_size = 5 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 3 } } } mio:USA_vauxhall_organization = { add_mio_size = 4 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 2 } } } mio:USA_vauxhall_organization = { add_mio_size = 3 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 1 } } } mio:USA_vauxhall_organization = { add_mio_size = 2 } }
+	else_if = { limit = { ENG = { mio:ENG_vauxhall_organization = { has_mio_size > 0 } } } mio:USA_vauxhall_organization = { add_mio_size = 1 } }
+}

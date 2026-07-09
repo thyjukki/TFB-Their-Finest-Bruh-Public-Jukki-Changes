@@ -259,7 +259,7 @@ USA_chrysler_organization = {
 }
 
 USA_army_ordnance_department_organization = {
-	include = generic_heavy_tank_organization
+	include = generic_medium_tank_organization
 	icon = GFX_idea_army_ordnance_department
 	
 	allowed = {	
@@ -269,13 +269,13 @@ USA_army_ordnance_department_organization = {
 	add_trait = { 
 		token = USA_mio_trait_periscope_sights
 		name = USA_mio_trait_periscope_sights
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_armor
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
 		special_trait_background = yes
 
 		position = { x=1 y=1 }
-		relative_position_id = generic_mio_trait_commander_cupola
+		relative_position_id = generic_mio_trait_all_round_cupola
 
-		any_parent = { generic_mio_trait_commander_cupola generic_mio_trait_simplified_layout }
+		all_parents = { generic_mio_trait_all_round_cupola }
 		equipment_bonus = {
 			breakthrough = 0.1
 			defense = 0.05
@@ -285,13 +285,13 @@ USA_army_ordnance_department_organization = {
 	add_trait = { 
 		token = USA_mio_trait_mass_production_of_armor
 		name = USA_mio_trait_mass_production_of_armor
-		icon = GFX_generic_mio_department_icon_tank_heavy_tank_line_efficiency
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = generic_mio_trait_fully_cast_turret
+		position = { x=2 y=1 }
+		relative_position_id = generic_mio_trait_simplified_turret_design
 
-		all_parents = { generic_mio_trait_fully_cast_turret }
+		all_parents = { generic_mio_trait_simplified_turret_design generic_mio_trait_armor_steel_working }
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
 			production_efficiency_gain_factor = 0.1
@@ -304,9 +304,6 @@ USA_detroit_arsenal_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_generic_industrial_concern_1
 	
-	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank mio_cat_eq_all_heavy_tank }
-	research_categories = { mio_cat_tech_light_armor_and_modules mio_cat_tech_medium_armor_and_modules }
-
 	allowed = {	
 		OR = {
 			tag = USA
@@ -2451,4 +2448,23 @@ USA_Galvin_organization = {
             original_tag = MEX
         }
     }
-} 
+}
+
+USA_vauxhall_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_vauxhall
+
+	allowed = {
+		tag = USA
+	}
+
+	available = {
+		FROM = { has_completed_focus = USA_utilize_gm_subsidiaries }
+	}
+
+	initial_trait = {
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
+}
