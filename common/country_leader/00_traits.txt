@@ -10160,6 +10160,37 @@ leader_traits = {
 		democratic_drift = 0.05
 	}
 
+	USA_connected_vice_president = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		political_advisor_cost_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	USA_isolationist_industrialist = {
+		sprite = 10
+		random = no
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_rail_way_factor = 0.1	
+		production_speed_arms_factory_factor = -0.10
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_synthetic_rubber_refinery_factor = 0.1
+		war_support_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.8
+				date < 1939.1.1
+			}
+		}
+	}
+
 	subservient_democrat_democratic = {
 		random = no
 		sprite = 13

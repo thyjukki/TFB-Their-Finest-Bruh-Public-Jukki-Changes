@@ -1200,14 +1200,17 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_country_flag = USA_democrat_leader_flag
+			}
 			traits  = {
-				financial_expert 
+				financial_expert
 			}
 		}
 		name="USA_henry_morgenthau"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
+				small="GFX_portrait_USA_henry_morgenthau_small"
 			}
 		}
 	}
@@ -1218,14 +1221,114 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				NOT = {
+					has_completed_focus = USA_judicial_procedures_reform_bill
+				}
+			}
 			traits  = {
-				silent_workhorse 
+				silent_workhorse
 			}
 		}
 		name="USA_robert_taft"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	USA_frank_knox={
+		advisor={
+			slot = political_advisor
+			idea_token = USA_frank_knox
+			allowed  = {
+				original_tag  = USA
+			}
+			available = {
+				OR = {
+					has_country_flag = USA_republican_leader_flag
+					has_country_flag = USA_40_fdr_victory
+					has_country_flag = USA_40_wilkie_victory
+				}
+			}
+			traits  = {
+				naval_architect
+			}
+		}
+		name="USA_frank_knox"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	USA_john_garner={
+		advisor={
+			slot = political_advisor
+			idea_token = USA_john_garner
+			allowed  = {
+				original_tag  = USA
+			}
+			available = {
+				NOT = {
+					AND {
+						has_completed_focus = USA_judicial_procedures_reform_bill
+						has_country_flag = USA_republican_leader_flag
+						has_country_flag = USA_wallace_running_mate
+					}
+				}
+			}
+			traits  = {
+				USA_connected_vice_president
+			}
+		}
+		name="USA_john_garner"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	USA_william_regnery={
+		advisor={
+			slot = political_advisor
+			idea_token = USA_william_regnery
+			allowed  = {
+				original_tag  = USA
+			}
+			available = {
+				has_country_flag = USA_republican_leader_flag
+			}
+			traits  = {
+				USA_isolationist_industrialist
+			}
+			cost = 150
+		}
+		name="USA_william_regnery"
+		portraits={
+			army={
+				small="GFX_portrait_USA_william_regnery_small"
+			}
+		}
+	}
+	USA_winthrop_aldrich={
+		advisor={
+			slot = political_advisor
+			idea_token = USA_winthrop_aldrich
+			allowed  = {
+				original_tag  = USA
+			}
+			available = {
+				has_country_flag = USA_republican_leader_flag
+			}
+			traits  = {
+				monopolistic_bank
+			}
+		}
+		name="USA_winthrop_aldrich"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
 			}
 		}
 	}
@@ -1357,8 +1460,11 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
+			available = {
+				has_country_flag = USA_democrat_leader_flag
+			}
 			traits  = {
-				captain_of_industry 
+				captain_of_industry
 			}
 		}
 		name="USA_james_byrne"

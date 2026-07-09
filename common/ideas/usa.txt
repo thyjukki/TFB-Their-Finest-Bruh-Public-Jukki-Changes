@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 
 	country = {
 
@@ -171,25 +171,6 @@
 			}
 		}
 
-		USA_john_garner = {
-
-			picture = generic_political_support
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				political_power_factor = 0.1
-			}
-		}
-
 		USA_self_propelled_guns_idea = {
 
 			picture = generic_army_bonus
@@ -232,10 +213,49 @@
 			}
 		}
 
+		USA_modern_damage_controls_idea = {
+
+			picture = generic_navy_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				critical_receive_chance = -0.05
+				naval_ship_recovery_chance = 0.05
+			}
+		}
+
+		USA_mahanian_doctrine_idea = {
+
+			picture = generic_navy_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				naval_hit_chance = 0.05
+			}
+		}
+
 		USA_tackling_waste_idea = {
 
-			picture = generic_disjointed_gov			
-			
+			picture = generic_disjointed_gov
+
 			allowed = {
 				always = no
 			}
@@ -2075,7 +2095,7 @@
 			modifier = {
 				political_power_gain = 0.2
 				stability_factor = 0.2
-				production_speed_industrial_complex_factor = 0.4
+				production_speed_industrial_complex_factor = 0.5
 				production_speed_arms_factory_factor = -0.3
 			}
 		}

@@ -1,4 +1,4 @@
-﻿capital = 361 # Washington DC
+capital = 361 # Washington DC
 
 oob = "USA_1936"
 
@@ -215,10 +215,11 @@ add_ideas = {
 	USA_island_hopping8
 	USA_neutrality_idea
 	new_deal
-	USA_john_garner
 	USA_armed_forces_desegregation
 	bureau_of_ordnance_spirit
 }
+
+set_country_flag = USA_democrat_leader_flag
 
 
 # DIPLOMACY
@@ -324,6 +325,10 @@ recruit_character = USA_william_francis_gibbs
 recruit_character = USA_andrew_mckee
 recruit_character = USA_john_walter_christie
 recruit_character = USA_vannevar_bush
+recruit_character = USA_frank_knox
+recruit_character = USA_john_garner
+recruit_character = USA_william_regnery
+recruit_character = USA_winthrop_aldrich
 
 create_equipment_variant = {
 	name = "M2 Light"

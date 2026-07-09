@@ -4808,6 +4808,42 @@ focus_tree = {
 			add_ideas = USA_airborne_divisions
 		}
 	}
+	
+	focus = {
+		id = USA_transport_aircraft_development
+		icon = GFX_focus_generic_long_range_aircraft
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_airborne_divisions }
+		relative_position_id = USA_airborne_divisions
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_transport_aircraft_development
+				bonus = 0.75
+				uses = 1
+				category = transport_planes_cat
+			}
+		}
+	}
+
 	focus = {
 		id = USA_army_of_the_united_states
 		icon = GFX_focus_generic_little_entente
@@ -5140,7 +5176,7 @@ focus_tree = {
 		completion_reward = {
 			USA_add_or_modify_united_states_army_air_forces = yes
 			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = -0.05 tooltip = air_agility_factor_tt }
-			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = 0.05 tooltip = air_defence_factor_tt }
+			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = 0.1 tooltip = air_defence_factor_tt }
 		}
 	}
 
@@ -5162,7 +5198,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
 			USA_add_or_modify_united_states_army_air_forces = yes
-			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
+			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = 0.10 tooltip = air_agility_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = -0.05 tooltip = air_defence_factor_tt }
 		}
 	}
@@ -5330,7 +5366,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		relative_position_id = USA_naval_bomber_tactics
 		x = 1
-		y = 3
+		y = 2
 		cost = 5
 		prerequisite = { focus = USA_naval_bomber_tactics focus = USA_carrier_primacy }
 
@@ -5622,7 +5658,7 @@ focus_tree = {
 	focus = {
 		id = USA_two_ocean_navy_act
 		icon = GFX_focus_generic_navy_battleship2
-		x = 14
+		x = 17
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5939,7 +5975,7 @@ focus_tree = {
 	focus = {
 		id = USA_bureau_of_ships
 		icon = GFX_goal_generic_build_navy
-		x = -2
+		x = -4
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -6023,6 +6059,8 @@ focus_tree = {
 				days = 180
 				track = capital_ships
 			}
+
+			add_ideas = USA_mahanian_doctrine_idea
 		}
 	}
 
@@ -6419,10 +6457,10 @@ focus_tree = {
 	focus = {
 		id = USA_naval_radar
 		icon = GFX_goal_generic_radar
-		x = 0
+		x = 5
 		y = 1
-		prerequisite = { focus = USA_convoy_tactics }
-		relative_position_id = USA_convoy_tactics
+		prerequisite = { focus = USA_bureau_of_ships }
+		relative_position_id = USA_bureau_of_ships
 		cost = 5
 
 		ai_will_do = {
@@ -6459,6 +6497,40 @@ focus_tree = {
 				bonus = 0.5
 				category = radar_tech
 			}
+		}
+	}
+	focus = {
+		id = USA_modern_damage_controls
+		icon = GFX_goal_continuous_repairments
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_naval_radar }
+		relative_position_id = USA_naval_radar
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = USA_modern_damage_controls
+				uses = 1
+				bonus = 0.5
+				category = damage_control_tech
+			}
+
+			add_ideas = USA_modern_damage_controls_idea
 		}
 	}
 	focus = {
@@ -6594,25 +6666,12 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = USA_expand_the_USMC
-					cost_reduction = 0.25
-					uses = 2
-					category = special_forces_doctrine
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = USA_expand_the_USMC
-					bonus = 1.0
-					uses = 1
-					technology = marines2
-					technology = marines3
-				}
+			add_tech_bonus = {
+				name = USA_expand_the_USMC
+				bonus = 1.0
+				uses = 1
+				technology = marines2
+				technology = marines3
 			}
 			create_corps_commander = {
 				name = "Alexander Vandegrift"

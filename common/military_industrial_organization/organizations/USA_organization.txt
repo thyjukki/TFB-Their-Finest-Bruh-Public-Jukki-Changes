@@ -1321,6 +1321,28 @@ USA_republic_aviations_organization = {
 			build_cost_ic = -0.1
 		}
 	}
+
+	add_trait = {
+		token = USA_mio_trait_increased_weapon_loadouts
+		name = USA_mio_trait_increased_weapon_loadouts
+		icon = GFX_generic_mio_department_icon_plane_medium_combat
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+		relative_position_id = generic_mio_trait_minimum_weapon_requirements
+
+		all_parents = { generic_mio_trait_minimum_weapon_requirements }
+
+		available = {
+			FROM = {
+				has_tech = support_weapons3
+			}
+		}
+
+		equipment_bonus = {
+			air_attack = 0.05
+		}
+	}
 }
 
 USA_lockheed_organization = {
@@ -1855,45 +1877,13 @@ USA_springfield_armory_organization = {
 			reliability = 0.05
 		}
 	}
-
-	add_trait = { 
-		token = USA_mio_trait_bazooka
-		name = USA_mio_trait_bazooka
-		icon = GFX_generic_mio_trait_icon_ap_attack
-		special_trait_background = yes
-
-		position = { x=0 y=0 }  
-
-		limit_to_equipment_type = { 
-			squad_equipment
-		}
-
-		available = {
-			FROM = {
-				has_tech = support_weapons3
-			}
-		}
-
-		visible = {
-			FROM = {
-				original_tag = USA
-			}
-		}
-
-		equipment_bonus = {
-			ap_attack = 0.50
-			reliability = 0.1
-		}
-	}
-
 	add_trait = {
 		token = USA_mio_trait_m1_garand_self_loading_rifle
 		name = USA_mio_trait_m1_garand_self_loading_rifle
 		icon = GFX_generic_mio_trait_icon_soft_attack
 		special_trait_background = yes
 
-		position = { x=0 y=1 }
-		relative_position_id = USA_mio_trait_bazooka
+		position = { x=0 y=0 }
 
 		limit_to_equipment_type = {
 			squad_equipment
@@ -2448,6 +2438,37 @@ USA_Galvin_organization = {
             original_tag = MEX
         }
     }
+
+	add_trait = { 
+		token = USA_mio_trait_bazooka
+		name = USA_mio_trait_bazooka
+		icon = GFX_generic_mio_trait_icon_ap_attack
+		special_trait_background = yes
+
+		position = { x=0 y=0 }  
+
+		limit_to_equipment_type = { 
+			squad_equipment
+		}
+
+		available = {
+			FROM = {
+				has_tech = support_weapons3
+			}
+		}
+
+		visible = {
+			FROM = {
+				original_tag = USA
+			}
+		}
+
+		equipment_bonus = {
+			ap_attack = 0.50
+			reliability = 0.1
+		}
+	}
+
 }
 
 USA_vauxhall_organization = {

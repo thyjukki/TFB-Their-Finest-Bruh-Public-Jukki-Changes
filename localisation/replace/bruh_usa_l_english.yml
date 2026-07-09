@@ -1,6 +1,14 @@
 ﻿l_english:
 
   #### FOCUSES ####
+  USA_transport_aircraft_development:0 "Transport Aircraft Development"
+  USA_transport_aircraft_development_desc:0 "The airborne divisions are only as good as the aircraft that carry them. Dedicated investment in transport aircraft design will let us drop more paratroopers, further, and more reliably than ever before."
+  USA_modern_damage_controls:0 "Modern Damage Controls"
+  USA_modern_damage_controls_desc:0 "Advances in compartmentalization, firefighting, and shipboard emergency procedures let crews contain flooding and fires before they become fatal, keeping damaged ships in the fight and getting them home."
+  USA_modern_damage_controls_idea:0 "Modern Damage Controls"
+  USA_modern_damage_controls_idea_desc:0 "Improved damage control procedures reduce the odds of a critical hit crippling a ship outright, and let more heavily damaged vessels make it back to port rather than sinking."
+  USA_mahanian_doctrine_idea:0 "Advanced Mahanian Gunnery"
+  USA_mahanian_doctrine_idea_desc:0 "Refined fire control doctrine drawn from Mahan's principles of concentrated firepower improves the fleet's odds of landing its shots in a decisive engagement."
   USA_new_deal_2:0 "Second New Deal"
   USA_new_deal_2_desc:0 "Although the economy has begun to rise since the tragedy of 1929, there is more work to be done. Millions remain unemployed, and radicals have begun to criticize FDR for not going far enough. His answer to this was the Second New Deal, a bundle of policies aimed specifically at alleviating the damages done by the Depression."
   USA_construction_1:0 "Fight the Monopolies"
@@ -483,12 +491,21 @@
 
   #### CHARACTERS ####
   USA_james_byrne:0 "James F. Byrnes"
+  USA_henry_morgenthau_desc:0 "As Secretary of the Treasury, Morgenthau has been one of Roosevelt's closest confidants, shaping New Deal fiscal policy and the financing of the growing war effort."
+  USA_robert_taft_desc:0 "The son of a president in his own right, Taft is a leading voice of conservative resistance to the expansion of federal power, standing against the New Deal and executive overreach alike."
+  USA_frank_knox:0 "Frank Knox"
+  USA_frank_knox_desc:0 "A newspaper publisher and former Rough Rider, Knox brings bipartisan credibility and a firm belief in naval preparedness to Washington."
+  USA_winthrop_aldrich:0 "Winthrop W. Aldrich"
+  USA_winthrop_aldrich_desc:0 "As chairman of Chase National Bank, Aldrich commands one of Wall Street's most powerful financial institutions, and uses his influence to shield the banking establishment from further regulatory encroachment."
 
   #### TRAITS ####
   american_caesar_2:0 "American Caesar"
   free_trade_champion:0 "Free Trade Champion"
   USA_mio_trait_medium_tank_organization:0 "Medium Tanks"
   USA_mio_trait_lockheed_aircraft:0 "Medium Aircraft"
+  USA_mio_trait_increased_weapon_loadouts:0 "Increased Weapon Loadouts"
+  USA_connected_vice_president:0 "Connected Vice-President"
+  USA_isolationist_industrialist:0 "Isolationist Industrialist"
 
   #### DECISIONS ####
   USA_join_the_allies:0 "Join the Allies"
@@ -594,7 +611,7 @@
   USA_great_depression_timer_210_tt:0 "Requires §Y210 days§! since the last §YGreat Depression§! recovery focus.\n   Current days are: [?USA_great_depression_cooldown:days|Y0]"
   USA_great_depression_timer_245_tt:0 "Requires §Y245 days§! since the last §YGreat Depression§! recovery focus.\n   Current days are: [?USA_great_depression_cooldown:days|Y0]"
   USA_great_depression_cooldown_tt:0 "After this law is passed, it will take §Y210 days§! until further New Deal legislation is drafted and ready to be signed.\n\n"
-  USA_war_production_tt:0 "Increases the amount of Dockyards you can get before taking £consumer_goods_texticon §YConsumer Goods Factories§! penalties to §Y120§!"
+  USA_war_production_tt:0 "Increases the amount of Dockyards you can get before taking £consumer_goods_texticon §YConsumer Goods Factories§! penalties to §Y100§!"
   USA_maritime_commission_tt:0 "Increases the amount of Dockyards you can get before taking £consumer_goods_texticon §YConsumer Goods Factories§! penalties to §Y80§!"
   USA_los_alamos_tt: "If there are no other §YExperimental Facilities§! in §Y[376.GetName]§!, we will gain §G1§! §YNuclear Research Facility§! in §Y[376.GetName]§!."
 
@@ -614,6 +631,8 @@
   USA_44_dewey_victory:0 "Dewey Defeats FDR"
   USA_rep_campaign:0 "Republican Campaign"
   USA_dem_campaign:0 "Democratic Campaign"
+  USA_democrat_leader_flag:0 "Democrat in the White House"
+  USA_republican_leader_flag:0 "Republican in the White House"
 
   ### Techs ###
   USA_motorized_equipment_1:0 "Mack Model E"
