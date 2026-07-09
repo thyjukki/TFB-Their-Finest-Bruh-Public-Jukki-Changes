@@ -1506,7 +1506,104 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_ideas = USA_side_with_big_business_idea
+			if = {
+				limit = { has_idea = standard_oil_california }
+				custom_effect_tooltip = standard_oil_california_tt
+				swap_ideas = {
+					remove_idea = standard_oil_california
+					add_idea = standard_oil_california_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = standard_oil_california
+						add_idea = standard_oil_california_upgraded
+					}
+				}
+			}
+			if = {
+				limit = { has_idea = general_electric }
+				custom_effect_tooltip = general_electric_tt
+				swap_ideas = {
+					remove_idea = general_electric
+					add_idea = general_electric_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = general_electric
+						add_idea = general_electric_upgraded
+					}
+				}
+			}
+			if = {
+				limit = { has_idea = USA_general_motors }
+				custom_effect_tooltip = USA_general_motors_tt
+				swap_ideas = {
+					remove_idea = USA_general_motors
+					add_idea = USA_general_motors_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = USA_general_motors
+						add_idea = USA_general_motors_upgraded
+					}
+				}
+			}
+			if = {
+				limit = { has_idea = USA_union_pacific_railway }
+				custom_effect_tooltip = USA_union_pacific_railway_tt
+				swap_ideas = {
+					remove_idea = USA_union_pacific_railway
+					add_idea = USA_union_pacific_railway_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = USA_union_pacific_railway
+						add_idea = USA_union_pacific_railway_upgraded
+					}
+				}
+			}
+			if = {
+				limit = { has_idea = USA_bethlehem_steel }
+				custom_effect_tooltip = USA_bethlehem_steel_tt
+				swap_ideas = {
+					remove_idea = USA_bethlehem_steel
+					add_idea = USA_bethlehem_steel_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = USA_bethlehem_steel
+						add_idea = USA_bethlehem_steel_upgraded
+					}
+				}
+			}
+			if = {
+				limit = { has_idea = USA_alcoa }
+				custom_effect_tooltip = USA_alcoa_tt
+				swap_ideas = {
+					remove_idea = USA_alcoa
+					add_idea = USA_alcoa_upgraded
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = USA_alcoa
+						add_idea = USA_alcoa_upgraded
+					}
+				}
+			}
+			
+			add_stability = -0.05
 		}
 	}
 

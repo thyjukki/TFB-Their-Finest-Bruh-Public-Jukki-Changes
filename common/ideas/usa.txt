@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 
 	country = {
 
@@ -272,25 +272,6 @@ ideas = {
 				production_speed_rail_way_factor = 0.1
 				production_speed_anti_air_building_factor = 0.1
 				production_speed_radar_station_factor = 0.1
-			}
-		}
-
-		USA_side_with_big_business_idea = {
-
-			picture = generic_economic_increase
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -3395,47 +3376,83 @@ ideas = {
 
 	
 	industrial_concern = {
-					
+
 		standard_oil_california = {
-			
-			
+
 			allowed = {
 				original_tag = USA
 			}
-			
 
-			
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
+			}
+
 			research_bonus = {
 				industry = 0.05
 				synth_resources = 0.15
 			}
-			
+
 			traits = { refinery_concern }
-			
-			modifier = {
-			}
 		}
-		
-		general_electric = {
-			
-			
+
+		standard_oil_california_upgraded = {
+
+			picture = standard_oil_california
+
 			allowed = {
 				original_tag = USA
 			}
-			
 
-			
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.20
+			}
+
+			traits = { USA_standard_oil_upgraded }
+		}
+
+		general_electric = {
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
+			}
+
 			research_bonus = {
 				electronics = 0.15
 			}
-			
+
 			traits = { electronics_concern }
-			
-			modifier = {
-			}
 		}
+
+		general_electric_upgraded = {
+
+			picture = general_electric
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				electronics = 0.20
+			}
+
+			traits = { USA_general_electric_upgraded }
+		}
+
 		USA_general_motors = {
-			
+
 			picture = usa_general_motors
 			allowed = {
 				original_tag = USA
@@ -3443,19 +3460,39 @@ ideas = {
 			available = {
 				has_completed_focus = USA_wartime_industry
 			}
-			
 
-			
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
+			}
+
 			research_bonus = {
 				industry = 0.15
 			}
-			
-			#traits = { industrial_concern }
-			
-			modifier = {
-				industrial_capacity_factory = 0.1
-			}
+
+			traits = { USA_general_motors_concern }
 		}
+
+		USA_general_motors_upgraded = {
+
+			picture = usa_general_motors
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_wartime_industry
+			}
+
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				industry = 0.20
+			}
+
+			traits = { USA_general_motors_concern_upgraded }
+		}
+
 		USA_union_pacific_railway = {
 
 			picture = idea_USA_union_pacific_railway
@@ -3464,7 +3501,8 @@ ideas = {
 				original_tag = USA
 			}
 
-			available = {
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
 			}
 
 			research_bonus = {
@@ -3472,6 +3510,101 @@ ideas = {
 			}
 
 			traits = { railway_company }
+		}
+
+		USA_union_pacific_railway_upgraded = {
+
+			picture = idea_USA_union_pacific_railway
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			traits = { USA_union_pacific_upgraded }
+		}
+
+		USA_bethlehem_steel = {
+
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { USA_bethlehem_steel_concern }
+		}
+
+		USA_bethlehem_steel_upgraded = {
+
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			traits = { USA_bethlehem_steel_concern_upgraded }
+		}
+
+		USA_alcoa = {
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				NOT = { has_completed_focus = USA_side_with_big_business }
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+
+			traits = { USA_alcoa_concern }
+		}
+
+		USA_alcoa_upgraded = {
+
+			picture = generic_industrial_concern_2
+
+			allowed = {
+				original_tag = USA
+			}
+
+			visible = {
+				has_completed_focus = USA_side_with_big_business
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			traits = { USA_alcoa_concern_upgraded }
 		}
 	}
 }
