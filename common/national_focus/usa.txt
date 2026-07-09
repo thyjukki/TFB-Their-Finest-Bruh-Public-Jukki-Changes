@@ -781,7 +781,7 @@ focus_tree = {
 		icon = GFX_focus_spa_the_spanish_miracle
 		prerequisite = { focus = USA_landon_deal }
 		relative_position_id = USA_landon_deal
-		x = 6
+		x = 5
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -4599,6 +4599,192 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_pacific_defense
+		icon = GFX_focus_generic_coastal_fort
+		x = -8
+		y = 1
+		prerequisite = { focus = USA_war_department }
+		relative_position_id = USA_war_department
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			631 = { # Midway
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13052
+					instant_build = yes
+				}
+			}
+			629 = { # Hawaii
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 4180
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 7112
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 7195
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 10048
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 12021
+					instant_build = yes
+				}
+			}
+			632 = { # Wake
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13047
+					instant_build = yes
+				}
+			}
+			638 = { # Guam
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 12140
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_build_atoll_airports
+		icon = GFX_focus_generic_air_bases
+		prerequisite = { focus = USA_pacific_defense }
+		x = 0
+		y = 1
+		relative_position_id = USA_pacific_defense
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			642 = { # Phoenix Island
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13050
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13050
+					instant_build = yes
+				}
+			}
+			630 = { # Johnston Atoll
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13051
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13051
+					instant_build = yes
+				}
+			}
+			727 = { # Line Islands
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13048
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13048
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13049
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13049
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13053
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 13053
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = USA_selective_training_act
 		icon = GFX_focus_generic_military_mission
 		x = -5
@@ -4805,7 +4991,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_airborne_divisions
+			set_variable = { USA_united_states_army_special_forces_cap = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_special_forces_cap = 0.05 tooltip = special_forces_cap_tt }
 		}
 	}
 	
@@ -4870,7 +5058,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_army_of_the_united_states
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_mobilization_speed = 1.0 tooltip = mobilization_speed_tt }
 			add_tech_bonus = {
 				name = USA_infantry
 				bonus = 0.75
@@ -4903,7 +5092,13 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = {
-			add_ideas = USA_k_rations
+			set_variable = { USA_united_states_army_supply_node_range = 0 }
+			set_variable = { USA_united_states_army_attrition = 0 }
+			set_variable = { USA_united_states_army_supply_consumption_factor = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_supply_node_range = 0.1 tooltip = supply_node_range_tt }
+			add_to_variable = { USA_united_states_army_attrition = -0.05 tooltip = attrition_tt }
+			add_to_variable = { USA_united_states_army_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
 		}
 	}
 
@@ -4933,7 +5128,9 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			add_ideas = USA_womens_armed_service_integration_act
+			set_variable = { USA_united_states_army_conscription = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_conscription = 0.02 tooltip = conscription_tt }
 		}
 	}
 	
@@ -5014,7 +5211,7 @@ focus_tree = {
 	focus = {
 		id = USA_build_the_pentagon
 		icon = GFX_focus_usa_build_the_pentagon
-		x = -7
+		x = 8
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5037,7 +5234,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_the_pentagon
+			set_variable = { USA_united_states_army_planning_speed = 0 }
+			set_variable = { USA_united_states_army_max_planning = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_planning_speed = 0.1 tooltip = planning_speed_tt }
+			add_to_variable = { USA_united_states_army_max_planning = 0.05 tooltip = max_planning_tt }
 		}
 	}
 	focus = {
@@ -5066,7 +5267,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_department_of_defense
+			set_variable = { USA_united_states_army_max_command_power = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_max_command_power = 50 tooltip = max_command_power_tt }
 		}
 	}
 
@@ -5096,7 +5299,6 @@ focus_tree = {
 		completion_reward = {
 			set_variable = { USA_united_states_army_air_forces_experience_gain_air = 0 }
 			set_variable = { USA_united_states_army_air_forces_air_fuel_consumption_factor = 0 }
-			set_variable = { USA_united_states_army_air_forces_air_training_xp_gain_factor = 0 }
 			set_variable = { USA_united_states_army_air_forces_air_defence_factor = 0 }
 			set_variable = { USA_united_states_army_air_forces_air_agility_factor = 0 }
 			set_variable = { USA_united_states_army_air_forces_air_night_penalty = 0 }
@@ -5105,8 +5307,9 @@ focus_tree = {
 			set_variable = { USA_united_states_army_air_forces_maximum_speed = 0 }
 			set_variable = { USA_united_states_army_air_forces_naval_strike_targetting_factor = 0 }
 			set_variable = { USA_united_states_army_air_forces_sortie_efficiency = 0 }
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_experience_gain_air = 0.1 tooltip = experience_gain_air_tt }
+			add_to_variable = { USA_united_states_army_air_forces_air_training_xp_gain_factor = 0.25 tooltip = air_training_xp_gain_factor_tt }
 		}
 	}
 
@@ -5126,7 +5329,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_air_fuel_consumption_factor = -0.1 tooltip = air_fuel_consumption_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_training_xp_gain_factor = 0.25 tooltip = air_training_xp_gain_factor_tt }
 		}
@@ -5174,7 +5377,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = -0.05 tooltip = air_agility_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = 0.1 tooltip = air_defence_factor_tt }
 		}
@@ -5197,7 +5400,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = 0.10 tooltip = air_agility_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = -0.05 tooltip = air_defence_factor_tt }
 		}
@@ -5257,7 +5460,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_maximum_speed = 0.05 tooltip = air_maximum_speed_factor_tt }
 		}
 	}
@@ -5281,7 +5484,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = 0.05 tooltip = air_defence_factor_tt }
 		}
 	}
@@ -5308,7 +5511,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_air_night_penalty = -0.1 tooltip = air_night_penalty_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_superiority_detect_factor = 0.1 tooltip = air_superiority_detect_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_interception_detect_factor = 0.1 tooltip = air_interception_detect_factor_tt }
@@ -5331,7 +5534,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_naval_strike_targetting_factor = 0.05 tooltip = naval_strike_targetting_factor_tt }
 		}
 	}
@@ -5356,7 +5559,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_AIR FOCUS_FILTER_NAVY }
 		completion_reward = {
-			USA_add_or_modify_united_states_army_air_forces = yes
+			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
 			add_to_variable = { USA_united_states_army_air_forces_sortie_efficiency = 0.05 tooltip = sortie_efficiency_tt }
 		}
 	}
@@ -5757,7 +5960,7 @@ focus_tree = {
 	focus = {
 		id = USA_maritime_commission
 		icon = GFX_goal_generic_production2
-		x = 9
+		x = 7
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
@@ -5780,10 +5983,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_maritime_commission
+			set_variable = { USA_united_states_navy_production_speed_dockyard_factor = 0 }
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_production_speed_dockyard_factor = 0.1 tooltip = production_speed_dockyard_factor_tt }
 			custom_effect_tooltip = USA_maritime_commission_tt
 		}
-	}	
+	}
 	
 
 	focus = {
@@ -5811,12 +6016,12 @@ focus_tree = {
 
 	focus = {
 		id = USA_build_up_west_pacific
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = USA_two_ocean_navy_act }
-		x = 3
+		icon = GFX_focus_generic_western_pacific
+		prerequisite = { focus = USA_pacific_defense }
+		x = 2
 		y = 1
 		cost = 5
-		relative_position_id = USA_two_ocean_navy_act
+		relative_position_id = USA_pacific_defense
 
 		available = {
 		}
@@ -5835,13 +6040,13 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = bunker 
+					type = bunker
 					level = 1
 					province = 12140
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = coastal_bunker 
+					type = coastal_bunker
 					level = 1
 					province = 12140
 					instant_build = yes
@@ -5860,13 +6065,13 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = coastal_bunker 
+					type = coastal_bunker
 					level = 2
 					province = 13047
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = bunker 
+					type = bunker
 					level = 1
 					province = 13047
 					instant_build = yes
@@ -5876,13 +6081,62 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_strengthen_guam
+		icon = GFX_focus_BEL_better_than_maginot
+		prerequisite = { focus = USA_build_up_west_pacific }
+		mutually_exclusive = { focus = USA_strengthen_hawaii }
+		x = 0
+		y = 1
+		relative_position_id = USA_build_up_west_pacific
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			638 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 12140
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 12140
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_fortress
+					level = 2
+					province = 12140
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+	}
+
+	focus = {
 		id = USA_build_up_central_pacific
-		icon = GFX_focus_generic_coastal_fort
-		prerequisite = { focus = USA_two_ocean_navy_act }
-		x = 1
+		icon = GFX_focus_PHI_take_pacific_islands
+		prerequisite = { focus = USA_pacific_defense }
+		x = -2
 		y = 1
 		cost = 5
-		relative_position_id = USA_two_ocean_navy_act
+		relative_position_id = USA_pacific_defense
 
 		available = {
 
@@ -5963,12 +6217,91 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = coastal_bunker 
+					type = coastal_bunker
 					level = 1
 					province = 12021
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = USA_strengthen_hawaii
+		icon = GFX_focus_PHI_beach_defense_strategy
+		prerequisite = { focus = USA_build_up_central_pacific }
+		mutually_exclusive = { focus = USA_strengthen_guam }
+		x = 0
+		y = 1
+		relative_position_id = USA_build_up_central_pacific
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+			629 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = coastal_defence_battery }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_mine_the_harbors
+		icon = GFX_focus_generic_mine_warfare
+		prerequisite = { focus = USA_strengthen_hawaii focus = USA_strengthen_guam }
+		x = 2
+		y = 1
+		relative_position_id = USA_strengthen_hawaii
+		cost = 5
+
+		available = {
+			OR = {
+				threat > 0.99
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = USA_strengthen_hawaii }
+				add_mines = { region = 312 amount = 300 } # Hawaii
+				add_mines = { region = 310 amount = 300 } # Midway
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_strengthen_guam }
+				add_mines = { region = 308 amount = 300 } # Southern Marianas (Saipan/Guam)
+				add_mines = { region = 309 amount = 300 } # Wake
+			}
+		}
+	}
+
+	focus = {
+		id = USA_prepared_defenses
+		icon = GFX_focus_FIN_coastal_defense
+		prerequisite = { focus = USA_mine_the_harbors }
+		x = 0
+		y = 1
+		relative_position_id = USA_mine_the_harbors
+		cost = 5
+
+		available = {
+
+		}
+
+		completion_reward = {
+
 		}
 	}
 
@@ -5988,10 +6321,9 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 50
 			add_ideas = bureau_of_ships_focus
-			if = {
-				limit = { has_idea = bureau_of_ordnance_spirit }
-				remove_ideas = bureau_of_ordnance_spirit
-			}
+			set_variable = { USA_united_states_navy_naval_equipment_upgrade_xp_cost = 0 }
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_naval_equipment_upgrade_xp_cost = -0.1 tooltip = naval_equipment_upgrade_xp_cost_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA_chester_w_nimitz = {
 				add_skill_level = 1
@@ -6060,61 +6392,9 @@ focus_tree = {
 				track = capital_ships
 			}
 
-			add_ideas = USA_mahanian_doctrine_idea
-		}
-	}
-
-	focus = {
-		id = USA_advanced_basing
-		icon = GFX_goal_generic_occupy_states_coastal
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_build_up_west_pacific }
-		relative_position_id = USA_build_up_west_pacific
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			638 = {
-				add_building_construction = {
-					type = naval_base
-					province = 12140
-					level = 5
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					327 = {
-						CONTROLLER = {
-							is_subject_of = ROOT
-						}
-					}
-				}
-				327 = {
-					add_building_construction = {
-						type = naval_base
-						province = 10265
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
+			set_variable = { USA_united_states_navy_naval_hit_chance = 0 }
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_naval_hit_chance = 0.05 tooltip = naval_hit_chance_tt }
 		}
 	}
 
@@ -6455,6 +6735,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_bureau_of_ordnance_reforms
+		icon = GFX_focus_generic_torpedo_production
+		prerequisite = { focus = USA_convoy_tactics }
+		x = 0
+		y = 1
+		relative_position_id = USA_convoy_tactics
+		cost = 5
+
+		available_if_capitulated = yes
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_naval_torpedo_hit_chance_factor = 0.15 tooltip = naval_torpedo_hit_chance_factor_tt }
+		}
+	}
+
+	focus = {
 		id = USA_naval_radar
 		icon = GFX_goal_generic_radar
 		x = 5
@@ -6530,7 +6828,11 @@ focus_tree = {
 				category = damage_control_tech
 			}
 
-			add_ideas = USA_modern_damage_controls_idea
+			set_variable = { USA_united_states_navy_critical_receive_chance = 0 }
+			set_variable = { USA_united_states_navy_naval_ship_recovery_chance = 0 }
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_critical_receive_chance = -0.05 tooltip = critical_receive_chance_tt }
+			add_to_variable = { USA_united_states_navy_naval_ship_recovery_chance = 0.05 tooltip = naval_ship_recovery_chance_tt }
 		}
 	}
 	focus = {
@@ -6609,7 +6911,7 @@ focus_tree = {
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
+		x = 5
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
@@ -6647,6 +6949,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = liberty_ships_focus
+			set_variable = { USA_united_states_navy_amphibious_invasion = 0 }
+			custom_effect_tooltip = USA_modify_united_states_navy_modifier_tt
+			add_to_variable = { USA_united_states_navy_amphibious_invasion = 0.1 tooltip = amphibious_invasion_tt }
 		}
 	}
 
@@ -6654,7 +6959,7 @@ focus_tree = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_two_ocean_navy_act }
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
@@ -6688,7 +6993,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_amphibious_operations
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_focus_generic_naval_invasion
 		prerequisite = { focus = USA_expand_the_USMC }
 		x = 0
 		y = 1
@@ -6749,7 +7054,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			army_experience = 10
-			add_ideas = USA_us_cavalry
+			set_variable = { USA_united_states_army_cavalry_attack_factor = 0 }
+			set_variable = { USA_united_states_army_cavalry_defence_factor = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_cavalry_attack_factor = 0.05 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { USA_united_states_army_cavalry_defence_factor = 0.05 tooltip = cavalry_defence_factor_tt }
 		}
 	}
 
@@ -6806,27 +7115,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = USA_us_cavalry
-				}
-				swap_ideas = {
-					remove_idea = USA_us_cavalry
-					add_idea = USA_us_cavalry_rough_riders
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = USA_us_cavalry_armored
-				}
-				swap_ideas = {
-					remove_idea = USA_us_cavalry_armored
-					add_idea = USA_us_cavalry_armored_rough_riders
-				}
-			}
-			else = {
-				add_ideas = USA_us_cavalry_rough_riders
-			}
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_cavalry_attack_factor = 0.05 tooltip = cavalry_attack_factor_tt }
+			add_to_variable = { USA_united_states_army_cavalry_defence_factor = 0.05 tooltip = cavalry_defence_factor_tt }
 		}
 	}
 
@@ -7011,24 +7302,15 @@ focus_tree = {
 				bonus = 1
 				category = cat_mechanized_equipment
 			}
-			if = {
-				limit = {
-					has_idea = USA_us_cavalry
-				}
-				swap_ideas = {
-					remove_idea = USA_us_cavalry
-					add_idea = USA_us_cavalry_armored
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = USA_us_cavalry_rough_riders
-				}
-				swap_ideas = {
-					remove_idea = USA_us_cavalry_rough_riders
-					add_idea = USA_us_cavalry_armored_rough_riders
-				}
-			}
+			set_variable = { USA_united_states_army_motorized_attack_factor = 0 }
+			set_variable = { USA_united_states_army_motorized_defence_factor = 0 }
+			set_variable = { USA_united_states_army_mechanized_attack_factor = 0 }
+			set_variable = { USA_united_states_army_mechanized_defence_factor = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_motorized_attack_factor = 0.05 tooltip = motorized_attack_factor_tt }
+			add_to_variable = { USA_united_states_army_motorized_defence_factor = 0.05 tooltip = motorized_defence_factor_tt }
+			add_to_variable = { USA_united_states_army_mechanized_attack_factor = 0.05 tooltip = mechanized_attack_factor_tt }
+			add_to_variable = { USA_united_states_army_mechanized_defence_factor = 0.05 tooltip = mechanized_defence_factor_tt }
 		}
 	}
 

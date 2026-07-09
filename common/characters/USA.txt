@@ -1271,11 +1271,9 @@ characters={
 			}
 			available = {
 				NOT = {
-					AND {
-						has_completed_focus = USA_judicial_procedures_reform_bill
-						has_country_flag = USA_republican_leader_flag
-						has_country_flag = USA_wallace_running_mate
-					}
+					has_completed_focus = USA_judicial_procedures_reform_bill
+					has_country_flag = USA_republican_leader_flag
+					has_country_flag = USA_wallace_running_mate
 				}
 			}
 			traits  = {

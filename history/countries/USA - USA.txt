@@ -216,10 +216,16 @@ add_ideas = {
 	USA_neutrality_idea
 	new_deal
 	USA_armed_forces_desegregation
-	bureau_of_ordnance_spirit
 }
 
 set_country_flag = USA_democrat_leader_flag
+
+add_dynamic_modifier = { modifier = USA_united_states_army_air_forces_dynamic_modifier }
+add_dynamic_modifier = { modifier = USA_united_states_army_dynamic_modifier }
+add_dynamic_modifier = { modifier = USA_united_states_navy_dynamic_modifier }
+set_variable = { USA_united_states_navy_naval_torpedo_hit_chance_factor = -0.1 }
+set_variable = { USA_united_states_army_mobilization_speed = -0.5 }
+set_variable = { USA_united_states_army_air_forces_air_training_xp_gain_factor = -0.25 }
 
 
 # DIPLOMACY

@@ -325,7 +325,7 @@
 	}
 
 	offset = {
-		x = 78
+		x = 62
 		y = 0
 		trigger = { tag = USA }
 	}

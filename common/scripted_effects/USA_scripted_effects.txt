@@ -36,25 +36,6 @@ USA_AOD_add_border_airfield_aircraft_subsidy = {
 	}
 }
 
-USA_add_or_modify_united_states_army_air_forces = {
-	if = {
-		limit = {
-			NOT = {
-				has_dynamic_modifier = {
-					modifier = USA_united_states_army_air_forces_dynamic_modifier
-				}
-			}
-		}
-		custom_effect_tooltip = USA_add_united_states_army_air_forces_modifier_tt
-		hidden_effect = {
-			add_dynamic_modifier = { modifier = USA_united_states_army_air_forces_dynamic_modifier }
-		}
-	}
-	else = {
-		custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
-	}
-}
-
 USA_neutrality_level_up = {
 	if = {
 		limit = { has_idea = USA_neutrality_idea_3 }

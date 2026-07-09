@@ -14,3 +14,37 @@ USA_united_states_army_air_forces_dynamic_modifier = {
 	naval_strike_targetting_factor = USA_united_states_army_air_forces_naval_strike_targetting_factor
 	sortie_efficiency = USA_united_states_army_air_forces_sortie_efficiency
 }
+
+USA_united_states_army_dynamic_modifier = {
+	icon = GFX_idea_generic_infantry_bonus
+	enable = { always = yes }
+
+	special_forces_cap = USA_united_states_army_special_forces_cap
+	mobilization_speed = USA_united_states_army_mobilization_speed
+	supply_node_range = USA_united_states_army_supply_node_range
+	attrition = USA_united_states_army_attrition
+	supply_consumption_factor = USA_united_states_army_supply_consumption_factor
+	conscription = USA_united_states_army_conscription
+	planning_speed = USA_united_states_army_planning_speed
+	max_planning = USA_united_states_army_max_planning
+	max_command_power = USA_united_states_army_max_command_power
+	cavalry_attack_factor = USA_united_states_army_cavalry_attack_factor
+	cavalry_defence_factor = USA_united_states_army_cavalry_defence_factor
+	motorized_attack_factor = USA_united_states_army_motorized_attack_factor
+	motorized_defence_factor = USA_united_states_army_motorized_defence_factor
+	mechanized_attack_factor = USA_united_states_army_mechanized_attack_factor
+	mechanized_defence_factor = USA_united_states_army_mechanized_defence_factor
+}
+
+USA_united_states_navy_dynamic_modifier = {
+	icon = GFX_idea_generic_navy_bonus
+	enable = { always = yes }
+
+	production_speed_dockyard_factor = USA_united_states_navy_production_speed_dockyard_factor
+	naval_hit_chance = USA_united_states_navy_naval_hit_chance
+	critical_receive_chance = USA_united_states_navy_critical_receive_chance
+	naval_ship_recovery_chance = USA_united_states_navy_naval_ship_recovery_chance
+	naval_equipment_upgrade_xp_cost = USA_united_states_navy_naval_equipment_upgrade_xp_cost
+	amphibious_invasion = USA_united_states_navy_amphibious_invasion
+	naval_torpedo_hit_chance_factor = USA_united_states_navy_naval_torpedo_hit_chance_factor
+}

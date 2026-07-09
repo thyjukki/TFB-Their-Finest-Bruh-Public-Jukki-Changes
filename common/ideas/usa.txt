@@ -62,115 +62,6 @@ ideas = {
 			}
 		}
 
-		USA_us_cavalry = {
-
-			picture = generic_army_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				cavalry_attack_factor = 0.05
-				cavalry_defence_factor = 0.05
-			}
-		}
-
-		USA_us_cavalry_rough_riders = {
-
-			picture = generic_army_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
-			}
-		}
-
-		USA_us_cavalry_armored = {
-
-			picture = generic_army_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				cavalry_attack_factor = 0.05
-				cavalry_defence_factor = 0.05
-				motorized_attack_factor = 0.05
-				motorized_defence_factor = 0.05
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-			}
-		}
-
-		USA_us_cavalry_armored_rough_riders = {
-
-			picture = generic_army_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
-				motorized_attack_factor = 0.05
-				motorized_defence_factor = 0.05
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-			}
-		}
-
-		USA_k_rations = {
-
-			picture = generic_supply_line
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				supply_node_range = 0.1
-				attrition = -0.05
-				supply_consumption_factor = -0.05
-			}
-		}
-
 		USA_self_propelled_guns_idea = {
 
 			picture = generic_army_bonus
@@ -210,45 +101,6 @@ ideas = {
 				modern_tank_aa_chassis = {
 					build_cost_ic = -0.05 instant = yes
 				}
-			}
-		}
-
-		USA_modern_damage_controls_idea = {
-
-			picture = generic_navy_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				critical_receive_chance = -0.05
-				naval_ship_recovery_chance = 0.05
-			}
-		}
-
-		USA_mahanian_doctrine_idea = {
-
-			picture = generic_navy_bonus
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				naval_hit_chance = 0.05
 			}
 		}
 
@@ -1351,42 +1203,7 @@ ideas = {
 				command_power_gain_mult = 0.1	
 			}
 		}
-		USA_airborne_divisions = {
-			picture = usa_airborne_divisions
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				special_forces_cap = 0.05	
-			}
-		}
-		USA_womens_armed_service_integration_act = {
-			
-			picture = eng_imperial_conscription
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.02	
-			}
-		}
-		USA_war_department = {	
+		USA_war_department = {
 			picture = usa_war_department
 			allowed = {
 				always = no
@@ -1400,22 +1217,6 @@ ideas = {
 			
 			modifier = {
 				max_command_power = 25	
-			}
-		}
-		USA_department_of_defense = {	
-			picture = usa_department_of_defense
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				max_command_power = 50	
 			}
 		}
 		USA_state_funds_refused = {
@@ -1432,39 +1233,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.15	
-			}
-		}
-		USA_the_pentagon = {
-			picture = generic_army_war_college
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				planning_speed = 0.1
-				max_planning = 0.05
-			}
-		}
-		USA_maritime_commission = {
-			picture = generic_sea_focused_navy
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_dockyard_factor = 0.1	
 			}
 		}
 		USA_greenland_patrol_idea = {
@@ -1902,22 +1670,6 @@ ideas = {
 				offensive_war_stability_factor = 0.2
 			}
 		}
-		USA_army_of_the_united_states = {
-			picture = HUN_secret_rearmament
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				mobilization_speed = 0.5
-			}
-		}
 		USA_final_table = {
 			
 			allowed = {
@@ -2161,10 +1913,6 @@ ideas = {
 
 			picture = generic_navy_bonus
 
-			modifier = {
-				naval_equipment_upgrade_xp_cost = -0.1
-			}
-			
 			equipment_bonus = {
 				ship_hull_super_heavy = {
 					build_cost_ic = -0.05 instant = yes
@@ -2401,10 +2149,7 @@ ideas = {
 			}
 			
 			removal_cost = -1
-			
-			modifier = {
-				amphibious_invasion = 0.10
-			}
+
 			equipment_bonus = {
 				convoy = {
 					instant = yes
