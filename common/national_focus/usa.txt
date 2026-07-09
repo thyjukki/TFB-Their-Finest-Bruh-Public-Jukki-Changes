@@ -23,7 +23,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 50 }
+	continuous_focus_position = { x = 5000 y = 800 }
 	shared_focus = ABDA_abdacom
 	default = no
 #	focus = {
@@ -410,7 +410,7 @@ focus_tree = {
 		relative_position_id = USA_new_deal_2
 		mutually_exclusive = { focus = USA_find_a_compromise }
 		overlay = GFX_focus_fast_overlay_generic_clock
-		x = -5
+		x = -3
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -438,7 +438,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal_2 }
 		relative_position_id = USA_new_deal_2
 		mutually_exclusive = { focus = USA_judicial_procedures_reform_bill }
-		x = -3
+		x = -1
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -805,7 +805,7 @@ focus_tree = {
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = USA_new_deal_2 }
 		relative_position_id = USA_new_deal_2
-		x = -8
+		x = -5
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1493,7 +1493,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal_2 focus = USA_landon_deal }
 		relative_position_id = USA_new_deal_2
 		mutually_exclusive = { focus = USA_side_with_workers_union }
-		x = 2
+		x = 3
 		y = 1
 		cost = 5
 		#ai_will_do = {
@@ -1613,7 +1613,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal_2 }
 		relative_position_id = USA_new_deal_2
 		mutually_exclusive = { focus = USA_side_with_big_business }
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		#ai_will_do = {
