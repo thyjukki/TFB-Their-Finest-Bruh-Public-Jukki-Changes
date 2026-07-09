@@ -3,6 +3,7 @@ USA_united_states_army_air_forces_dynamic_modifier = {
 	enable = { always = yes }
 
 	experience_gain_air = USA_united_states_army_air_forces_experience_gain_air
+	air_range_factor = USA_united_states_army_air_forces_air_range_factor
 	air_fuel_consumption_factor = USA_united_states_army_air_forces_air_fuel_consumption_factor
 	air_training_xp_gain_factor = USA_united_states_army_air_forces_air_training_xp_gain_factor
 	air_defence_factor = USA_united_states_army_air_forces_air_defence_factor
