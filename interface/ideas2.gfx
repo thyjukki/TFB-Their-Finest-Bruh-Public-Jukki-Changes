@@ -124,6 +124,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_palantir"
+		texturefile = "gfx/interface/palantir.dds"
+	}
+
+	spriteType = {
 		name = "GFX_republican_aviation"
 		texturefile = "gfx/interface/ideas/republic_aviation.dds"
 	}
