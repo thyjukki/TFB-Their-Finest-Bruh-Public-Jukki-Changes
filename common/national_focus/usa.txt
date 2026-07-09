@@ -844,9 +844,10 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			air_experience = 10
+			unlock_decision_category_tooltip = USA_foreign_service_volunteers_decisions
 		}
 	}
-	
+
 	focus = {
 		id = USA_construction_4
 		icon = GFX_focus_generic_steel
@@ -5417,7 +5418,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR }
 		completion_reward = {
 			custom_effect_tooltip = USA_modify_united_states_army_air_forces_modifier_tt
-			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = 0.5 tooltip = air_agility_factor_tt }
+			add_to_variable = { USA_united_states_army_air_forces_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_range_factor = 0.05 tooltip = air_range_factor_tt }
 			add_to_variable = { USA_united_states_army_air_forces_air_defence_factor = -0.05 tooltip = air_defence_factor_tt }
 		}
@@ -5461,6 +5462,8 @@ focus_tree = {
 		}
 	}
 
+
+	## Prob too broken these set of focuses, could be reworked to something else, but for now they are disabled, maybe with air designer module rearch?
 	focus = {
 		id = USA_upgraded_engines
 		icon = GFX_goal_generic_air_production
@@ -5472,6 +5475,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available_if_capitulated = yes
@@ -5495,6 +5502,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			has_war_with = JAP
 		}
@@ -5509,7 +5520,7 @@ focus_tree = {
 	focus = {
 		id = USA_air_to_air_radar
 		icon = GFX_goal_generic_radar
-		x = 2
+		x = 0
 		y = 1
 		cost = 5
 		prerequisite = { focus = USA_lessons_from_battles }
@@ -6151,7 +6162,7 @@ focus_tree = {
 					province = 12140
 					instant_build = yes
 				}
-				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = coastal_defence_battery_pacific }
 			}
 		}
 	}
@@ -6288,7 +6299,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				add_dynamic_modifier = { modifier = coastal_defence_battery }
+				add_dynamic_modifier = { modifier = coastal_defence_battery_pacific }
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # USA Events
 ###########################
 
@@ -3054,7 +3054,6 @@ country_event = {
 	trigger = {
 		original_tag = USA
 		date > 1936.12.30
-		USA = { has_completed_focus = USA_new_deal_2 }
 	}
 
 	immediate = {

@@ -338,6 +338,18 @@ BUL_our_duty_in_the_balkans_dynamic_modifier = { #Used as National Spirit
 	stability_factor = BUL_our_duty_in_the_balkans_stability_modifier
 	weekly_manpower = 1000
 }
+
+coastal_defence_battery_pacific = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	army_defence_factor = 0.10
+	cas_damage_reduction = 0.15
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.10
+}
+
 coastal_defence_battery = {
 	enable = { always = yes }
 
