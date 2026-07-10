@@ -1204,7 +1204,7 @@ characters={
 				financial_expert
 			}
 		}
-		name="USA_henry_morgenthau"
+		name=USA_henry_morgenthau
 		portraits={
 			army={
 				small="GFX_portrait_USA_henry_morgenthau_small"
@@ -1227,7 +1227,7 @@ characters={
 				silent_workhorse
 			}
 		}
-		name="USA_robert_taft"
+		name=USA_robert_taft
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
@@ -1252,7 +1252,7 @@ characters={
 				naval_architect
 			}
 		}
-		name="USA_frank_knox"
+		name=USA_frank_knox
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
@@ -1277,7 +1277,7 @@ characters={
 				USA_connected_vice_president
 			}
 		}
-		name="USA_john_garner"
+		name=USA_john_garner
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
@@ -1299,7 +1299,7 @@ characters={
 			}
 			cost = 150
 		}
-		name="USA_william_regnery"
+		name=USA_william_regnery
 		portraits={
 			army={
 				small="GFX_portrait_USA_william_regnery_small"
@@ -1320,7 +1320,7 @@ characters={
 				technocrat
 			}
 		}
-		name="USA_winthrop_aldrich"
+		name=USA_winthrop_aldrich
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_4"
@@ -1343,7 +1343,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="raymond_spruance"
+		name=USA_raymond_a_spruance
 		portraits={
 			army={
 				small="GFX_idea_raymond_spruance"
@@ -1361,7 +1361,7 @@ characters={
 				smooth_talking_charmer 
 			}
 		}
-		name="USA_cordell_hull"
+		name=USA_cordell_hull
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_6"
@@ -1382,7 +1382,7 @@ characters={
 				victory_through_airpower 
 			}
 		}
-		name="curtis_lemay"
+		name=USA_curtis_lemay
 		portraits={
 			army={
 				small="GFX_idea_curtis_lemay"
@@ -1418,7 +1418,7 @@ characters={
 				factor  = 0.000
 			}
 		}
-		name="harold_ickes"
+		name=USA_harold_ickes
 		portraits={
 			army={
 				small="GFX_idea_harold_ickes"
@@ -1441,7 +1441,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="thomas_kinkaid"
+		name=USA_thomas_kinkaid
 		portraits={
 			army={
 				small="GFX_idea_thomas_kinkaid"
@@ -1462,7 +1462,7 @@ characters={
 				captain_of_industry
 			}
 		}
-		name="USA_james_byrne"
+		name=USA_james_byrne
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
@@ -1484,7 +1484,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="henry_arnold"
+		name=USA_henry_arnold
 		portraits={
 			army={
 				small="GFX_idea_henry_arnold"
@@ -1503,7 +1503,7 @@ characters={
 				naval_theorist 
 			}
 		}
-		name="dewitt_clinton_ramsey"
+		name=USA_dewitt_clinton_ramsey
 		portraits={
 			army={
 				small="GFX_idea_dewitt_clinton_ramsey"
@@ -1522,7 +1522,7 @@ characters={
 				air_warfare_theorist 
 			}
 		}
-		name="harold_mcclelland"
+		name=USA_harold_mcclelland
 		portraits={
 			army={
 				small="GFX_idea_harold_mcclelland"
@@ -1540,14 +1540,14 @@ characters={
 				compassionate_gentleman 
 			}
 		}
-		name="USA_john_winant"
+		name=USA_john_winant
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_5"
 			}
 		}
 	}
-	USA_usa_william_donovan={
+	USA_william_donovan={
 		advisor={
 			slot = political_advisor
 			idea_token = usa_william_donovan
@@ -1563,7 +1563,7 @@ characters={
 				head_of_intelligence 
 			}
 		}
-		name="usa_william_donovan"
+		name=USA_william_donovan
 		portraits={
 			army={
 				small="GFX_idea_usa_william_donovan"
@@ -1581,7 +1581,7 @@ characters={
 				armaments_organizer 
 			}
 		}
-		name="USA_donald_nelson"
+		name=USA_donald_nelson
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
@@ -1603,7 +1603,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="george_kenney"
+		name=USA_george_kenney
 		portraits={
 			army={
 				small="GFX_idea_george_kenney"
@@ -1648,7 +1648,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="john_cannon"
+		name=USA_john_cannon
 		portraits={
 			army={
 				small="GFX_idea_john_cannon"
@@ -1670,7 +1670,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="carl_spaatz"
+		name=USA_carl_spaatz
 		portraits={
 			army={
 				small="GFX_idea_carl_spaatz"
@@ -1697,7 +1697,7 @@ characters={
 				}
 			}
 		}
-		name="george_marshall"
+		name=USA_george_marshall
 		portraits={
 			army={
 				small="GFX_idea_george_marshall"
@@ -1717,7 +1717,7 @@ characters={
 				naval_aviation_pioneer 
 			}
 		}
-		name="marc_mitscher"
+		name=USA_marc_mitscher
 		portraits={
 			army={
 				small="GFX_idea_marc_mitscher"
@@ -1735,7 +1735,7 @@ characters={
 				war_industrialist 
 			}
 		}
-		name="USA_henry_stimson"
+		name=USA_henry_stimson
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
@@ -1758,7 +1758,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="jimmy_doolittle"
+		name=USA_jimmy_doolittle
 		portraits={
 			army={
 				small="GFX_idea_jimmy_doolittle"
@@ -1781,7 +1781,7 @@ characters={
 				factor  = 1.000
 			}
 		}
-		name="claire_lee_chennault"
+		name=USA_claire_lee_chennault
 		portraits={
 			army={
 				small="GFX_idea_claire_lee_chennault"

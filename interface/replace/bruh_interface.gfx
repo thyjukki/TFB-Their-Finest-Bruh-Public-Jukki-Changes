@@ -9419,4 +9419,9 @@ spriteType = {
 		name = "GFX_portrait_usa_teddy_force_ghost_small"
 		textureFile = "gfx/interface/ideas/idea_teddy_ghost.dds"
 	}
+
+	spriteType = {
+		name = GFX_portrait_USA_jonathan_wainwright_small
+		texturefile = "gfx/interface/ideas/idea_generic_army_europe_1.dds"
+	}
 }
