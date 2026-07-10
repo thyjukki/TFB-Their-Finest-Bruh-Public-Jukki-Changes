@@ -237,12 +237,30 @@ palantir_log = {
 
    # USA
     if = { limit = { USA = { has_completed_focus = USA_new_deal_2 } } log = "USA: New Deal" } else = { log = "USA: Landon" }
+    if = { limit = { USA = { has_completed_focus = USA_judicial_procedures_reform_bill } } log = "USA: Court Packing" } else_if = { limit = { USA = { has_completed_focus = USA_find_a_compromise } } log = "USA: Judicial Compromise" } else = { log = "USA: No Judicial Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_balance_the_budget } } log = "USA: Balanced Budget" } else_if = { limit = { USA = { has_completed_focus = USA_deficit_spending } } log = "USA: Deficit Spending" } else = { log = "USA: No Budget Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_extend_civilian_conservation_corps } } log = "USA: Extended CCC" } else_if = { limit = { USA = { has_completed_focus = USA_divert_ccc_funding_to_private_companies } } log = "USA: Cut CCC Funding" } else = { log = "USA: No CCC Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_side_with_big_business } } log = "USA: Sided with Big Business" } else_if = { limit = { USA = { has_completed_focus = USA_side_with_workers_union } } log = "USA: Sided with Workers Union" } else = { log = "USA: No Business/Labor Path Picked" }
     if = { limit = { USA = { has_completed_focus = USA_fdr_again } } log = "USA: FDR Round 2" } else_if = { limit = { USA = { has_completed_focus = USA_wilkies_deal } } log = "USA: Wilkies" } else = { log = "USA: No 1940 Election" }
+    if = { limit = { USA = { has_completed_focus = USA_lend_lease_act } } log = "USA: Lend-Lease" } else_if = { limit = { USA = { has_completed_focus = USA_home_front_defense } } log = "USA: Home Front Defense" } else = { log = "USA: No Lend-Lease Path Picked" }
     if = { limit = { USA = { has_completed_focus = USA_all_in } } log = "USA: All-In" }
     else_if = { limit = { USA = { has_completed_focus = USA_final_table } } log = "USA: Final Table" }
     else_if = { limit = { USA = { has_completed_focus = USA_third_man_walking } } log = "USA: Third Man Walking" }
+    if = { limit = { USA = { has_completed_focus = USA_arsenal_of_democracy } } log = "USA: Arsenal of Democracy" } else_if = { limit = { USA = { has_completed_focus = USA_public_projects } } log = "USA: Public Projects" } else = { log = "USA: No Arsenal/Public Works Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_japan_first } } log = "USA: Japan First" } else_if = { limit = { USA = { has_completed_focus = USA_germany_first } } log = "USA: Germany First" } else = { log = "USA: No War Priority Picked" }
     if = { limit = { USA = { has_completed_focus = USA_battleship_primacy } } log = "USA: Battleship Primacy" } else_if = { limit = { USA = { has_completed_focus = USA_carrier_primacy } }  log = "USA: Carrier Primacy" }  else = { log = "USA: No naval Primacy Picked" }
-    if = { limit = { USA = { has_completed_focus = USA_air_support } } log = "USA: CAS/Tac Primacy" } else_if = { limit = { USA = { has_completed_focus = USA_combined_bomber_offensive } }  log = "USA: Strat Bomber Primacy" }  else = { log = "USA: No air Primacy Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_award_fighter_contract } } log = "USA: Fighter Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_award_escort_fighter_contract } } log = "USA: Escort Fighter Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_award_cas_contract } } log = "USA: CAS Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_award_tactical_bomber_contract } } log = "USA: Tactical Bomber Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_award_naval_aircraft_contract } } log = "USA: Naval Aircraft Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_strategic_bomber_funding } } log = "USA: Strategic Bomber Contract Awarded" }
+    if = { limit = { USA = { has_completed_focus = USA_prioritize_pilot_survivability } } log = "USA: Pilot Survivability" } else_if = { limit = { USA = { has_completed_focus = USA_more_maneuverability } } log = "USA: Maneuverability Focus" } else = { log = "USA: No Fighter Doctrine Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_strengthen_guam } } log = "USA: Guam Buildup" } else_if = { limit = { USA = { has_completed_focus = USA_strengthen_hawaii } } log = "USA: Hawaii Buildup" } else = { log = "USA: No Pacific Buildup Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_cavalry_traditions } } log = "USA: Cavalry Traditions" } else_if = { limit = { USA = { has_completed_focus = USA_armored_developments } } log = "USA: Armored Developments" } else = { log = "USA: No Cavalry/Armor Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_armored_division } } log = "USA: Armored Division Doctrine" } else_if = { limit = { USA = { has_completed_focus = USA_infantry_tanks } } log = "USA: Infantry Tank Doctrine" } else = { log = "USA: No Tank Doctrine Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_detroit_arsenal } } log = "USA: Detroit Arsenal" } else_if = { limit = { USA = { has_completed_focus = USA_utilize_gm_subsidiaries } } log = "USA: GM Subsidiaries" } else = { log = "USA: No Detroit/GM Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_motorized_artillery } } log = "USA: Motorized Artillery" } else_if = { limit = { USA = { has_completed_focus = USA_self_propelled_guns } } log = "USA: Self-Propelled Guns" } else = { log = "USA: No Artillery Path Picked" }
 
    # SOV
     if = { limit = { SOV = { has_completed_focus = SOV_spain_small } } log = "SOV: Spain Small" } else = { log = "SOV: Spain Large" }
