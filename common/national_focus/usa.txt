@@ -5745,7 +5745,7 @@ focus_tree = {
 				set_country_flag = USA_mio_trait_strategic_bomber_contract_taken_flag
 			}
 			mio:USA_boeing_organization = {
-				add_mio_funds = 1500
+				add_mio_funds = 1000
 				complete_mio_trait = USA_mio_trait_strategic_bomber_contract
 			}
 			add_tech_bonus = {
