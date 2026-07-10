@@ -3324,6 +3324,13 @@ ideas = {
 				original_tag = USA
 			}
 
+			available = {
+				OR = {
+					has_completed_focus = USA_shipyard_rebuild
+					has_completed_focus = USA_military_construction
+				}
+			}
+
 			visible = {
 				NOT = { has_completed_focus = USA_side_with_big_business }
 			}
@@ -3341,6 +3348,13 @@ ideas = {
 
 			allowed = {
 				original_tag = USA
+			}
+
+			available = {
+				OR = {
+					has_completed_focus = USA_shipyard_rebuild
+					has_completed_focus = USA_military_construction
+				}
 			}
 
 			visible = {

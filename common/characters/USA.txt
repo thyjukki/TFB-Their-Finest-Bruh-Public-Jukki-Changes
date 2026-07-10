@@ -1200,9 +1200,6 @@ characters={
 			allowed  = {
 				original_tag  = USA
 			}
-			available = {
-				has_country_flag = USA_democrat_leader_flag
-			}
 			traits  = {
 				financial_expert
 			}
@@ -1320,7 +1317,7 @@ characters={
 				has_country_flag = USA_republican_leader_flag
 			}
 			traits  = {
-				monopolistic_bank
+				technocrat
 			}
 		}
 		name="USA_winthrop_aldrich"

@@ -478,6 +478,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_congress_medium_support = yes
+
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
