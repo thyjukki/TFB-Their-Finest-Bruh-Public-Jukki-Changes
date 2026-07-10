@@ -420,6 +420,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_great_depression_level_down = yes
 			if = {
 				limit = { has_idea = USA_john_garner }
 				country_event = { id = usa.1009 }
@@ -427,7 +428,6 @@ focus_tree = {
 			else = {
 				country_event = { id = usa.1010 }
 			}
-			custom_effect_tooltip = USA_find_a_compromise_level_down_tt
 			custom_effect_tooltip = USA_judicial_reform_bill_garner_tldr_tt
 		}
 	}
