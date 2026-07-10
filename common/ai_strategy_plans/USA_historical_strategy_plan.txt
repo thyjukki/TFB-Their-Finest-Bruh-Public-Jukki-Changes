@@ -62,8 +62,6 @@ USA_historical_plan = {
 		USA_build_the_pentagon
 		USA_liberty_ships
 		USA_department_of_defense
-		USA_strategic_bombing
-		USA_escort_fighters
 		USA_fdr_again
 		USA_lend_lease_act
 		USA_four_freedoms
@@ -81,7 +79,6 @@ USA_historical_plan = {
 		USA_destroyers_for_bases
 		USA_support_rock_island
 		USA_tank_destroyer_doctrine
-		USA_combined_bomber_offensive
 		USA_carrier_primacy
 		USA_manhattan_project
 
