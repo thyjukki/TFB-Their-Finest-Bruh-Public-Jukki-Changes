@@ -7460,7 +7460,7 @@ focus_tree = {
 		id = USA_hello_to_ford
 		icon = GFX_goal_generic_army_motorized
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = { focus = USA_armored_cavalry }
 			relative_position_id = USA_armored_cavalry
 		cost = 5
