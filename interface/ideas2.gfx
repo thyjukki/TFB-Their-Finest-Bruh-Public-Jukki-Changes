@@ -132,4 +132,10 @@ spriteTypes = {
 		name = "GFX_republican_aviation"
 		texturefile = "gfx/interface/ideas/republic_aviation.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_AST_whyalla_steelworks_ic_improved"
+		texturefile = "gfx/interface/ideas/idea_AST_whyalla_steelworks_ic.dds"
+	}
+
 }
