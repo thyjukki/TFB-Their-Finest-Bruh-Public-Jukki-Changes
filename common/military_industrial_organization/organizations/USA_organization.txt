@@ -2439,15 +2439,18 @@ USA_Galvin_organization = {
         }
     }
 
-	add_trait = { 
+	add_trait = {
 		token = USA_mio_trait_bazooka
 		name = USA_mio_trait_bazooka
 		icon = GFX_generic_mio_trait_icon_ap_attack
 		special_trait_background = yes
 
-		position = { x=0 y=0 }  
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_anti_tank_rifle
 
-		limit_to_equipment_type = { 
+		all_parents = { generic_mio_trait_anti_tank_rifle }
+
+		limit_to_equipment_type = {
 			squad_equipment
 		}
 
@@ -2464,7 +2467,7 @@ USA_Galvin_organization = {
 		}
 
 		equipment_bonus = {
-			ap_attack = 0.50
+			hard_attack  = 0.05
 			reliability = 0.1
 		}
 	}
