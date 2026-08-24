@@ -3539,8 +3539,6 @@
 		}
 
 		bypass_effect = {
-			
-
 			add_to_variable = { SOV_red_army_experience_gain_army_factor_var = 0.1 }
 			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
 		}
@@ -3549,6 +3547,7 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			army_experience = 50
 			if = {
 				limit = { has_idea = SOV_modernisation_cav_1 }
 				swap_ideas = {
@@ -5038,6 +5037,19 @@
 			SOV_kliment_voroshilov = { 
 				promote_leader = yes 
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil27
+				}
+				cost = 7
+			}
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil34 SOV_mil42 SOV_mil43
+				}
+				cost = 14
+			}
 		}
 	}
 	
@@ -5155,6 +5167,25 @@
 				category = heavy_artillery
 			}
 			SOV_refresh_RG_cap_heavy = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil27
+				}
+				cost = 7
+			}
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil34
+				}
+				cost = 14
+			}
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil42 SOV_mil43
+				}
+				cost = 21
+			}
 		}
 	}
 
@@ -5329,6 +5360,21 @@
 				add_unit_leader_trait = trait_head_red_army
 			}
 			SOV_refresh_RG_cap_light = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil4 SOV_mil6 SOV_mil13 SOV_mil12
+				}
+				cost = 7
+			}
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil17 SOV_mil16 SOV_mil18
+				}
+				cost = 21
+			}
+
 		}
 	}
 
@@ -5406,6 +5452,14 @@
 			SOV_aleksandr_yegorov = { 
 				promote_leader = yes 
 				clr_character_flag = SOV_exiled_flag 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil19 SOV_mil21 SOV_mil23 SOV_mil25 SOV_mil20 SOV_mil24
+				}
+				cost = 14
 			}
 		}
 	}
@@ -5523,6 +5577,20 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			SOV_grigory_kulik = { 
 				promote_leader = yes 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil4 SOV_mil6 SOV_mil13 SOV_mil12
+				}
+				cost = 7
+			}
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil17 SOV_mil16 SOV_mil18
+				}
+				cost = 14
 			}
 		}
 	}
@@ -6422,6 +6490,14 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = grigory_kulik
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil4 SOV_mil6 SOV_mil13 SOV_mil12 SOV_mil17 SOV_mil16 SOV_mil18
+				}
+				cost = 7
+			}
 		}
 	}
 
@@ -6493,6 +6569,14 @@
 			#custom_effect_tooltip = army_chief_defensive_1
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = SOV_aleksandr_yegorov
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil19 SOV_mil21 SOV_mil23 SOV_mil25 SOV_mil20 SOV_mil24
+				}
+				cost = 7
+			}
 		}
 	}
 
@@ -6563,6 +6647,13 @@
 					#promote_leader = yes 
 					add_unit_leader_trait = trait_head_red_army
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			reduce_focus_completion_cost = {
+				focus = {
+					SOV_mil27 SOV_mil34 SOV_mil42 SOV_mil43
+				}
+				cost = 7
 			}
 		}
 	}
@@ -7431,7 +7522,7 @@
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = SOV_restructure_society
-				days = 500
+				days = 365
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = SOV_more_decisions_generic_tt
@@ -7704,7 +7795,7 @@
             }
 			add_timed_idea = {
 				idea = SOV_restructure_society
-				days = 500
+				days = 365
 			}
 
 			custom_effect_tooltip = SOV_more_decisions_generic_tt
@@ -8512,7 +8603,7 @@
 			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
 
-			custom_effect_tooltip = SOV_resource_gain_efficiency_5_tt
+			custom_effect_tooltip = SOV_resource_gain_efficiency_025_tt
 			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.025 }
 			custom_effect_tooltip = SOV_construction_speed_infra_5_tt
 			add_to_variable = { SOV_command_economy_production_speed_infrastructure_factor_var = 0.05 }	
@@ -8553,8 +8644,23 @@
 			}
 			add_resource = {
 				type = oil
-				amount = 200
+				amount = 250
 				state = 229
+			}
+			add_resource = {
+				type = oil
+				amount = 250
+				state = 232
+			}
+ 			add_resource = {
+				type = rubber
+				amount = 250
+				state = 229
+			}
+	 		add_resource = {
+				type = rubber
+				amount = 250
+				state = 232
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = {
@@ -8627,17 +8733,17 @@
 			}
 			add_resource = {
 				type = aluminium
-				amount = 200
+				amount = 150
 				state = 200
 			}
 			add_resource = {
 				type = aluminium
-				amount = 200
+				amount = 150
 				state = 653
 			}
 			add_resource = {
 				type = aluminium
-				amount = 200
+				amount = 150
 				state = 569
 			}
 
@@ -8692,17 +8798,17 @@
 			}
 			add_resource = {
 				type = chromium
-				amount = 200
+				amount = 150
 				state = 233
 			}
 			add_resource = {
 				type = tungsten
-				amount = 200
+				amount = 150
 				state = 651
 			}
 			add_resource = {
 				type = steel
-				amount = 200
+				amount = 150
 				state = 398
 			}
 
@@ -8937,17 +9043,17 @@
 			}
 			add_resource = {
 				type = tungsten
-				amount = 200
+				amount = 150
 				state = 233
 			}
 			add_resource = {
 				type = tungsten
-				amount = 200
+				amount = 150
 				state = 827
 			}
 			add_resource = {
 				type = chromium
-				amount = 200
+				amount = 150
 				state = 828
 			}
 	 		
@@ -9859,15 +9965,15 @@
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
 			custom_effect_tooltip = SOV_factories_in_state_2_tt
 			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 }
-			custom_effect_tooltip = SOV_resource_gain_efficiency_5_tt
-			add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.05 }
+			# custom_effect_tooltip = SOV_resource_gain_efficiency_5_tt
+			# add_to_variable = { SOV_command_economy_local_resources_factor_var = 0.05 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
 				limit = { controls_state = 566 }
 				add_resource = {
 					type = aluminium
-					amount = 200
+					amount = 150
 					state = 566
 				}
 			}
@@ -9875,7 +9981,7 @@
 				limit = { controls_state = 564 }
 				add_resource = {
 					type = aluminium
-					amount = 200
+					amount = 150
 					state = 564
 				}
 			}
@@ -10033,18 +10139,19 @@
 				limit = {
 					owns_state = 330
 				}
-				num_of_owned_factories > 900
+				num_of_owned_factories > 1000
 			} else = {
-				num_of_owned_factories > 850
+				num_of_owned_factories > 950
 			}
 			
-			has_stability > 0.7
+			has_stability > 0.9
+			date > 1941.8.1
 			has_war = no
 		}
 		
 		relative_position_id = SOV_heavy_mastery_of_production
 		
-		cost = 10
+		cost = 4
 		
 		completion_reward = {		
 
@@ -10200,11 +10307,11 @@
 		}
 		
 		relative_position_id = SOV_heavy_productive_forces
-		cost = 5
+		cost = 3
 		completion_reward = {			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_construction_speed_5_tt
-			add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
+			# custom_effect_tooltip = SOV_construction_speed_5_tt
+			# add_to_variable = { SOV_command_economy_production_speed_buildings_factor_var = 0.05 }
 			custom_effect_tooltip = SOV_factories_in_state_2_tt
 			add_to_variable = { SOV_command_economy_global_building_slots_var = 2 }
 			custom_effect_tooltip = SOV_civ_to_mil_conversion_20_tt
@@ -10214,9 +10321,9 @@
 			
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = SOV_increase_5_year_plan_5_tt 
+			custom_effect_tooltip = SOV_increase_5_year_plan_3_tt 
 			
-			add_to_variable = { var_SOV_second_5_year_plan_progress_bar_counter = 5 }
+			add_to_variable = { var_SOV_second_5_year_plan_progress_bar_counter = 3 }
 			clamp_variable = {
 				var = var_SOV_second_5_year_plan_progress_bar_counter
 				max = 105
@@ -10276,12 +10383,12 @@
 			}
 			add_resource = {
 				type = chromium
-				amount = 200
+				amount = 100
 				state = 579
 			}
 			add_resource = {
 				type = tungsten
-				amount = 200
+				amount = 100
 				state = 579
 			}
 			
@@ -11007,8 +11114,8 @@
 		cost = 5
 		completion_reward = {			
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
-			custom_effect_tooltip = SOV_factory_output_5_tt
-			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.05 }
+			custom_effect_tooltip = SOV_factory_output_025_tt
+			add_to_variable = { SOV_command_economy_industrial_capacity_factory_var = 0.025 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_heavy_industrial_powerhouses_tt
@@ -11021,7 +11128,7 @@
 				582 = {
 					add_resource = {
 						type = steel
-						amount = 100
+						amount = 75
 						state = 582
 					}
 				}
@@ -11032,7 +11139,7 @@
 					add_extra_state_shared_building_slots = 1
 					add_resource = {
 						type = steel
-						amount = 200
+						amount = 150
 						state = 582
 					}
 				}
@@ -11047,7 +11154,7 @@
 					add_extra_state_shared_building_slots = 2
 					add_resource = {
 						type = steel
-						amount = 300
+						amount = 225
 						state = 582
 					}
 				}
@@ -11062,7 +11169,7 @@
 					add_extra_state_shared_building_slots = 2
 					add_resource = {
 						type = steel
-						amount = 400
+						amount = 300
 						state = 582
 					}
 				}
@@ -11077,7 +11184,7 @@
 					add_extra_state_shared_building_slots = 3
 					add_resource = {
 						type = steel
-						amount = 500
+						amount = 375
 						state = 582
 					}
 				}
@@ -11092,7 +11199,7 @@
 					add_extra_state_shared_building_slots = 3
 					add_resource = {
 						type = steel
-						amount = 600
+						amount = 450
 						state = 582
 					}
 				}
@@ -11107,7 +11214,7 @@
 					add_extra_state_shared_building_slots = 4
 					add_resource = {
 						type = steel
-						amount = 700
+						amount = 525
 						state = 582
 					}
 				}
@@ -11122,7 +11229,7 @@
 					add_extra_state_shared_building_slots = 5
 					add_resource = {
 						type = steel
-						amount = 800
+						amount = 600
 						state = 582
 					}
 				}
@@ -11256,12 +11363,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 50
+					amount = 25
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 50
+					amount = 25
 					state = 579
 				}
 				add_victory_points = {
@@ -11281,12 +11388,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 100
+					amount = 50
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 100
+					amount = 50
 					state = 579
 				}
 				add_victory_points = {
@@ -11306,12 +11413,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 150
+					amount = 75
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 150
+					amount = 75
 					state = 579
 				}
 				add_victory_points = {
@@ -11331,12 +11438,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 200
+					amount = 100
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 200
+					amount = 100
 					state = 579
 				}
 				add_victory_points = {
@@ -11356,12 +11463,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 250
+					amount = 125
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 250
+					amount = 125
 					state = 579
 				}
 				add_victory_points = {
@@ -11381,12 +11488,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 300
+					amount = 150
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 300
+					amount = 150
 					state = 579
 				}
 				add_victory_points = {
@@ -11406,12 +11513,12 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 350
+					amount = 200
 					state = 579
 				}
 				add_resource = {
 					type = tungsten
-					amount = 350
+					amount = 200
 					state = 579
 				}
 				add_victory_points = {
@@ -12686,6 +12793,8 @@
 				bonus = 0.8
 				uses = 1
 				technology = art_radio1
+				technology = art_radio2
+				technology = art_radio3
 			}
 			set_variable = { global.khulik_artillery_date = global.date }
 		}
@@ -12749,6 +12858,8 @@
 				bonus = 0.8
 				uses = 1
 				technology = art_radio1
+				technology = art_radio2
+				technology = art_radio3
 			}
 		}
 	}
@@ -13907,8 +14018,8 @@
 
 		completion_reward = {
 			swap_ideas = {
-			remove_idea = SOV_heavy_perm
-			add_idea = SOV_heavy_perm2
+				remove_idea = SOV_heavy_perm
+				add_idea = SOV_heavy_perm2
 			}
 		}
 	}
@@ -14704,8 +14815,8 @@
 			add_to_variable = { SOV_command_economy_stability_gain_factor_var = 0.002 }
 			custom_effect_tooltip = SOV_expected_consumer_goods_-5_tt
 			add_to_variable = { SOV_command_economy_consumer_goods_expected_value_var = -0.05 }
-			custom_effect_tooltip = SOV_construction_speed_mil_20_tt
-			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.2 }
+			custom_effect_tooltip = SOV_construction_speed_mil_10_tt
+			add_to_variable = { SOV_command_economy_production_speed_arms_factory_factor_var = 0.1 }
 
 			hidden_effect = {
 				SOV_check_equipment_stockpile = yes
@@ -14759,6 +14870,9 @@
 					cost = -14
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = home_of_revolution
 
 		}
 	}
@@ -14871,7 +14985,7 @@
 			add_to_variable = { SOV_red_army_supply_combat_penalties_on_core_factor_var = -0.15 }	
 
 			custom_effect_tooltip = SOV_red_army_out_of_supply_factor_var_-15_tt
-			add_to_variable = { SOV_army_force_out_of_supply_factor_var = -0.15 }
+			add_to_variable = { SOV_red_army_out_of_supply_factor_var = -0.15 }
 		}
 	}
 	
@@ -15283,7 +15397,7 @@
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = SOV_focus_will_auto_start_at_surrender_level_tt
-						PROGRESS = "10% Surrender Progress"
+						PROGRESS = "5% Surrender Progress"
 					}
 					always = no
 				}
@@ -15361,10 +15475,12 @@
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_command_economy_tt
 
-			custom_effect_tooltip = SOV_efficiency_growth_10_tt
-			add_to_variable = { SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.1 }
 			add_to_variable = { 
-           	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.1
+				SOV_command_economy_production_factory_efficiency_gain_factor_var = 0.075
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = { 
+           	 	SOV_command_economy_production_factory_max_efficiency_factor_var = 0.05
             	tooltip = production_factory_max_efficiency_factor_tt
             }
 		}
@@ -15896,7 +16012,7 @@
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = SOV_focus_will_auto_start_at_surrender_level_tt
-						PROGRESS = "25% Surrender Progress"
+						PROGRESS = "30% Surrender Progress"
 					}
 					always = no
 				}
@@ -15940,7 +16056,7 @@
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = SOV_focus_will_auto_start_at_surrender_level_tt
-						PROGRESS = "30% Surrender Progress"
+						PROGRESS = "35% Surrender Progress"
 					}
 					always = no
 				}
@@ -15987,7 +16103,7 @@
 				custom_override_tooltip = {
 					tooltip = {
 						localization_key = SOV_focus_will_auto_start_at_surrender_level_tt
-						PROGRESS = "35% Surrender Progress"
+						PROGRESS = "40% Surrender Progress"
 					}
 					always = no
 				}
@@ -16896,7 +17012,7 @@
 
 		relative_position_id = SOV_slacken_training_standarts
 		available = {
-			surrender_progress > 0.35
+			surrender_progress > 0.45
 		}
 		completion_reward = {
 			
@@ -16922,7 +17038,7 @@
 		relative_position_id = SOV_slacken_training_standarts
 
 		available = {
-			surrender_progress > 0.35
+			surrender_progress > 0.40
 		}
 
 		completion_reward = {
@@ -16945,8 +17061,32 @@
 		y = 1
 		relative_position_id = SOV_reorganize_red_army
 		cost = 2
+		overlay = GFX_focus_fast_overlay_generic_clock
 
-
+		available = {
+			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
+				limit = {
+					has_country_flag = SOV_guards_in_progress_flag
+				}
+				set_temp_variable = { temp_focus_days = 2 } #For tooltip purposes
+				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = SOV_focus_in_progress_tt
+						FLAG_DAYS = [?SOV_guards_in_progress_flag:days]
+					}
+					always = no 
+				}
+			}
+			else = { #NOT BEEN WORKED ON (Just Explain)
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = SOV_focus_will_auto_start_on_reorganize_finish_tt
+					}
+					always = no
+				}
+			}
+		}
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_generic_modify_red_army_tt
@@ -17037,18 +17177,18 @@
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_generic_modify_red_army_tt
+			#custom_effect_tooltip = SOV_generic_modify_red_army_tt
 
 			# custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-10_tt
 			# add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.1 }
 			add_mastery_bonus = {
 				name = SOV_new_doctrine
-				bonus = 0.2
+				bonus = 0.1
 				days = 360
 				folder = land
 			}
 			add_mastery = {
-				amount = 100
+				amount = 50
 				folder = land
 			}
 		}
@@ -17091,10 +17231,10 @@
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_generic_modify_red_army_tt
+			# custom_effect_tooltip = SOV_generic_modify_red_army_tt
 
-			custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-5_tt
-			add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
+			# custom_effect_tooltip = SOV_red_army_land_doctrine_cost_factor_-5_tt
+			# add_to_variable = { SOV_red_army_land_doctrine_cost_factor_var = -0.05 }
 
 			# add_doctrine_cost_reduction = {
 			# 	name = doc_bonus
@@ -17104,12 +17244,12 @@
 			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_our_losses
-				bonus = 0.4
+				bonus = 0.2
 				days = 360
 				folder = land
 			}
 			add_mastery = {
-				amount = 200
+				amount = 100
 				folder = land
 			}
 		}
@@ -17165,12 +17305,12 @@
 			# }
 			add_mastery_bonus = {
 				name = SOV_learn_from_losses_2
-				bonus = 0.6
+				bonus = 0.3
 				days = 360
 				folder = land
 			}
 			add_mastery = {
-				amount = 300
+				amount = 150
 				folder = land
 			}
 		}
@@ -17537,7 +17677,7 @@
 		available = {
 			JAP = { has_war_with = USA }
 			NOT = { has_war_with = JAP }
-			surrender_progress > 0.3
+			surrender_progress > 0.4
 		}
 
 		completion_reward = {
@@ -17692,7 +17832,7 @@
 			
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_1
-				amount = 400
+				amount = 300
 				producer = SOV
 			}
 
@@ -17716,15 +17856,15 @@
 
 			252 = {
 				create_unit = { 
-					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.80 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
+					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.60 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
 					owner = SOV 
 				}
 				create_unit = { 
-					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.80 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
+					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.60 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
 					owner = SOV 
 				}
 				create_unit = { 
-					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.80 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
+					division = "division_template = \"Tank Division\" start_experience_factor = 0.40 start_manpower_factor = 0.60 force_equipment_variants = { sov_medium_tank_chassis_t34 = { owner = \"SOV\" version_name = \"T34 (L-11)\" } } force_equipment_variants = { sov_heavy_tank_chassis_kv1 = { owner = \"SOV\" version_name = \"KV-1 (L-11)\" } } force_equipment_variants = { gw_armored_car_chassis = { owner = \"SOV\" version_name = \"BA-11\" } } force_equipment_variants = { sov_light_tank_chassis_bt7 = { owner = \"SOV\" version_name = \"BT-7\" } }" 
 					owner = SOV 
 				}
 			}
