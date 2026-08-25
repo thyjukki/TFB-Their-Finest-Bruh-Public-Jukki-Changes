@@ -22,6 +22,34 @@ ideas = {
 			}
 		}
 
+		USA_interwar_armor_doctrine_idea = {
+
+			picture = generic_armor
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = { armor = -0.10 }
+
+			equipment_bonus = {
+				mio_cat_eq_all_tanks = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+
+			modifier = {
+				army_armor_attack_factor = -0.1
+			}
+		}
+
 		USA_prepared_defenses_idea = {
 
 			picture = generic_infantry_bonus

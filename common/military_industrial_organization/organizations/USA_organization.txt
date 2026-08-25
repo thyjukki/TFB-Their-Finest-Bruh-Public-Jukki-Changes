@@ -2307,7 +2307,7 @@ USA_baldwin_locomotive_works_organization = {
 
 		available = {
 			FROM = {
-				has_completed_focus = USA_department_of_defense
+				has_completed_focus = USA_armored_developments
 			}
 		}
 

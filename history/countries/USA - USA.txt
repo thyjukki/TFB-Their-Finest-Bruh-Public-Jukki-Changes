@@ -216,6 +216,7 @@ add_ideas = {
 	USA_neutrality_idea
 	new_deal
 	USA_armed_forces_desegregation
+	USA_interwar_armor_doctrine_idea
 }
 
 set_country_flag = USA_democrat_leader_flag
@@ -225,6 +226,10 @@ add_dynamic_modifier = { modifier = USA_united_states_army_dynamic_modifier }
 add_dynamic_modifier = { modifier = USA_united_states_navy_dynamic_modifier }
 set_variable = { USA_united_states_navy_naval_torpedo_hit_chance_factor = -0.1 }
 set_variable = { USA_united_states_army_mobilization_speed = -0.5 }
+set_variable = { USA_united_states_army_experience_gain_army_factor = -0.05 }
+set_variable = { USA_united_states_army_org_factor = -0.1 }
+set_variable = { USA_united_states_army_core_defence_factor = 0.05 }
+set_variable = { USA_united_states_army_training_time_factor = 0.2 }
 set_variable = { USA_united_states_army_air_forces_air_training_xp_gain_factor = -0.25 }
 
 
