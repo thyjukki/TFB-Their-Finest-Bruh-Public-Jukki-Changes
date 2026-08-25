@@ -5066,7 +5066,7 @@ focus_tree = {
 	focus = {
 		id = USA_us_armed_forces
 		icon = GFX_focus_generic_diverse_army
-		x = 36
+		x = 39
 		y = 6
 		cost = 5
 
@@ -5084,7 +5084,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_united_states_army_experience_gain_army_factor_5_tt
 			add_to_variable = { USA_united_states_army_experience_gain_army_factor = 0.05 }
 
-			remove_idea = USA_interwar_armor_doctrine_idea
+			remove_ideas = { USA_interwar_armor_doctrine_idea }
 		}
 	}
 
@@ -5093,7 +5093,7 @@ focus_tree = {
 		icon = GFX_focus_generic_mechanized
 		prerequisite = { focus = USA_us_armed_forces }
 		relative_position_id = USA_us_armed_forces
-		x = 8
+		x = 5
 		y = 1
 		cost = 5
 
@@ -5116,9 +5116,9 @@ focus_tree = {
 		id = USA_overwhelming_firepower
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = USA_us_armed_forces }
-		relative_position_id = USA_mobile_tactics
-		x = 9
-		y = 0
+		relative_position_id = USA_us_armed_forces
+		x = 14
+		y = 1
 		cost = 5
 
 		ai_will_do = {
@@ -5144,7 +5144,7 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = USA_us_armed_forces }
 		relative_position_id = USA_us_armed_forces
-		x = 0
+		x = -4
 		y = 1
 		cost = 10
 
@@ -5204,7 +5204,7 @@ focus_tree = {
 		id = USA_first_special_service_force
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_us_armed_forces }
-		x = -4
+		x = -7
 		y = 1
 		relative_position_id = USA_us_armed_forces
 		cost = 5
@@ -5323,12 +5323,47 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_drop_a_corner
+		id = USA_stick_to_a_square
 		icon = GFX_focus_generic_defensive_reorganization
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_louisiana_maneuvers
+		mutually_exclusive = {
+			focus = USA_drop_a_corner
+		}
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		search_filters = {FOCUS_FILTER_ARMY}
+		completion_reward = {
+			set_variable = { USA_united_states_army_army_org_regain = 0 }
+			custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+			add_to_variable = { USA_united_states_army_army_org_regain = 0.05 tooltip = army_org_regain_tt }
+		}
+	}
+
+	focus = {
+		id = USA_drop_a_corner
+		icon = GFX_focus_generic_defensive_reorganization
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_louisiana_maneuvers }
+		relative_position_id = USA_louisiana_maneuvers
+		mutually_exclusive = {
+			focus = USA_stick_to_a_square
+		}
 		cost = 5
 
 		ai_will_do = {
@@ -5379,6 +5414,12 @@ focus_tree = {
 
 			custom_effect_tooltip = USA_united_states_army_training_time_factor_-25_tt
 			add_to_variable = { USA_united_states_army_training_time_factor = -0.25 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = USA_spawn_national_guard_divisions_tt
+			hidden_effect = {
+				USA_spawn_national_guard_divisions = yes
+			}
 		}
 	}
 
@@ -5447,7 +5488,7 @@ focus_tree = {
 		id = USA_army_of_the_united_states
 		icon = GFX_focus_generic_little_entente
 		x = 0
-		y = 1
+		y = 2
 		prerequisite = { focus = USA_federalize_national_guard }
 		relative_position_id = USA_federalize_national_guard
 		cost = 5
@@ -5486,10 +5527,10 @@ focus_tree = {
 	focus = {
 		id = USA_worlds_best_fed_army
 		icon = GFX_focus_generic_reinforcing_the_supply_network
-		x = 0
-		y = 3
+		x = 1
+		y = 4
 		prerequisite = { focus = USA_army_of_the_united_states }
-		prerequisite = { focus = USA_drop_a_corner }
+		prerequisite = { focus = USA_drop_a_corner focus = USA_stick_to_a_square }
 		relative_position_id = USA_selective_training_act
 		cost = 5
 
@@ -5513,9 +5554,9 @@ focus_tree = {
 		id = USA_womens_armed_service_integration_act
 		icon = GFX_focus_generic_treaty
 		x = 0
-		y = 4
+		y = 1
 		prerequisite = { focus = USA_worlds_best_fed_army }
-		relative_position_id = USA_selective_training_act
+		relative_position_id = USA_worlds_best_fed_army
 		cost = 5
 
 		ai_will_do = {

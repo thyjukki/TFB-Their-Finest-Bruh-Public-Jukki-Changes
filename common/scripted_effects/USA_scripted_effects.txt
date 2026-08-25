@@ -518,8 +518,198 @@ USA_spawn_citizen_militia = {
 		owner = PREV
 	}
 	create_unit = {
-		division = "name = \"3. Citizen Militia\" division_template = \"Citizen Militia\" start_experience_factor = 0" 
+		division = "name = \"3. Citizen Militia\" division_template = \"Citizen Militia\" start_experience_factor = 0"
 		owner = PREV
+	}
+}
+USA_spawn_national_guard_divisions = {
+	division_template = {
+		name = "National Guard Division"
+		division_names_group = USA_INF_01
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+			infantry = { x = 2 y = 3 }
+			infantry = { x = 1 y = 3 }
+			infantry = { x = 0 y = 3 }
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			recon = { x = 0 y = 1 }
+			logistics_company = { x = 0 y = 2 }
+		}
+	}
+
+	# I Army Corps (Massachusetts)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 1087 }
+		create_unit = {
+			division = "name = \"26th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 1087 }
+		create_unit = {
+			division = "name = \"43rd National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# II Army Corps (New York)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 358 }
+		create_unit = {
+			division = "name = \"27th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 358 }
+		create_unit = {
+			division = "name = \"44th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# III Army Corps (Maryland)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 361 }
+		create_unit = {
+			division = "name = \"28th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 361 }
+		create_unit = {
+			division = "name = \"29th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# V Army Corps
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 261 }
+		create_unit = {
+			division = "name = \"37th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 261 }
+		create_unit = {
+			division = "name = \"38th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# VI Army Corps (Illinois)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 395 }
+		create_unit = {
+			division = "name = \"32nd National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 395 }
+		create_unit = {
+			division = "name = \"33rd National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# IV Army Corps (Georgia)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 365 }
+		create_unit = {
+			division = "name = \"30th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 365 }
+		create_unit = {
+			division = "name = \"31st National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# VIII Army Corps (Texas)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 375 }
+		create_unit = {
+			division = "name = \"36th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 375 }
+		create_unit = {
+			division = "name = \"45th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# VII Army Corps (Nebraska)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 384 }
+		create_unit = {
+			division = "name = \"34th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 384 }
+		create_unit = {
+			division = "name = \"35th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# IX Army Corps (California)
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 378 }
+		create_unit = {
+			division = "name = \"40th National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 378 }
+		create_unit = {
+			division = "name = \"41st National Guard Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
+	}
+	# Hawaiian Department
+	random_owned_controlled_state = {
+		limit = { ROOT = { has_full_control_of_state = PREV } }
+		prioritize = { 629 }
+		create_unit = {
+			division = "name = \"Hawaiian Division\" division_template = \"National Guard Division\" start_experience_factor = 0.2 start_equipment_factor = 0.5"
+			owner = ROOT
+		}
 	}
 }
 USA_civil_war_order_weapons_get_factories = {

@@ -23,6 +23,7 @@ USA_united_states_army_dynamic_modifier = {
 	special_forces_cap = USA_united_states_army_special_forces_cap
 	experience_gain_army_factor = USA_united_states_army_experience_gain_army_factor
 	army_org_factor = USA_united_states_army_org_factor
+	army_org_regain = USA_united_states_army_army_org_regain
 	army_core_defence_factor = USA_united_states_army_core_defence_factor
 	training_time_factor = USA_united_states_army_training_time_factor
 	mobilization_speed = USA_united_states_army_mobilization_speed
