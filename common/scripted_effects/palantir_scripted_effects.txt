@@ -260,7 +260,7 @@ palantir_log = {
     if = { limit = { USA = { has_completed_focus = USA_cavalry_traditions } } log = "USA: Cavalry Traditions" } else_if = { limit = { USA = { has_completed_focus = USA_armored_developments } } log = "USA: Armored Developments" } else = { log = "USA: No Cavalry/Armor Path Picked" }
     if = { limit = { USA = { has_completed_focus = USA_armored_division } } log = "USA: Armored Division Doctrine" } else_if = { limit = { USA = { has_completed_focus = USA_infantry_tanks } } log = "USA: Infantry Tank Doctrine" } else = { log = "USA: No Tank Doctrine Path Picked" }
     if = { limit = { USA = { has_completed_focus = USA_detroit_arsenal } } log = "USA: Detroit Arsenal" } else_if = { limit = { USA = { has_completed_focus = USA_utilize_gm_subsidiaries } } log = "USA: GM Subsidiaries" } else = { log = "USA: No Detroit/GM Path Picked" }
-    if = { limit = { USA = { has_completed_focus = USA_motorized_artillery } } log = "USA: Motorized Artillery" } else_if = { limit = { USA = { has_completed_focus = USA_self_propelled_guns } } log = "USA: Self-Propelled Guns" } else = { log = "USA: No Artillery Path Picked" }
+    if = { limit = { USA = { has_completed_focus = USA_modernize_artillery } } log = "USA: Modernized Artillery" } else_if = { limit = { USA = { has_completed_focus = USA_self_propelled_guns } } log = "USA: Self-Propelled Guns" } else = { log = "USA: No Artillery Path Picked" }
 
    # SOV
     if = { limit = { SOV = { has_completed_focus = SOV_spain_small } } log = "SOV: Spain Small" } else = { log = "SOV: Spain Large" }
