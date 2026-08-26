@@ -3434,7 +3434,6 @@ ideas = {
 		}
 
 		USA_interwar_armor_doctrine_idea_2 = {
-			name = USA_interwar_armor_doctrine_idea
 			picture = generic_armor
 
 			allowed = {
@@ -3456,7 +3455,6 @@ ideas = {
 		}
 
 		USA_interwar_armor_doctrine_idea_3 = {
-			name = USA_interwar_armor_doctrine_idea
 			picture = generic_armor
 
 			allowed = {
@@ -3478,7 +3476,6 @@ ideas = {
 		}
 
 		USA_interwar_armor_doctrine_idea_4 = {
-			name = USA_interwar_armor_doctrine_idea
 			picture = generic_armor
 
 			allowed = {
@@ -3495,7 +3492,6 @@ ideas = {
 		}
 
 		USA_interwar_armor_doctrine_idea_5 = {
-			name = USA_interwar_armor_doctrine_idea
 			picture = generic_armor
 
 			allowed = {
@@ -3508,11 +3504,9 @@ ideas = {
 
 			removal_cost = -1
 
-			research_bonus = { armor = -0.10 }
-
 			equipment_bonus = {
-				mio_cat_eq_all_tanks = {
-					build_cost_ic = 0.1
+				armored_car_chassis = {
+					build_cost_ic = -0.05
 					instant = yes
 				}
 				mio_cat_eq_all_light_tank = {

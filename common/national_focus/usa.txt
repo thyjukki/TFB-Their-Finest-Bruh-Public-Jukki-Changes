@@ -7546,6 +7546,11 @@ focus_tree = {
         remove_idea = USA_interwar_armor_doctrine_idea
         add_idea = USA_interwar_armor_doctrine_idea_5
       }
+
+      custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+
+      custom_effect_tooltip = USA_united_states_army_armor_attack_factor_10_tt
+      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1 }
     }
   }
 
