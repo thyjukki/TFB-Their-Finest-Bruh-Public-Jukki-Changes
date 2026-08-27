@@ -7668,6 +7668,13 @@ focus_tree = {
     relative_position_id = USA_armored_division
     cost = 5
 
+    available = {
+      OR = {
+        has_war = yes
+        GER = { has_war_with = ENG }
+      }
+    }
+
     available_if_capitulated = yes
     search_filters = { FOCUS_FILTER_RESEARCH }
     completion_reward = {
@@ -7702,6 +7709,13 @@ focus_tree = {
     mutually_exclusive = { focus = USA_detroit_arsenal }
     relative_position_id = USA_infantry_tanks
     cost = 5
+
+    available = {
+      OR = {
+        has_war = yes
+        GER = { has_war_with = ENG }
+      }
+    }
 
     available_if_capitulated = yes
     search_filters = { FOCUS_FILTER_RESEARCH }
