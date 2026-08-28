@@ -23,7 +23,7 @@ focus_tree = {
       original_tag = USA
     }
   }
-  continuous_focus_position = { x = 5500 y = 800 }
+  continuous_focus_position = { x = 2200 y = 1200 }
   shared_focus = ABDA_abdacom
   default = no
   #	focus = {
@@ -231,6 +231,22 @@ focus_tree = {
       has_completed_focus = USA_continue_the_new_deal
     }
 
+    offset = {
+      x = -4
+      y = 0
+      trigger = {
+        has_game_rule = {
+          rule = obsolete_focus_branches_visibility
+          option = HIDE
+        }
+        OR = {
+          has_completed_focus = USA_new_deal_2
+          has_completed_focus = USA_landon_deal
+        }
+      }
+    }
+
+
     bypass = {
 
     }
@@ -287,7 +303,7 @@ focus_tree = {
 
   focus = {
     id = USA_full_desegregation
-    icon = GFX_focus_generic_support_the_left_right
+    icon = GFX_focus_generic_diverse_army
     x = 0
     y = 1
     prerequisite = { focus = USA_desegregate_the_armed_forces }
@@ -342,11 +358,11 @@ focus_tree = {
     mutually_exclusive = {
       focus = USA_landon_deal
     }
-    x = -4
+    x = -5
     y = 1
 
     offset = {
-      x = 4
+      x = 5
       y = 0
       trigger = {
         has_game_rule = {
@@ -355,7 +371,6 @@ focus_tree = {
         }
         OR = {
           has_completed_focus = USA_new_deal_2
-          has_completed_focus = USA_landon_deal
         }
       }
     }
@@ -785,11 +800,11 @@ focus_tree = {
     mutually_exclusive = {
       focus = USA_new_deal_2
     }
-    x = 4
+    x = 5
     y = 1
 
     offset = {
-      x = -4
+      x = -5
       y = 0
       trigger = {
         has_game_rule = {
@@ -797,7 +812,6 @@ focus_tree = {
           option = HIDE
         }
         OR = {
-          has_completed_focus = USA_new_deal_2
           has_completed_focus = USA_landon_deal
         }
       }
@@ -962,7 +976,7 @@ focus_tree = {
     y = 1
 
     offset = {
-      x = 8
+      x = 3
       y = 0
       trigger = {
         has_game_rule = {
@@ -2972,8 +2986,8 @@ focus_tree = {
     id = USA_fair_labour_standards_act
     icon = GFX_focus_eng_concessions_to_the_trade_unions
     overlay = GFX_focus_fast_overlay_generic_clock
-    x = -1
-    y = 1
+    x = 0
+    y = 2
     prerequisite = { focus = USA_recession_recovery }
     prerequisite = { focus = USA_sit_down_strikes }
     relative_position_id = USA_sit_down_strikes
@@ -3857,12 +3871,27 @@ focus_tree = {
   focus = {
     id = USA_war_department
     icon = GFX_focus_secret_rearmament
-    x = 29
+    x = 32
     y = 0
     cost = 5
 
     ai_will_do = {
       factor = 1
+    }
+
+    offset = {
+      x = -4
+      y = 0
+      trigger = {
+        has_game_rule = {
+          rule = obsolete_focus_branches_visibility
+          option = HIDE
+        }
+        OR = {
+          has_completed_focus = USA_new_deal_2
+          has_completed_focus = USA_landon_deal
+        }
+      }
     }
 
     available = {
@@ -3923,6 +3952,62 @@ focus_tree = {
       }
     }
   }
+
+  # Intel Branch
+  focus = {
+    id = USA_office_of_strategic_services
+    icon = GFX_focus_generic_secret_service_agency
+    x = -3
+    y = 1
+    prerequisite = { focus = USA_war_department }
+    relative_position_id = USA_war_department
+    cost = 5
+
+    allow_branch = {
+      has_dlc = "La Resistance"
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    completion_reward = {
+      if = {
+        limit = {
+          has_intelligence_agency = no
+        }
+        create_intelligence_agency = yes
+        custom_effect_tooltip = generic_skip_one_line_tt
+      }
+      add_ideas = USA_office_of_strategic_services_idea
+    }
+  }
+
+  focus = {
+    id = USA_expand_the_oss
+    icon = GFX_focus_generic_secret_service_agency
+    x = 0
+    y = 1
+    prerequisite = { focus = USA_office_of_strategic_services }
+    relative_position_id = USA_office_of_strategic_services
+    cost = 5
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    completion_reward = {
+      swap_ideas = {
+        remove_idea = USA_office_of_strategic_services_idea
+        add_idea = USA_office_of_strategic_services_idea_2
+      }
+    }
+  }
+
   #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  #
   #    #  ## ##  #   #  #   #  #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## #
   #    #  # # #  #   #  ##  #  #      #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ##
@@ -4710,7 +4795,7 @@ focus_tree = {
   focus = {
     id = USA_pacific_defense
     icon = GFX_focus_generic_coastal_fort
-    x = -6
+    x = -7
     y = 1
     prerequisite = { focus = USA_war_department }
     relative_position_id = USA_war_department
@@ -4908,8 +4993,8 @@ focus_tree = {
 
   focus = {
     id = USA_us_armed_forces
-    icon = GFX_focus_generic_diverse_army
-    x = 39
+    icon = GFX_goal_generic_allies_build_infantry
+    x = 44
     y = 6
     cost = 5
 
@@ -4917,15 +5002,29 @@ focus_tree = {
       factor = 1
     }
 
+    offset = {
+      x = -4
+      y = 0
+      trigger = {
+        has_game_rule = {
+          rule = obsolete_focus_branches_visibility
+          option = HIDE
+        }
+        OR = {
+          has_completed_focus = USA_new_deal_2
+          has_completed_focus = USA_landon_deal
+        }
+      }
+    }
+
+
     available_if_capitulated = yes
     search_filters = {FOCUS_FILTER_ARMY}
     completion_reward = {
       army_experience = 15
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
-
-      custom_effect_tooltip = USA_united_states_army_experience_gain_army_factor_5_tt
-      add_to_variable = { USA_united_states_army_experience_gain_army_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_experience_gain_army_factor = 0.05 tooltip = experience_gain_army_factor_tt  }
     }
   }
 
@@ -4958,7 +5057,7 @@ focus_tree = {
     icon = GFX_goal_generic_army_artillery2
     prerequisite = { focus = USA_us_armed_forces }
     relative_position_id = USA_us_armed_forces
-    x = 12
+    x = 13
     y = 1
     cost = 5
 
@@ -5002,8 +5101,7 @@ focus_tree = {
         track = infantry
       }
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
-      custom_effect_tooltip = USA_united_states_army_infantry_attack_factor_5_tt
-      add_to_variable = { USA_united_states_army_infantry_attack_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_infantry_attack_factor = 0.05 tooltip = army_infantry_attack_factor_tt  }
     }
   }
 
@@ -5028,8 +5126,77 @@ focus_tree = {
         folder = special_forces
       }
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
-      custom_effect_tooltip = USA_united_states_army_special_forces_attack_factor_5_tt
-      add_to_variable = { USA_united_states_army_special_forces_attack_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_special_forces_attack_factor = 0.05  tooltip = special_forces_attack_factor_tt }
+    }
+  }
+
+  focus = {
+    id = USA_marching_fire_doctrine
+    icon = GFX_goal_generic_small_arms
+    x = -1
+    y = 1
+    prerequisite = { focus = USA_us_army_rangers }
+    relative_position_id = USA_us_army_rangers
+    mutually_exclusive = { focus = USA_cannon_companies }
+    cost = 5
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_ARMY }
+    completion_reward = {
+      custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+      add_to_variable = { USA_united_states_army_infantry_attack_factor = 0.05 tooltip = army_infantry_attack_factor_tt }
+      add_to_variable = { USA_united_states_army_infantry_defence_factor = 0.05 tooltip = army_infantry_defence_factor_tt }
+      add_to_variable = { USA_united_states_army_org_loss_when_moving = -0.05 tooltip = org_loss_when_moving_tt }
+    }
+  }
+
+  focus = {
+    id = USA_cannon_companies
+    icon = GFX_goal_generic_army_artillery
+    x = 1
+    y = 1
+    prerequisite = { focus = USA_us_army_rangers }
+    relative_position_id = USA_us_army_rangers
+    mutually_exclusive = { focus = USA_marching_fire_doctrine }
+    cost = 5
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_ARMY }
+    completion_reward = {
+      custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+      add_to_variable = { USA_united_states_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
+      add_to_variable = { USA_united_states_army_artillery_defence_factor = 0.05 tooltip = army_artillery_defence_factor_tt }
+      add_to_variable = { USA_united_states_army_org_factor = 0.05 tooltip = army_org_factor_tt }
+    }
+  }
+
+  focus = {
+    id = USA_fire_and_maneuver_doctrine
+    icon = GFX_goal_generic_army_doctrines
+    x = 0
+    y = 2
+    prerequisite = { focus = USA_marching_fire_doctrine focus = USA_cannon_companies }
+    relative_position_id = USA_us_army_rangers
+    cost = 5
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_ARMY }
+    completion_reward = {
+      custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
+      add_to_variable = { USA_united_states_army_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
+      add_to_variable = { USA_united_states_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
     }
   }
 
@@ -5211,8 +5378,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_org_factor_10_tt
-      add_to_variable = { USA_united_states_army_org_factor = 0.1 }
+      add_to_variable = { USA_united_states_army_org_factor = 0.1 tooltip = army_org_factor_tt }
     }
   }
 
@@ -5242,9 +5408,9 @@ focus_tree = {
 
     search_filters = {FOCUS_FILTER_ARMY}
     completion_reward = {
-      set_variable = { USA_united_states_army_army_org_regain = 0 }
+      set_variable = { USA_united_states_army_army_morale_factor = 0 }
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
-      add_to_variable = { USA_united_states_army_army_org_regain = 0.05 tooltip = army_org_regain_tt }
+      add_to_variable = { USA_united_states_army_army_morale_factor = 0.05 tooltip = army_morale_factor_tt }
     }
   }
 
@@ -5276,8 +5442,7 @@ focus_tree = {
     completion_reward = {
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_org_factor_5_tt
-      add_to_variable = { USA_united_states_army_org_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_org_factor = 0.05 tooltip = army_org_factor_tt }
     }
   }
 
@@ -5306,8 +5471,7 @@ focus_tree = {
     completion_reward = {
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_training_time_factor_-25_tt
-      add_to_variable = { USA_united_states_army_training_time_factor = -0.25 }
+      add_to_variable = { USA_united_states_army_training_time_factor = -0.25 tooltip = training_time_factor_tt }
 
       custom_effect_tooltip = generic_skip_one_line_tt
       custom_effect_tooltip = USA_spawn_national_guard_divisions_tt
@@ -5524,8 +5688,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_artillery_attack_factor_5_tt
-      add_to_variable = { USA_united_states_army_artillery_attack_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
     }
   }
 
@@ -5622,13 +5785,29 @@ focus_tree = {
   focus = {
     id = USA_united_states_army_air_forces
     icon = GFX_goal_generic_build_airforce
-    x = 42
+    x = 44
     y = 0
     cost = 5
 
     ai_will_do = {
       factor = 1
     }
+
+    offset = {
+      x = -4
+      y = 0
+      trigger = {
+        has_game_rule = {
+          rule = obsolete_focus_branches_visibility
+          option = HIDE
+        }
+        OR = {
+          has_completed_focus = USA_new_deal_2
+          has_completed_focus = USA_landon_deal
+        }
+      }
+    }
+
 
     available_if_capitulated = yes
     search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6220,13 +6399,29 @@ focus_tree = {
   focus = {
     id = USA_united_states_navy
     icon = GFX_focus_generic_large_navy
-    x = 58
+    x = 60
     y = 0
     cost = 5
 
     ai_will_do = {
       factor = 1
     }
+
+    offset = {
+      x = -4
+      y = 0
+      trigger = {
+        has_game_rule = {
+          rule = obsolete_focus_branches_visibility
+          option = HIDE
+        }
+        OR = {
+          has_completed_focus = USA_new_deal_2
+          has_completed_focus = USA_landon_deal
+        }
+      }
+    }
+
 
     available_if_capitulated = yes
     search_filters = {FOCUS_FILTER_NAVY}
@@ -7498,8 +7693,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_speed_factor_5_tt
-      add_to_variable = { USA_united_states_army_speed_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_speed_factor = 0.05 tooltip = army_speed_factor_tt }
     }
   }
 
@@ -7549,8 +7743,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_armor_attack_factor_10_tt
-      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1 }
+      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1  tooltip = army_armor_attack_factor_tt }
     }
   }
 
@@ -7622,8 +7815,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_armor_attack_factor_10_tt
-      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1 }
+      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1  tooltip = army_armor_attack_factor_tt }
     }
   }
 
@@ -7653,8 +7845,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_armor_attack_factor_10_tt
-      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1 }
+      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.1 tooltip = army_armor_attack_factor_tt }
     }
   }
 
@@ -7702,7 +7893,7 @@ focus_tree = {
 
   focus = {
     id = USA_utilize_gm_subsidiaries
-    icon = GFX_goal_generic_army_motorized
+    icon = GFX_ITA_innovative_theories
     x = 0
     y = 1
     prerequisite = { focus = USA_infantry_tanks focus = USA_armored_division }
@@ -7845,8 +8036,7 @@ focus_tree = {
 
       custom_effect_tooltip = USA_modify_united_states_army_modifier_tt
 
-      custom_effect_tooltip = USA_united_states_army_armor_attack_factor_5_tt
-      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.05 }
+      add_to_variable = { USA_united_states_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
     }
   }
 

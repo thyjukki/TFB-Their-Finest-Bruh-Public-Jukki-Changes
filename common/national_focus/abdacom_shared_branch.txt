@@ -343,10 +343,27 @@
 	}
 
 	offset = {
-		x = 70
+		x = 69
 		y = 0
 		trigger = { tag = USA }
 	}
+
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			tag = USA
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			OR = {
+				has_completed_focus = USA_new_deal_2
+				has_completed_focus = USA_landon_deal
+			}
+		}
+	}
+
 
 	offset = {
 		x = 73

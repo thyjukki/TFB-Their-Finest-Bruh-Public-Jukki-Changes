@@ -2,6 +2,49 @@ ideas = {
 
 	country = {
 
+		USA_office_of_strategic_services_idea = {
+
+			picture = generic_spy_intel
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.05
+			}
+		}
+
+		USA_office_of_strategic_services_idea_2 = {
+
+			picture = generic_spy_intel
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.05
+				enemy_operative_detection_chance = 0.05
+				enemy_operative_capture_chance_factor = 0.1
+				civilian_intel_to_others = -5
+			}
+		} 	
+
 		USA_economic_boom_idea = {
 
 			picture = generic_economic_increase
