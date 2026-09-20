@@ -86,34 +86,28 @@ support_integrated_operations = {
     rewards = {
         first_line_of_defense = {
 			destroyer = {
-				max_organisation = 2.5
-				naval_torpedo_damage_reduction_factor = -0.075
+				max_organisation = 5
+				naval_light_gun_hit_chance_factor = 0.05
 			}
 		}
 		first_line_of_attack = {
 			light_cruiser = {
-				max_organisation = 2.5
+				max_organisation = 5
 				naval_light_gun_hit_chance_factor = 0.05
 			}
 		}
 		blue_water_training = {
+			destroyer = {
+				naval_speed = 0.07
+			}
+			light_cruiser = {
+				naval_speed = 0.05
+			}
 			equipment_bonus ={
                 ship_hull_cruiser = {
 				    naval_weather_penalty_factor = -0.125
                 }
             }
-		}
-		fleet_coordination = {
-			battleship ={
-				surface_visibility = -0.05
-				max_organisation = 2.5
-				naval_heavy_gun_hit_chance_factor = 0.05
-			}
-			sh_battleship ={
-				max_organisation = 2.5
-				naval_heavy_gun_hit_chance_factor = 0.05
-			}
-			screening_efficiency = 0.05
 		}
 		early_warning = {
 			destroyer = {
@@ -123,6 +117,19 @@ support_integrated_operations = {
 				surface_detection = 0.05
 			}
 		}
+		fleet_coordination = {
+			battleship ={
+				surface_visibility = -0.05
+				max_organisation = 5
+				naval_heavy_gun_hit_chance_factor = 0.07
+			}
+			sh_battleship ={
+				max_organisation = 5
+				naval_heavy_gun_hit_chance_factor = 0.07
+			}
+			screening_efficiency = 0.05
+		}
+
     }
 }
 
@@ -418,13 +425,11 @@ jeune_ecole = {
     			lg_attack = 0.05
     		}
 			destroyer = {
-				torpedo_attack = 0.05
 				convoy_raiding_coordination = 0.025
 			}
     	}
     	large_torpedo_boats = {
     		light_cruiser = {
-    			torpedo_attack = 0.05
 				max_organisation = 10
     		}
             equipment_bonus = {
@@ -443,7 +448,7 @@ jeune_ecole = {
     	}
     	sea_scabs = {
     		destroyer = {
-				lg_attack = 0.07
+				lg_attack = 0.08
     			naval_speed = 0.05
 				lg_armor_piercing = 0.02
     		}

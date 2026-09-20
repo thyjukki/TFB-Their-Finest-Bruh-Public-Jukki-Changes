@@ -362,7 +362,6 @@ light_task_forces = {
         multiplier = 2 
         sub_units = { 
             carrier
-            destroyer
         }
         
     }
@@ -416,7 +415,6 @@ light_task_forces = {
     		}
     		destroyer = {
                 patrol_coordination = 0.05
-    			naval_speed = 0.03
     			surface_detection = 0.10
     		}
     	}
