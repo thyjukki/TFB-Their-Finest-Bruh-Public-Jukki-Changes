@@ -227,36 +227,49 @@ torpedo_primacy = {
     		destroyer = {
     			torpedo_attack = 0.05
     		}
+			light_cruiser = {
+				torpedo_attack = 0.05
+			}
     	}
     	coordinated_fire_patterns = {
     		destroyer = {
     			max_organisation = 10
+				naval_speed = 0.02
     		}
+			light_cruiser = {
+				max_organisation = 5
+			}
     	}	
     	dedicated_torpedo_task_forces = {
     		light_cruiser = {
-    			sub_attack = 0.05
     			torpedo_attack = 0.05
     		}
     		destroyer = {
-    			sub_attack = 0.05
+    			torpedo_attack = 0.05
+    		}
+			heavy_cruiser = {
+				naval_speed = 0.02
+				torpedo_attack = 0.05
     		}
 
     	}
     	improved_escort_role = {
     		destroyer = {
-    			sub_detection = 0.1
+    			surface_detection = 0.05
     		}
+			light_cruiser = {
+				surface_detection = 0.05
+			}
     	}
 
     	task_force_integration = {
     		light_cruiser =  {
-    			max_organisation = 10
+    			max_organisation = 5
+				naval_speed = 0.02
     		}
     		heavy_cruiser = {
     			max_organisation = 10
-    			sub_detection = 0.1
-					torpedo_attack = 0.05
+				torpedo_attack = 0.05
     		}
     	}
     }
@@ -402,18 +415,21 @@ jeune_ecole = {
     	commerce_raiding_priority = {
     		light_cruiser = {
     			convoy_raiding_coordination = 0.025
-    			max_organisation = 10
     			lg_attack = 0.05
     		}
+			destroyer = {
+				torpedo_attack = 0.05
+				convoy_raiding_coordination = 0.025
+			}
     	}
     	large_torpedo_boats = {
     		light_cruiser = {
     			torpedo_attack = 0.05
+				max_organisation = 10
     		}
             equipment_bonus = {
                 ship_hull_torpedo_cruiser = {
-                    torpedo_attack = 0.05
-                    lg_attack = 0.05
+                    torpedo_attack = 0.1
                     instant = yes
                 }
             }
@@ -422,24 +438,27 @@ jeune_ecole = {
     		destroyer = {
     			convoy_raiding_coordination = 0.025
     			max_organisation = 10
+				naval_range = 0.1
     		}
-
     	}
     	sea_scabs = {
-    		convoy_retreat_speed = 0.05
     		destroyer = {
+				lg_attack = 0.07
     			naval_speed = 0.05
-    			patrol_coordination = 0.05
+				lg_armor_piercing = 0.02
     		}
     	}
     	autonomous_cruisers = {
+			navy_anti_air_attack_factor = 0.03
     		battle_cruiser = {
     			hg_attack = 0.05
     			naval_range = 0.05
     			naval_speed = 0.05
     			convoy_raiding_coordination = 0.05
-
     		}
+			light_cruiser = {
+				naval_speed = 0.02
+				naval_range = 0.05
     	}
     }
 
