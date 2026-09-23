@@ -1,0 +1,7 @@
+- tank stats
+- Tank leaders
+- Desegration
+  Stab hit pp loss, but chose give buff to selected path
+	Chance for strike in south
+
+- Air Produce british or own enginges
