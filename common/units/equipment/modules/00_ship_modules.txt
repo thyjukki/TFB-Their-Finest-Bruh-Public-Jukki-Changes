@@ -2117,7 +2117,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 16
+			torpedo_attack = 18
 			build_cost_ic = 90
 		}
 		multiply_stats = {
@@ -2137,7 +2137,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 23
+			torpedo_attack = 25
 			build_cost_ic = 120
 			naval_torpedo_hit_chance_factor = 0.01
 		}
@@ -2171,7 +2171,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 30
+			torpedo_attack = 34
 			build_cost_ic = 150
 			naval_torpedo_hit_chance_factor = 0.015
 		}
@@ -2195,7 +2195,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 37
+			torpedo_attack = 44
 			build_cost_ic = 180
 			naval_torpedo_hit_chance_factor = 0.02
 		}
@@ -2218,7 +2218,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 13
+			torpedo_attack = 16
 			build_cost_ic = 80
 		}
 
@@ -2240,7 +2240,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 16
+			torpedo_attack = 20
 			build_cost_ic = 100
 			naval_torpedo_hit_chance_factor = 0.005
 		}
@@ -2267,7 +2267,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 20
+			torpedo_attack = 26
 			build_cost_ic = 120
 			naval_torpedo_hit_chance_factor = 0.01
 		}
@@ -2291,7 +2291,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 24
+			torpedo_attack = 32
 			build_cost_ic = 140
 			naval_torpedo_hit_chance_factor = 0.015
 		}

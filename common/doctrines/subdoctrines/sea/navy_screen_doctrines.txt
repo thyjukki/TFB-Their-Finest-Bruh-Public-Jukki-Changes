@@ -20,18 +20,25 @@ convoy_escort = {
     }
 
     # EFFECTS
-	convoy_escort_efficiency = 0.1
+	convoy_escort_efficiency = 0.05
 	convoy_retreat_speed = 0.05
 
     rewards = {
 		anti_submarine_sweep_training = {
 			destroyer = {
+				sub_detection = 0.02
+			}
+			light_cruiser = {
 				sub_detection = 0.05
 			}
 		}
         escort_reclassification = {
+			convoy_escort_efficiency = 0.05
 			destroyer = {
 				max_organisation = 5
+			}
+			light_cruiser = {
+				sub_attack = 0.05
 			}
 		}
 		sweeping_duty = {
@@ -39,17 +46,25 @@ convoy_escort = {
 			destroyer = {
 				naval_speed = 0.05
 			}
+			light_cruiser = {
+				naval_speed = 0.05
+			}
 		}
 		creeping_attack = {
 			destroyer = {
-				sub_detection = 0.05
+				sub_detection = 0.03
 				sub_attack = 0.05
 			}
 		}
 		as_below_so_above = {
+			convoy_escort_efficiency = 0.05
+			convoy_retreat_speed = 0.05
 			destroyer = {
 				anti_air_attack = 0.075
 				lg_attack = 0.05
+			}
+			light_cruiser = {
+				anti_air_attack = 0.1
 			}
 		}
     }
@@ -97,6 +112,7 @@ support_integrated_operations = {
 			}
 		}
 		blue_water_training = {
+			screening_efficiency = 0.05
 			destroyer = {
 				naval_speed = 0.07
 			}
@@ -162,43 +178,52 @@ hunter_killers = {
 
     # EFFECTS
 	naval_coordination = 0.05 
-	
     rewards = {
 		search_and_destroy = {
 			destroyer = {
-				sub_detection = 0.075
+				sub_detection = 0.05
+				sub_attack = 0.05
 			}
 		}
 		flotilla_leader = {
 			carrier = {
 				carrier_sub_detection = 0.075
+				sub_detection = 0.05
 			}
 			sh_carrier = {
 				carrier_sub_detection = 0.075
+				sub_detection = 0.05
 			}
 		}
 		group_operations = {
 			destroyer = {
+				naval_speed = 0.05
+				sub_detection = 0.05
 				sub_attack = 0.05
 			}
 		}
 		combat_readiness = {
 			carrier = {
+				naval_speed = 0.05
 				max_organisation = 7.5
+				sub_detection = 0.1
+
 			}
 			sh_carrier = {
+				naval_speed = 0.05
 				max_organisation = 7.5
+				sub_detection = 0.1
 			}
 		}
 		escort_group_patrols = {
 			sh_carrier = {
-				patrol_coordination = 0.1
+				patrol_coordination = 0.15
 			}
 			carrier = {
-				patrol_coordination = 0.1
+				patrol_coordination = 0.15
 			}
 			destroyer = {
-				patrol_coordination = 0.1
+				patrol_coordination = 0.15
 			}
 		}
     }
