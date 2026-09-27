@@ -3046,7 +3046,7 @@ equipment_modules = {
 		
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.10
-			naval_torpedo_damage_reduction_factor = 0.45
+			naval_torpedo_damage_reduction_factor = 0.65
 		}
 		build_cost_resources = {
 			steel = 5
@@ -3071,7 +3071,7 @@ equipment_modules = {
 		
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.15
-			naval_torpedo_damage_reduction_factor = 0.5
+			naval_torpedo_damage_reduction_factor = 0.75
 		}
 		build_cost_resources = {
 			steel = 10
@@ -3096,7 +3096,7 @@ equipment_modules = {
 		
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.20
-			naval_torpedo_damage_reduction_factor = 0.55
+			naval_torpedo_damage_reduction_factor = 0.85
 		}
 		build_cost_resources = {
 			steel = 15
@@ -3121,7 +3121,7 @@ equipment_modules = {
 		
 		add_stats = {
 			naval_torpedo_enemy_critical_chance_factor = -0.25
-			naval_torpedo_damage_reduction_factor = 0.6
+			naval_torpedo_damage_reduction_factor = 0.90
 		}
 		build_cost_resources = {
 			steel = 20
