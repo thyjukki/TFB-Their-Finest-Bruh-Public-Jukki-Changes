@@ -1,0 +1,20 @@
+﻿l_english:
+ jet_CAS_equipment:0 "Jet CAS"
+ ENG_jet_CAS_equipment:0 "Type 164 Brigand"
+ GER_jet_CAS_equipment:0 "Hs 132"
+ ITA_jet_CAS_equipment:0 "Caproni Campini Ca.183bis"
+ USA_jet_CAS_equipment:0 "FR-1 Fireball"
+ SOV_jet_CAS_equipment:0 "Ilyushin Il-10"
+ JAP_jet_CAS_equipment:0 "R2y2"
+ FRA_jet_CAS_equipment:0 "Dassault M.D.450 Ouragan"
+
+  sp_naval_v2_rocket_launching_carriers: 		"Carrier based v2 weapons"
+
+	sp_naval_v2_rocket_launching_carriers: 		"Carrier based v2 weapons"
+	sp_naval_v2_rocket_launching_carriers_desc: 	"Based on the irl 1947 Operation Sandy, Can also fit SAM missiles :3"
+
+	sp_naval_v1_rocket_launching_submarine: 		"Submarine based v1 weapons"
+	sp_naval_v1_rocket_launching_submarine_desc: 	"Based on the irl USS Cusk launch on February 12th 1947, Also Mark Felton has a video on some german cope version"
+
+	carrier_v2_missile_launcher: 		"Carrier based v2 weapons"
+	carrier_v2_missile_launcher_desc: 	"§RDissables§! Carrier Hangars"

@@ -1,0 +1,47 @@
+﻿l_english:
+
+  jet_fighter_volksjager_equipment_1:0 "Heinkel He 162 Volksjäger"
+  jerrycan:0 "Jerrycan"
+  sp_guided_rocket:0 "Guided Anti-Ship Missiles"
+  sp_air_Hs132_unique_reward: "How do we use tiny rockets"
+  sp_air_hs132_a_variant: 		"Specialiced Rato"
+  sp_air_hs132_b_variant: 		"Generic Rato"
+  sp_air_hs132_c_variant: 		"Install Ejection seats"
+
+  sp_land_assault_rifle_cailber: "The assault rifle caliber"
+  sp_land_assault_rifle_cailber_bigger: "Bigger assault rifle caliber"
+  sp_land_assault_rifle_cailber_standard: "standard assault rifle caliber"
+
+  sp_air_volksjager: "VolksJäger"
+  sp_air_volksjager_desc: "The war effort is not developing in our favor. The Allies has seized air superiority, their bombers raining destruction upon the Reich’s cities and war industries. We need a jet fighter that can be built cheaply, rapidly, and without the need for scarce resources such as aluminum."
+  sp_air_jet_cas: "Jet Close Air Support"
+  sp_air_jet_cas_desc: "At least pilot bail out attempts wont result in high speed grinding and incineration"
+
+  GER_sp_air_jet_cas: "Henschel Hs 132"
+  GER_sp_air_jet_cas_desc: "Three Hs 132 prototypes were ordered, construction began in March 1945 at Henschel's Schönefeld factory, and at the end of the war the Hs 132 variants were captured by Soviet forces,"
+
+  GER_sp_land_jerrycan: "Wehrmacht-Einheitskanister"
+  GER_sp_land_jerrycan_desc: "Developed in 1937 by Germany, the Jerrycan was the true wunderwaffen, making it so one Soldier can carry 2 full or 4 empty cans alone. By 1939 the German military had thousands of such cans stockpiled in anticipation of war. Motorised troops were issued the cans with lengths of rubber hose in order to siphon fuel from any available source, a way to aid their rapid invasion of Poland at the start of the Second World War"
+  sp_land_jerrycan: "Jerrycan"
+  sp_land_jerrycan_desc: "The name of the Jerrycan refers to its German origins, Jerry being slang for Germans. The design was reverse engineered and subsequently copied, with minor modifications, by the Allies during the Second World War"
+
+  sp_land_raketenwerfer: "Pack Anti-Tank III"
+  GER_sp_land_raketenwerfer_desc: "The Raketenwerfer 43 was given to infantry to bolster their anti-tank capability. The weapon was fired from a small two-wheeled gun carriage which fired a percussion-primed, rocket-propelled, fin-stabilized grenade with a shaped charge warhead. Much like the recoilless rifles of the allies"
+  sp_land_raketenwerfer_desc: "The earliest known example of recoilless principles was created by Leonardo da Vinci, The first recoilless gun known to have been constructed was developed by the USA, The German 7.5 cm LG 40 was found to be so useful during the invasion of Crete that Krupp and Rheinmetall set to work creating more powerful versions, respectively the 10.5 cm Leichtgeschütz 40 and 10.5 cm Leichtgeschütz 42. These weapons were loosely copied by the US even though they did have a development program, and it is not clear to what extent the German designs were copied. These weapons remained fairly rare during the war, although the American M20 became increasingly common in 1945"
+  
+  GER_sp_land_night_vision: "ZG 1229 Vampir"
+  sp_land_night_vision: "Night Vison"
+  sp_land_night_vision_desc: "Active infrared devices were developed by the Wehrmacht during World War II, intended primarily for night use. The ZG 1229 was designed by Allgemeine AEG and Forschungsanstalt. It was produced by Ernst Leitz and between 200 and 310 units were built. A grenadier carrying it was known as a Nachtjäger (night-hunter)."
+
+  GER_land_assault_rifle: "STG44"
+  sp_land_assault_rifle: "Modern Assault Rifle Studies"
+  sp_land_assault_rifle_desc: "An assault rifle is a select fire rifle that uses an intermediate-rifle cartridge and a detachable magazine. Assault rifles were first put into mass production and accepted into widespread service during World War II. The first assault rifle to see major usage was the German StG 44, After ww2 the NATO countries were equipped with battle rifles, the development of the M16 rifle during the Vietnam War prompted the adoption of assault rifles by the rest of NATO. By the end of the 20th century, assault rifles had become the standard weapon in most of the world's armies, replacing full-powered rifles and submachine guns in most roles. The two most successful modern assault rifles are the AK-47 and the M16 designs and their derivatives."
+  
+  sp_air_specialiced_bombs: "Earthshaker and Bouncing Bomb"
+  sp_air_specialiced_bombs_desc: "Here at BOBG we drop both bombs! That’s 65% more bomb per bomb!, Not satisfied? Open wikipedia! thats where i got the descriptions from"
+
+
+  GER_sp_air_guided_missile_old: "Henschel Hs 293"
+  USA_sp_air_guided_missile_old: "ASM-N-2 Bat"
+  sp_air_guided_missile_old: "Guided air to ship missiles"
+  sp_air_guided_missile_old_desc: "A new TV-guided anti-shipping weapon for which an operator would use the TV image sent from the nose of the weapon and operate aerodynamic controls during the weapon's fall. Both axis and allies created at least one of these weapons during ww2"

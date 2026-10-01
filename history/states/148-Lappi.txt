@@ -1,0 +1,51 @@
+state = {
+	id = 148
+	name = "STATE_148" #LAPPI
+	manpower = 121737
+	
+	state_category = rural
+	
+	resources={
+		steel=170 # was: 8
+		chromium=150 # was: 2
+	}
+
+	history = {
+
+		owner = FIN
+		add_core_of = FIN
+		#add_core_of = SMI
+
+		victory_points = { 
+			11164 1 # Kemi
+		}
+
+		victory_points = {  
+			6087 2 # Rovaniemi
+		}
+
+		victory_points = { 
+			11125 2 # Tornio
+		}
+
+		victory_points = { 
+			6142 0 # Inari
+		}
+
+		buildings = {
+			infrastructure = 2
+			# Kemijoki
+			#11164 = { dam = 1 }
+			11125 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+
+	provinces = {
+		30 103 124 162 167 203 2992 3055 3069 3097 3107 3158 3193 6061 6076 6087 6128 6137 6142 9112 9189 9223 11030 11115 11125 11130 11164 11167 11204 
+	}
+
+	local_supplies = 0.0 
+}

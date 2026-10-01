@@ -1,0 +1,152 @@
+spriteTypes = {
+
+	####################
+	##### POLICIES #####
+	####################
+
+	#### General Policies ###
+
+	spriteType = {
+		name = "GFX_mio_cat_all_artillery_equipment"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_department_icon_artillery_conversion.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_civs"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_civs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_factory_safe"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_factory_safe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_arty"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_arty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_cg"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_cg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_civilian_project"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_civilian_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_conc_speed"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_conc_speed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_cp"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_cp.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_crate"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_crate.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_dockyard"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_dockyard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_dockyard_refit"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_dockyard_refit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_factory_alt"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_factory_alt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_list"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_list.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_nuke"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_nuke.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_political_bad"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_political_bad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_research_special"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_research_special.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_research_speed"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_research_speed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_manpower"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_mils"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_mils.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_political_exhiled"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_political_exhiled.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_political_good"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_political_good.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_retool"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_retool.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_stockpile"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_stockpile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_jackpot"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_jackpot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_jackpot_1"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_jackpot_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_jackpot_2"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_jackpot_2.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_generic_mio_trait_icon_jackpot_3"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_jackpot_3.dds"
+	}
+
+	spriteType = {
+		name = "generic_mio_trait_icon_jackpot_4"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic_mio_trait_icon_jackpot_4.dds"
+	}
+
+}

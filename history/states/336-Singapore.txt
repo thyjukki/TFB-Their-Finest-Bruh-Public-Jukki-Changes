@@ -1,0 +1,51 @@
+state = {
+	id = 336
+	name = "STATE_336"
+	manpower = 556200
+	
+	state_category = town
+	
+	resources={
+		rubber=1100 # was: 848
+		steel=100 # was: 32
+		tungsten=490 # was: 308
+		aluminium = 100 # was: 25
+	}
+
+	history={
+		set_state_flag = RAJ_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
+		owner = MAL
+		add_core_of = MAL
+
+		victory_points = {
+			10297 5 # Kuala Lumpur
+		}
+
+		victory_points = {
+			4412 1 # Seremban 
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 4
+			air_base = 2
+
+			10297 = {
+				naval_base = 5
+			}
+		}
+
+		1936.1.2 = {
+			owner = ENG
+		}
+		
+	}
+
+	provinces = {
+		4412 10297 13409
+	}
+
+	local_supplies = 0.0 
+}

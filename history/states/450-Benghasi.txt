@@ -1,0 +1,33 @@
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 82535
+	
+	state_category = enclave
+
+	history={
+		owner = ITA
+		set_state_flag = ITA_controls
+		set_state_flag = ITA_controls_lib
+		
+		victory_points = {
+			11954 10
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			11954 = {
+				naval_base = 2
+				bunker = 3
+			}
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		4120 10123 11954 4063 7139 1062 12094
+	}
+
+	local_supplies=0.0 
+}

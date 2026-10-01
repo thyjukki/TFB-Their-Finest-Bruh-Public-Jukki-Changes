@@ -1,0 +1,23 @@
+ideas = {
+	
+ 	country = {
+		sp_guided_rocket = { #fritz_x
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = strategic_bombing_focus
+	
+			modifier = {
+				naval_strike_targetting_factor = 0.5
+			}
+	
+		}
+
+	} 
+}

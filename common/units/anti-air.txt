@@ -1,0 +1,443 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	anti_air = {
+		abbreviation = "AA"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		regimental = no
+		combat_width = 0
+		training_time = 120	
+
+		need = {
+			anti_air_equipment = 20
+			support_equipment = 5
+			#horse_equipment = 20
+		}
+
+		can_be_parachuted = no
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.1
+		
+		same_support_type = anti_air
+	}
+
+	anti_air_support = {
+		abbreviation = "AA"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+		allowed_battalion_groups = { infantry combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		divisional = no
+		combat_width = 0
+		training_time = 120	
+
+		air_attack = -0.7
+		ap_attack = -0.5
+
+		need = {
+			anti_air_equipment = 10
+			support_equipment = 2
+			#horse_equipment = 20
+		}
+
+		can_be_parachuted = no
+		
+		#Size Definitions
+		manpower = 150
+		weight = 0.05
+		
+        supply_consumption = 0.05
+		
+	}
+	
+	mot_anti_air_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_mobile_and_mobile_combat_sup
+			category_anti_air
+		}
+
+		regimental = no
+		
+		combat_width = 0
+		training_time = 120
+
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		maximum_speed = -0.125
+
+		need = {
+			anti_air_equipment = 20
+			motorized_equipment = 20
+		}
+
+		can_be_parachuted = yes
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.2
+		
+		transport = motorized_equipment
+		
+		same_support_type = anti_air
+	}
+	
+	mot_anti_air_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+		allowed_battalion_groups = { infantry combat_support mobile armor }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_mobile_and_mobile_combat_sup
+			category_anti_air
+		}
+
+		divisional = no
+		
+		combat_width = 0
+		training_time = 120
+
+		own_equipment_fuel_consumption_mult = 0.15
+		
+		maximum_speed = -0.125
+
+
+		need = {
+			anti_air_equipment = 10
+			motorized_equipment = 10
+		}
+
+		can_be_parachuted = yes
+		
+		#Size Definitions
+		manpower = 150
+		weight = 0.1
+
+		ap_attack = -0.5
+		air_attack = -0.7
+		
+        supply_consumption = 0.1
+		
+		transport = motorized_equipment
+		
+	}
+	
+	motorised_anti_air = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_mobile_and_mobile_combat_sup
+			category_anti_air
+		}
+
+		regimental = no
+		
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			mot_anti_air_equipment = 20
+		}
+
+		can_be_parachuted = no
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.2
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.2
+		
+		same_support_type = anti_air
+	}
+	
+	heavy_anti_air = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		regimental = no
+		
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			heavy_anti_air_equipment = 20
+			support_equipment = 5
+			#horse_equipment = 35
+		}
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.15
+		
+		maximum_speed = -0.25
+		
+			
+		same_support_type = anti_air
+	}
+	
+	heavy_anti_air_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+		allowed_battalion_groups = { combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		divisional = no
+
+		training_time = 120
+
+		need = {
+			heavy_anti_air_equipment = 10
+			support_equipment = 2
+			#horse_equipment = 35
+		}
+
+		maximum_speed = -0.25
+		
+		#Size Definitions
+		manpower = 100
+		weight = 0.05
+		
+        supply_consumption = 0.05
+		
+		ap_attack = -0.5
+		air_attack = -0.7
+
+	}
+
+	mot_heavy_anti_air = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		regimental = no
+
+		
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			heavy_anti_air_equipment = 20
+			motorized_equipment = 25
+		}
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.15
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		transport = motorized_equipment
+		
+		maximum_speed = -0.375
+			
+		same_support_type = anti_air
+	}
+
+	mot_heavy_anti_air_support = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+			anti_air
+		}
+
+		group = support
+		allowed_battalion_groups = { combat_support mobile_combat_support }
+
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		divisional = no
+
+		
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			heavy_anti_air_equipment = 10
+			motorized_equipment = 10
+		}
+		
+		#Size Definitions
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.05
+		own_equipment_fuel_consumption_mult = 0.1
+		
+		maximum_speed = -0.375
+		ap_attack = -0.5
+		air_attack = -0.7
+	}
+}

@@ -1,0 +1,18 @@
+version="2.18.1"
+tags={
+	"Balance"
+	"Events"
+	"Gameplay"
+	"Historical"
+	"National Focuses"
+	"Technologies"
+}
+name="Their Finest Bruh DEV "
+picture="thumbnail.png"
+replace_path="common/ai_equipment"
+replace_path="common/ai_strategy"
+replace_path="common/ai_strategy_plans"
+replace_path="common/ai_templates"
+replace_path="gfx/interface/equipmentdesigner/tanks/designer"
+replace_path="history/countries"
+supported_version="1.19.*"

@@ -1,0 +1,29 @@
+# All equipment based on medium tank chassis
+equipments = {
+	jet_fighter_volksjager_equipment_1 = {
+		year = 1946
+
+		archetype = jet_fighter_equipment
+		priority = 20
+		air_superiority = 1
+		reliability = 0.40
+		# Air vs Navy - low damage / high hit chance / easy to hurt
+		naval_strike_attack = 1
+		naval_strike_targetting = 10
+		#Space taken in convoy
+		build_cost_ic = 100
+		manpower = 40
+		fuel_consumption = 0.48
+		air_range = 750
+		maximum_speed = 800
+		air_agility = 65
+		air_attack = 40
+		air_defence = 10
+		resources = {			
+			aluminium = 25
+			rubber = 4
+			tungsten = 2
+		}
+	}
+}
+

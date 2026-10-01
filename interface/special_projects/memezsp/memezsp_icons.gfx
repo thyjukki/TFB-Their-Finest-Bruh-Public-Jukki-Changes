@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_jet_fighter_volksjager_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/air/ger/ger_fighter_volk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_air_guided_missile_old"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_air_guided_missile_old.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_air_jet_cas"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_air_jet_cas.dds"
+	}
+	spriteType = { 
+		name = "GFX_sp_air_volksjager"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_air_Volksjager.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_assault_rifle"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_land_assault_rifle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_land_fuel_cans"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_land_fuel_cans.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_land_pack_at3"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_land_pack_at3.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_land_Heavy_MLRS"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_land_Heavy_MLRS.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_air_specialiced_bombs"
+		texturefile = "gfx/interface/special_projects/project_icons/sp_air_specialiced_bombs.dds"
+	} 
+	
+
+	#Sp icons army
+	#SMALL
+	spriteType = {
+		name = "GFX_technology_infantry_folder_special_project_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_available_item_bg.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_technology_infantry_folder_special_project_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_infantry_folder_special_project_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_special_project_small_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_infantry_folder_special_project_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//techtree//technology_special_project_small_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+}
